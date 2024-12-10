@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "introduction"
 	group: "41F4ECD62DE73C61"
+	icon: "minecraft:red_bed"
 	id: "5157C9EBAC7BA1EA"
 	order_index: 0
 	quest_links: [ ]
@@ -82,7 +83,7 @@
 				{
 					count: 8L
 					id: "036AA7A178B2D1C8"
-					item: { Count: 8, id: "minecraft:flint" }
+					item: "minecraft:flint"
 					type: "item"
 				}
 			]
@@ -312,7 +313,14 @@
 				{
 					count: 6L
 					id: "12E7F91713A64580"
-					item: { Count: 8, id: "minecraft:oak_log" }
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
 					type: "item"
 				}
 				{

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "stone_age"
 	group: "41F4ECD62DE73C61"
+	icon: "minecraft:stone"
 	id: "703A9CCDD0CCCCCD"
 	order_index: 1
 	quest_links: [ ]
@@ -155,35 +156,14 @@
 				{
 					count: 48L
 					id: "6E6B20EAAB50ADFE"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:raw_materials/copper"
-						}
-					}
-					title: "Any #forge:raw_materials/copper"
+					item: "minecraft:copper_ingot"
+					title: "48x Copper"
 					type: "item"
 				}
 				{
 					id: "281AA072A22D214B"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 16b
-									id: "gtceu:raw_tin"
-								}
-								{
-									Count: 8b
-									id: "gtceu:raw_cassiterite"
-								}
-							]
-						}
-					}
-					title: "16x Tin or 8x Cassiterite"
+					item: "gtceu:tin_ingot"
+					title: "16x Tin"
 					type: "item"
 				}
 			]

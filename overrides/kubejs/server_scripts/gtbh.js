@@ -1,3 +1,26 @@
+const woodTypes = [
+    { logType: "dark_oak_logs", woodType: "dark_oak" },
+    { logType: "oak_logs", woodType: "oak" },
+    { logType: "acacia_logs", woodType: "acacia" },
+    { logType: "birch_logs", woodType: "birch" },
+    { logType: "jungle_logs", woodType: "jungle" },
+    { logType: "spruce_logs", woodType: "spruce" },
+    { logType: "mangrove_logs", woodType: "mangrove" },
+    { logType: "cherry_logs", woodType: "cherry" },
+    {
+        logType: "crimson_stems",
+        woodType: "crimson",
+    },
+    {
+        logType: "warped_stems",
+        woodType: "warped",
+    },
+    {
+        logType: "bamboo_blocks",
+        woodType: "bamboo",
+    },
+];
+
 ServerEvents.recipes((event) => {
     // remove vanilla pickaxes
     event.remove({ output: "minecraft:wooden_pickaxe" });
@@ -106,4 +129,145 @@ ServerEvents.recipes((event) => {
     bed("minecraft:purple_bed", "minecraft:purple_carpet");
     bed("minecraft:magenta_bed", "minecraft:magenta_carpet");
     bed("minecraft:pink_bed", "minecraft:pink_carpet");
+
+    function barrel(wood) {
+        event.shaped(
+            Item.of(`sophisticatedstorage:barrel`, { woodType: wood.woodType }),
+            ["lsl", "pfp", "lsl"],
+            {
+                l: `#minecraft:${wood.logType}`,
+                s: `minecraft:${wood.woodType}_slab`,
+                p: `minecraft:${wood.woodType}_planks`,
+                f: "minecraft:flint",
+            }
+        );
+    }
+
+    function limitedBarrel1(wood) {
+        event.shaped(
+            Item.of(`sophisticatedstorage:limited_barrel_1`, {
+                woodType: wood.woodType,
+            }),
+            ["lsl", "pfp", "lpl"],
+            {
+                l: `#minecraft:${wood.logType}`,
+                s: `minecraft:${wood.woodType}_slab`,
+                p: `minecraft:${wood.woodType}_planks`,
+                f: "minecraft:flint",
+            }
+        );
+    }
+
+    function limitedBarrel2(wood) {
+        event.shaped(
+            Item.of(`sophisticatedstorage:limited_barrel_2`, {
+                woodType: wood.woodType,
+            }),
+            ["lpl", "sfs", "lpl"],
+            {
+                l: `#minecraft:${wood.logType}`,
+                s: `minecraft:${wood.woodType}_slab`,
+                p: `minecraft:${wood.woodType}_planks`,
+                f: "minecraft:flint",
+            }
+        );
+    }
+
+    function limitedBarrel3(wood) {
+        event.shaped(
+            Item.of(`sophisticatedstorage:limited_barrel_3`, {
+                woodType: wood.woodType,
+            }),
+            ["lsl", "lfl", "sps"],
+            {
+                l: `#minecraft:${wood.logType}`,
+                s: `minecraft:${wood.woodType}_slab`,
+                p: `minecraft:${wood.woodType}_planks`,
+                f: "minecraft:flint",
+            }
+        );
+    }
+
+    function limitedBarrel4(wood) {
+        event.shaped(
+            Item.of(`sophisticatedstorage:limited_barrel_4`, {
+                woodType: wood.woodType,
+            }),
+            ["sls", "lfl", "sls"],
+            {
+                l: `#minecraft:${wood.logType}`,
+                s: `minecraft:${wood.woodType}_slab`,
+                p: `minecraft:${wood.woodType}_planks`,
+                f: "minecraft:flint",
+            }
+        );
+    }
+
+    function chest(wood) {
+        event.shaped(
+            Item.of(`sophisticatedstorage:chest`, { woodType: wood.woodType }),
+            ["lpl", "pfp", "lpl"],
+            {
+                l: `#minecraft:${wood.logType}`,
+                p: `minecraft:${wood.woodType}_planks`,
+                f: "minecraft:flint",
+            }
+        );
+    }
+
+    event.remove({ output: "minecraft:barrel" });
+    event.remove({ output: "sophisticatedstorage:barrel" });
+    event.remove({ output: "sophisticatedstorage:limited_barrel_1" });
+    event.remove({ output: "sophisticatedstorage:limited_barrel_2" });
+    event.remove({ output: "sophisticatedstorage:limited_barrel_3" });
+    event.remove({ output: "sophisticatedstorage:limited_barrel_4" });
+
+    event.remove({ output: "minecraft:chest" });
+    event.remove({ output: "sophisticatedstorage:chest" });
+
+    event.shapeless(
+        Item.of("sophisticatedstorage:chest", { woodType: "oak" }),
+        "minecraft:chest"
+    );
+
+    woodTypes.forEach((woodObj) => {
+        barrel(woodObj);
+
+        limitedBarrel1(woodObj);
+        limitedBarrel2(woodObj);
+        limitedBarrel3(woodObj);
+        limitedBarrel4(woodObj);
+
+        chest(woodObj);
+    }, this);
+
+    event.replaceInput(
+        { output: "minecraft:blast_furnace" },
+        "minecraft:iron_ingot",
+        "#forge:plates/iron"
+    );
+
+    event.replaceInput(
+        { output: "gtceu:lp_steam_solid_boiler" },
+        "minecraft:furnace",
+        "minecraft:blast_furnace"
+    );
+
+    event.replaceInput(
+        { output: "gtceu:hp_steam_solid_boiler" },
+        "minecraft:furnace",
+        "minecraft:blast_furnace"
+    );
+
+    event.replaceInput(
+        { output: "gtceu:lp_steam_furnace" },
+        "minecraft:furnace",
+        "minecraft:blast_furnace"
+    );
+
+    event.replaceInput(
+        { output: "gtceu:lp_steam_alloy_smelter" },
+        "minecraft:furnace",
+        "minecraft:blast_furnace"
+    );
 });
