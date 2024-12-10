@@ -1,0 +1,414 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stone_age"
+	group: "41F4ECD62DE73C61"
+	id: "703A9CCDD0CCCCCD"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["31E78E162F2C97C1"]
+			icon: "minecraft:carrot"
+			id: "4B36521123CA3A3F"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "2C1E07BA506D6CF3"
+				type: "checkmark"
+			}]
+			title: "Food mechanics"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B36521123CA3A3F"]
+			id: "7695E2C03C1CAF1F"
+			tasks: [{
+				count: 196L
+				id: "052FB031D09D1935"
+				item: { Count: 196, id: "minecraft:sand" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["013A0BF0700859E4"]
+			id: "71A26B7E0DADEB83"
+			tasks: [{
+				count: 10L
+				id: "73DFA6D6507A8EB9"
+				item: { Count: 10, id: "minecraft:stone" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["71A26B7E0DADEB83"]
+			id: "4FD5F88375F9F873"
+			tasks: [{
+				count: 2L
+				id: "74474612B0D15138"
+				item: {
+					Count: 2
+					id: "gtceu:flint_mortar"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4B36521123CA3A3F"]
+			id: "1BDF1E09A00A8F70"
+			tasks: [{
+				count: 120L
+				id: "452DA2418DD6D792"
+				item: { Count: 120, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1BDF1E09A00A8F70"
+				"7695E2C03C1CAF1F"
+			]
+			id: "38D03E88C1812A28"
+			tasks: [
+				{
+					count: 117L
+					id: "19C173A6057BBD29"
+					item: { Count: 117, id: "gtceu:compressed_coke_clay" }
+					type: "item"
+				}
+				{
+					count: 117L
+					id: "738FE4CC69D8FAAE"
+					item: { Count: 117, id: "gtceu:coke_oven_brick" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38D03E88C1812A28"]
+			id: "4C85AC534A63BD47"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "219C3B24E0E04992"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "709B73B9A98513B9"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4C85AC534A63BD47"]
+			id: "013A0BF0700859E4"
+			tasks: [{
+				count: 16L
+				id: "46B7DAE2A8C1F368"
+				item: { Count: 16, id: "minecraft:charcoal" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4B36521123CA3A3F"]
+			id: "4518C8B094E17ACB"
+			tasks: [{
+				id: "3E104802F0F577B7"
+				title: "Mining info"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4518C8B094E17ACB"]
+			id: "78507126AE170E6C"
+			tasks: [
+				{
+					count: 48L
+					id: "6E6B20EAAB50ADFE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/copper"
+						}
+					}
+					title: "Any #forge:raw_materials/copper"
+					type: "item"
+				}
+				{
+					id: "281AA072A22D214B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 16b
+									id: "gtceu:raw_tin"
+								}
+								{
+									Count: 8b
+									id: "gtceu:raw_cassiterite"
+								}
+							]
+						}
+					}
+					title: "16x Tin or 8x Cassiterite"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"78507126AE170E6C"
+				"4FD5F88375F9F873"
+			]
+			id: "1EA6DB3AB3E65491"
+			tasks: [
+				{
+					count: 48L
+					id: "227E1F2F7F0667DB"
+					item: { Count: 48, id: "gtceu:copper_dust" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "13C7E33C947FE9F4"
+					item: { Count: 16, id: "gtceu:tin_dust" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1EA6DB3AB3E65491"]
+			id: "4386C8B280AA77F7"
+			tasks: [
+				{
+					count: 48L
+					id: "3AFEE093CC1A2360"
+					item: { Count: 48, id: "gtceu:bronze_dust" }
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "119620BE127846C3"
+					item: { Count: 48, id: "gtceu:bronze_ingot" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4518C8B094E17ACB"]
+			id: "0CBF0A6D1F8FF647"
+			tasks: [{
+				count: 48L
+				id: "77F82C9AC1109D3F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/iron"
+					}
+				}
+				title: "Any #forge:raw_materials/iron"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CBF0A6D1F8FF647"]
+			id: "3D44CBE56F4839CE"
+			tasks: [{
+				count: 48L
+				id: "354F10ABFB5C8D66"
+				item: { Count: 48, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4386C8B280AA77F7"
+				"313F704303E5935B"
+			]
+			dependency_requirement: "one_completed"
+			id: "26B35F58813215C8"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5CEB6FF46481A298"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/hammers"
+						}
+					}
+					title: "Any #forge:tools/hammers"
+					type: "item"
+				}
+				{
+					id: "51B60702CF33FFCA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					title: "Any #forge:tools/wrenches"
+					type: "item"
+				}
+				{
+					id: "70A3B2A5683C9933"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					title: "Any #forge:tools/saws"
+					type: "item"
+				}
+				{
+					id: "4504A9C4FD733792"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/files"
+						}
+					}
+					title: "Any #forge:tools/files"
+					type: "item"
+				}
+				{
+					id: "4141001DF221CA36"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					title: "Any #forge:tools/screwdrivers"
+					type: "item"
+				}
+				{
+					id: "17102A5DE3A767C5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wire_cutters"
+						}
+					}
+					title: "Any #forge:tools/wire_cutters"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4C85AC534A63BD47"]
+			icon: "gtceu:creosote_bucket"
+			id: "33F04BACB4AF2207"
+			tasks: [{
+				id: "66756CB32D22E0F2"
+				type: "checkmark"
+			}]
+			title: "Creosote"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D44CBE56F4839CE"]
+			description: ["Bronze > Iron but more effort to create, you pick"]
+			id: "313F704303E5935B"
+			tasks: [{
+				id: "5AFAF0007032AC56"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["26B35F58813215C8"]
+			id: "532176D1B80C4798"
+			tasks: [{
+				id: "7B33FC19D9F8783B"
+				title: "GregTech consdierations"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["532176D1B80C4798"]
+			id: "72787F9AA4CCEDCD"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "202C5ECEE933E5A3"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					id: "373892056E1FE986"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+				{
+					id: "65E64B13F481B465"
+					item: "gtceu:lp_steam_solid_boiler"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 2.0d
+		}
+	]
+	title: "Stone age"
+}
