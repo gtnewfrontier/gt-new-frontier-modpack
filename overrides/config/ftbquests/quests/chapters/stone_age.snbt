@@ -221,9 +221,38 @@
 				id: "77F82C9AC1109D3F"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					tag: {
-						value: "forge:raw_materials/iron"
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:raw_magnetite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_hematite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_yellow_limonite"
+							}
+							{
+								Count: 1b
+								id: "minecraft:raw_iron"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_basaltic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_granitic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_pyrite"
+							}
+						]
 					}
 				}
 				title: "Any #forge:raw_materials/iron"
