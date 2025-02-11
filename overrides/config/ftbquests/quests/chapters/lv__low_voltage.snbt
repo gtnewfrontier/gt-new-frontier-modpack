@@ -1574,33 +1574,6 @@
 			y: 7.875d
 		}
 		{
-			dependencies: ["3A8D7FC6F316C38C"]
-			description: [
-				"A fancy tool to help with base building. The gadget has different modes that you can view by holding the relevant hotkey - it defaults to &eG&r."
-				""
-				"Be sure to check out the &3Destruction Gadget&r and the &3Copy Paste Gadget&r."
-				""
-				"You &6should&r be able to charge this in the charger slot of any &bGregTech machine&r, but unfortunately, this is currently &cbugged&r. Have a look at the &dTurbo Charger&r quest in the top-right of this page if you want to charge this."
-			]
-			id: "0DAD0A6360448B39"
-			rewards: [{
-				count: 64
-				id: "754F6E206D20BC31"
-				item: "minecraft:bricks"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "A familiar face in the land of Greg"
-			tasks: [{
-				id: "65100C599DB0F30C"
-				item: "buildinggadgets2:gadget_building"
-				type: "item"
-			}]
-			x: -2.25d
-			y: 6.75d
-		}
-		{
 			dependencies: [
 				"5263F866638D875C"
 				"32B08E6F414A00C0"
@@ -2374,38 +2347,6 @@
 			title: "I'm Fetching Me Mallet!"
 			x: 8.91d
 			y: 4.29d
-		}
-		{
-			dependencies: ["648BCF486E16CCB2"]
-			description: [
-				"This is a &4meme&r quest - check the recipe requirement for the teddy."
-				""
-				"Yes... this will take you an entire year to craft in an &7LV&r Compressor. How long would this take you to craft when overclocked to the highest possible value?"
-				""
-				"&7Definitely don't worry about making this now... take the hint and wait for a heavy overclock."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o The main developer of this pack spent far too long fixing the model files to customise this thing.&7.&8. If you're wondering why there's a random Pokemon doll, it's my Minecraft skin!"
-			]
-			hide_dependency_lines: true
-			icon: "expatternprovider:fishbig"
-			id: "59BEB2AA9598A21D"
-			rewards: [{
-				id: "03A3C108D5BCE712"
-				item: "expatternprovider:fishbig"
-				random_bonus: 63
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Got enough time on your hands?"
-			tasks: [{
-				id: "783D21E963174609"
-				item: "expatternprovider:fishbig"
-				type: "item"
-			}]
-			title: "And they say GregTech is grindy..."
-			x: -1.1012329931972786d
-			y: 2.237499999999997d
 		}
 	]
 	subtitle: ["Tame electricity and make your first machines"]

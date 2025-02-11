@@ -596,45 +596,6 @@
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"77B7B1EDD19831E0"
-				"46C7E1D5E37B1ED2"
-			]
-			description: ["The &aWireless Connector&r will help with logistics, giving &9Wireless Transfer&r for your ME Network with unlimited range. The energy cost scales exponentially with transfer distance."]
-			id: "7E2076D45F83D9C3"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "To infinity, and beyond!"
-			tasks: [{
-				id: "3AC7E29D373750F8"
-				item: "expatternprovider:wireless_connect"
-				type: "item"
-			}]
-			title: "The Power of Wireless"
-			x: 3.96d
-			y: 5.94d
-		}
-		{
-			dependencies: ["77B7B1EDD19831E0"]
-			description: [
-				"If recipe sizes are starting to worry you, don't worry - &2AE2&r now allows you to place an unlimited amount of items into a processing pattern."
-				""
-				"Thanks to this innovation, you can automate all the &3Assembly Line&r recipes."
-			]
-			icon: "expatternprovider:ex_interface"
-			id: "79192BA29BE69170"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "3DFCDF1B24506A8A"
-				title: "Wahey!"
-				type: "checkmark"
-			}]
-			title: "PackagedWho?"
-			x: 3.3d
-			y: 4.62d
-		}
-		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
 				"At the cost of 16x the drilling Power, the &3Advanced Fluid Drilling Rig II&r will be gaining &664x the output&r in Fluid."
@@ -1058,53 +1019,6 @@
 			title: "Two Hatches for the Price of One"
 			x: 2.2414965986394577d
 			y: 5.631377551020407d
-		}
-		{
-			dependencies: ["77B7B1EDD19831E0"]
-			description: [
-				"Let's go over some uses!"
-				""
-				"&2Blank Pattern Storage:&r"
-				""
-				"Right-clicking with the tool in your hand will open a GUI where you can insert &9Blank Patterns&r. There's a considerable amount of storage space for transport of Patterns!"
-				"{@pagebreak}"
-				"&2Bulk Pattern Modification:&r"
-				""
-				"Inserting &9Encoded Patterns&r instead of blank ones will allow you to multiply/divide them all at once in bulk. This is particularly useful when multiplying up your Patterns for parallel on-demand machinery."
-				""
-				"Patterns can also be cleared in bulk with the \"Clear\" button. There isn't any confirmation after clicking it, so use with caution."
-				"{@pagebreak}"
-				"&2Item Search and Replace:&r"
-				""
-				"Right-clicking the tool and clicking the &aChange Mode button&r will bring up a new GUI. This GUI will allow you to replace all occurances of one item with another for the &9Encoded Patterns&r stored within the tool."
-				""
-				"This is particularly useful for &eupgrading GT circuits&r, such as transitioning from Nano to Quantum &5EV&r circuits."
-				"{@pagebreak}"
-				"&2Easy Pattern Transfer:&r"
-				""
-				"Shift-left-clicking Patterns will move them between the Player Inventory and the Modifier where possible. This means you can easily move Patterns around between Interfaces and Terminals without clogging your inventory."
-				"{@pagebreak}"
-				"&bLore&r: Neeve, the author of the NAE2 mod suggested tiering this item at &eUXV&r tier, because it \"gives the player way too much power.\" For reference, &eUXV&r is 4 tiers past &3UV&r tier - two tiers before &c&lMAX&r voltage."
-			]
-			icon: "expatternprovider:pattern_modifier"
-			id: "5CE0B928479D8535"
-			rewards: [{
-				count: 64
-				id: "597FE2E43C76B1E0"
-				item: "ae2:blank_pattern"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "The &aPattern Modifier&r does A LOT!"
-			tasks: [{
-				id: "77D0C17BBE681C85"
-				item: "expatternprovider:pattern_modifier"
-				type: "item"
-			}]
-			title: "Pattern Modifier"
-			x: 4.95d
-			y: 5.94d
 		}
 	]
 	subtitle: ["Investigate the scientific and fuse elements"]

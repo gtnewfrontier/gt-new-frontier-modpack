@@ -1992,31 +1992,6 @@
 			y: 4.086734693877553d
 		}
 		{
-			dependencies: ["39E7997F3080250A"]
-			description: [
-				"The &aPattern P2P Tunnel&r is an upgraded version of &9Item/Fluid P2P Tunnels&r."
-				""
-				"The input side is placed on an Pattern Provider containing patterns. It can have multiple outputs, which should connect to inventories."
-				""
-				"When multiple crafts of a single pattern are requested, the P2P Tunnel will evenly distribute the crafts between all of the connected outputs."
-				""
-				"The Pattern P2P Tunnel also respects &eBlocking Mode&r, which is set in the interface containing the patterns."
-			]
-			icon: "mae2:pattern_p2p_tunnel"
-			id: "1722813F617DF39B"
-			shape: "rsquare"
-			size: 0.5d
-			subtitle: "Pattern 2 Pattern"
-			tasks: [{
-				id: "40B572EB6B1D083E"
-				item: "mae2:pattern_p2p_tunnel"
-				type: "item"
-			}]
-			title: "Pattern P2P Tunnels"
-			x: 8.428571428571423d
-			y: 4.178571428571431d
-		}
-		{
 			dependencies: ["3398FC108D9DCB46"]
 			description: ["This hatch acts like an infinite water source for multiblocks! It can make some setups much more convenient, and also has effectively infinite throughput, so it doesn't have the limitations of the &9Infinite Water Source Cover&r not being fast enough."]
 			icon: "gtceu:reservoir_hatch"
@@ -2033,29 +2008,6 @@
 			title: "Reservoir Hatch"
 			x: 3.806122448979586d
 			y: 4.658163265306122d
-		}
-		{
-			dependencies: ["39E7997F3080250A"]
-			description: [
-				"To turn a P2P Tunnel into a &aGTEU P2P Tunnel&r, right-click it in the world with a &dWire&r or &dCable&r."
-				""
-				"This is ideal in lategame situations to negate Cable or Transformer spam. You can also use them in conjunction with the AE2 Quantum Bridge to power your high tier Miners and Drills outside your base."
-				""
-				"There is a &45% Voltage Tax&r on the output side of the P2P, resulting in 5% energy loss."
-			]
-			icon: "mae2:pattern_p2p_tunnel"
-			id: "40FB56274D296BFC"
-			shape: "rsquare"
-			size: 0.5d
-			subtitle: "Unfortunately, unavailable to any British players"
-			tasks: [{
-				id: "74B6B5BE046E9810"
-				item: "mae2:eu_p2p_tunnel"
-				type: "item"
-			}]
-			title: "EU P2P Tunnels"
-			x: 8.418367346938766d
-			y: 2.7806122448979593d
 		}
 	]
 	subtitle: ["Improve your infrastructure and parallelise your setups"]

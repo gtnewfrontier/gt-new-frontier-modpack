@@ -1359,27 +1359,6 @@
 			y: -0.75d
 		}
 		{
-			dependencies: ["4024C831C77101CA"]
-			description: [
-				"If you're looking for a change of scene, the &5Void Dimension&r is a perfectly empty area for you to build your factory."
-				""
-				"It wouldn't be unwise to procure some manner of &aflight&r before venturing here - maybe look around and see if this pack has &6any options&r."
-			]
-			icon: "javd:portal_block"
-			id: "1011551290D3D7EA"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Goodbye, cruel Overworld"
-			tasks: [{
-				id: "19CC2402A14AE77C"
-				item: "javd:portal_block"
-				type: "item"
-			}]
-			title: "Void Dimension Portal"
-			x: 9.0d
-			y: 0.375d
-		}
-		{
 			dependencies: ["55552589C581EE9E"]
 			description: [
 				"If you heeded our suggestion for Peaceful mode, you shouldn't need to defend yourself from pesky mobs - but this armor provides some nice QoL that you may enjoy!"
@@ -1454,50 +1433,6 @@
 			title: "Nanomuscles, son!"
 			x: 4.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["4AFD3073C731A1E4"]
-			description: [
-				"With &5EV Circuits&r, you can compress your Coprocessors into &3Dense&r variants to get more value-for-money. "
-				""
-				"The crafting ratio is in your favour, so you'll likely have more &eparallel autocrafting power&r than you'd need to finish the pack."
-			]
-			icon: "mae2:4x_crafting_accelerator"
-			id: "1D8170A19E54C5B9"
-			size: 0.75d
-			subtitle: "Who are you calling Dense?"
-			tasks: [{
-				id: "074BEBAAF5C3FF1F"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "mae2:4x_crafting_accelerator"
-							}
-							{
-								Count: 1b
-								id: "mae2:16x_crafting_accelerator"
-							}
-							{
-								Count: 1b
-								id: "mae2:64x_crafting_accelerator"
-							}
-							{
-								Count: 1b
-								id: "mae2:256x_crafting_accelerator"
-							}
-						]
-					}
-				}
-				title: "Dense Coprocessors"
-				type: "item"
-			}]
-			title: "Dense Coprocessors"
-			x: 9.0d
-			y: -5.25d
 		}
 	]
 	subtitle: ["Scale up your power and begin advanced chemistry"]

@@ -2206,35 +2206,6 @@
 			y: -0.75d
 		}
 		{
-			dependencies: ["682C26579EDDCA76"]
-			description: [
-				"Tired of running around your base yet? &3Travel Anchors&r make their introduction in the latest update!"
-				""
-				"Aim the &aTravel Staff&r at a placed Anchor, then &6sneak-right-click&r to teleport on top. You can &bcustomise the appearance&r of a Travel Anchor by right-clicking it with a block in your off-hand, and you can &9rename&r Anchors in their GUI. The effective tool for breaking them is the &bWrench&r."
-				""
-				"The &dEnder Pearls&r necessary to craft more Anchors won't be available yet - take a small handful of Anchors to make life a &olittle&r easier."
-			]
-			icon: "travelanchors:travel_anchor"
-			id: "350E8A014DD8C838"
-			rewards: [{
-				count: 3
-				id: "45B4F45CE10CD806"
-				item: "travelanchors:travel_anchor"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "pshhh... nothin personnel... kid"
-			tasks: [{
-				id: "132FA856BB60C546"
-				item: "travelanchors:travel_staff"
-				type: "item"
-			}]
-			title: "Travel Anchors"
-			x: 1.125d
-			y: 3.75d
-		}
-		{
 			dependencies: [
 				"6238B2A7ED1BE5A1"
 				"3E2E161F8CE35138"

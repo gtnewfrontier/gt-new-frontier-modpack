@@ -610,8 +610,8 @@
 				type: "item"
 			}]
 			title: "Sticky Resin"
-			x: 5.625d
-			y: -0.375d
+			x: 5.609685374149663d
+			y: -0.38507653061223124d
 		}
 		{
 			dependencies: [
@@ -984,8 +984,8 @@
 				}
 			]
 			title: "Electronics #4: The Circuit"
-			x: 6.75d
-			y: 0.75d
+			x: 6.752542517006802d
+			y: 0.7292091836734826d
 		}
 		{
 			dependencies: ["1FFD2242B94A7378"]
@@ -1381,8 +1381,8 @@
 				type: "item"
 			}]
 			title: "Portable Cell"
-			x: 4.5d
-			y: 0.75d
+			x: 4.495399659863949d
+			y: 0.243494897959188d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -1528,8 +1528,8 @@
 				type: "item"
 			}]
 			title: "Backpacks"
-			x: 4.5d
-			y: 1.875d
+			x: 4.495399659863949d
+			y: 1.2720663265306271d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
