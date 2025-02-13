@@ -1,8 +1,24 @@
 {
-  "block.gtceu.greenhouse":"Greenhouse", 
-  "gtceu.greenhouse":"Greenhouse",
-  "block.gtceu.construction_core":"Construction Core", 
-  "gtceu.construction_core":"Construction Core",
+    "block.gtceu.greenhouse": "Greenhouse",
+    "gtceu.greenhouse": "Greenhouse",
+    "block.gtceu.construction_core": "Construction Core",
+    "gtceu.construction_core": "Construction Core",
 
-  "material.gtceu.fluix":"Fluix"
+    "material.gtceu.fluix": "Fluix",
+
+    "twilightforest:twilight_forest": "Twilight Forest",
+    "gtceu.jei.ore_vein.twilightforest/galena": "Galena (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/diamond": "Diamond (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/lapis": "Lapis (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/molybdenum": "Molybdenum (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/olivine": "Olivine (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/coal": "Coal (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/sapphire": "Sapphire (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/nickel": "Nickel (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/lubricant": "Lubricant (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/magnetite": "Magnetite (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/banded_iron": "Banded Iron (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/apatite": "Apatite (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/salts": "Salts (Twilight Forest)",
+    "gtceu.jei.ore_vein.twilightforest/cassiterite": "Cassiterite (Twilight Forest)"
 }
