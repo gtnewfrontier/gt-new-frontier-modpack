@@ -92,6 +92,9 @@
     "cable_info": true,
     "parallel_info": true
   },
+  "twilightforest": {
+    "quest_ram_wool": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,

@@ -154,6 +154,8 @@
 		minimumDaysForRaids = 15
 		#Define factions, their mobs, and gun pools. Format: faction_name|ai_difficulty|mob1,mob2...|closeGun1,closeGun2...|longGun1,longGun2...|eliteGun1,eliteGun2...
 		factions = ["night_of_the_undead|1|minecraft:zombie,minecraft:zombie_villager,minecraft:husk|jeg:custom_smg,jeg:waterpipe_shotgun|jeg:revolver|jeg:double_barrel_shotgun", "the_rattlers|2|minecraft:skeleton,minecraft:stray|jeg:custom_smg|jeg:semi_auto_rifle|jeg:bolt_action_rifle,jeg:semi_auto_rifle", "nosy_business|3|minecraft:pillager,minecraft:vindicator|jeg:pump_shotgun|jeg:semi_auto_rifle,jeg:assault_rifle|jeg:repeating_shotgun,jeg:service_rifle", "bad_piggies|2|minecraft:piglin,minecraft:piglin_brute|jeg:double_barrel_shotgun,jeg:waterpipe_shotgun|jeg:assault_rifle,jeg:semi_auto_rifle|jeg:hollenfire_mk2", "hell_hogs|3|minecraft:zombified_piglin,minecraft:wither_skeleton|jeg:custom_smg,jeg:waterpipe_shotgun,jeg:double_barrel_shotgun|jeg:assault_rifle,jeg:semi_auto_rifle|jeg:soulhunter_mk2", "lost_souls|3|jeg:ghoul|jeg:waterpipe_shotgun,jeg:revolver|jeg:custom_smg|jeg:holy_shotgun,jeg:blossom_rifle"]
+		#If enabled, Elite Gunners have a chance to spawn riding Horses.
+		horsemen = true
 
 	#Properties relating to network
 	[common.network]

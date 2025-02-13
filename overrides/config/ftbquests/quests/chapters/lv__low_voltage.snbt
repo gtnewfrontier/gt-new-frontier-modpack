@@ -5,15 +5,8 @@
 	group: "693226878D58638A"
 	icon: "gtceu:lv_electric_motor"
 	id: "7D50771C3FE033D7"
-	order_index: 1
-	quest_links: [{
-		id: "376725077649D2CC"
-		linked_quest: "5A8F0124E07D5025"
-		shape: "gear"
-		size: 1.2d
-		x: 2.25d
-		y: 0.0d
-	}]
+	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["2F7617C0C4B330DE"]
@@ -71,7 +64,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5A8F0124E07D5025"]
 			description: [
 				"Less common as a component, but used in a number of critical machines."
 				""
@@ -98,7 +90,6 @@
 			y: 1.125d
 		}
 		{
-			dependencies: ["5A8F0124E07D5025"]
 			description: [
 				"When placed on a machine, pumps will transfer fluid. You can configure them to import or export."
 				""
@@ -123,7 +114,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5A8F0124E07D5025"]
 			description: [
 				"A specialized motor needed to make certain machines."
 				""
@@ -148,10 +138,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"4B979482EF026BFF"
-				"5A8F0124E07D5025"
-			]
 			description: [
 				"The &3Steam Turbine&r is the only Generator you can realistically use in &7LV&r. &2Later, you'll unlock more interesting Power options&r, such as natural gases or petrols."
 				""
@@ -233,14 +219,15 @@
 			y: 3.360459183673477d
 		}
 		{
-			dependencies: ["4B979482EF026BFF"]
+			dependencies: ["3185D7B103B69140"]
 			description: [
 				"Make some Battery Alloy, used for Battery Hulls."
 				""
-				"Antimony is found in the &cNether&r, so don't forget to check its Ore Tab."
+				"Antimony is found in the &cNether&r, and Lead is found in the &aTwilight Forest&r so don't forget to check their Ore Tabs."
 				""
 				"&9Note:&r This quest does &lnot&r contain functional Batteries - head downwards for that."
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:battery_alloy_ingot"
 			id: "6D9D54FAB21EC086"
 			shape: "rsquare"
@@ -367,10 +354,6 @@
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"4B979482EF026BFF"
-				"5A8F0124E07D5025"
-			]
 			description: [
 				"You could make any other &7LV&r Machine, but it would be easiest to start with the most useful one. We know, we know... you wanna make some of the crazier stuff first, but trust us, this is the best starting point."
 				""
@@ -1219,7 +1202,7 @@
 		{
 			dependencies: [
 				"32B08E6F414A00C0"
-				"4B979482EF026BFF"
+				"3185D7B103B69140"
 			]
 			description: [
 				"With &7LV&r power, the primary way of getting &aAluminium Dust&r is by electrolyzing &9Sapphire&r or &2Green Sapphire&r. Aluminium is the main &bMV&r material, similar to how Steel is crucial in &7LV&r, and Bronze is important in the &6Steam Age&r."
@@ -1254,7 +1237,7 @@
 			]
 			title: "Sapphire"
 			x: -2.25d
-			y: 5.625d
+			y: 6.75d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
@@ -1778,7 +1761,6 @@
 			dependencies: [
 				"3647B1B964A15E4E"
 				"7BE7DE4C0109D788"
-				"4B979482EF026BFF"
 			]
 			description: [
 				"Well... gotten any Aluminium Ingots yet?"
@@ -2347,6 +2329,76 @@
 			title: "I'm Fetching Me Mallet!"
 			x: 8.91d
 			y: 4.29d
+		}
+		{
+			dependencies: ["63CD0236B337EAAD"]
+			description: [
+				"Similar to GTNH, some ores/resources are gated by other dimensions"
+				""
+				"Time to go exploring in the twilight forest :)"
+			]
+			id: "3185D7B103B69140"
+			size: 0.75d
+			tasks: [{
+				id: "6BF9258234123515"
+				item: "gtnf:twilight_portal_generator"
+				type: "item"
+			}]
+			title: "Familiar Gating"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3185D7B103B69140"]
+			description: [
+				"If you accidentally lose/destroy your portal, you'll be stuck."
+				""
+				"Collecting a few items from the Twilight Forest can help you find your way back home :)"
+			]
+			id: "59FD88A1CD8D94E3"
+			optional: true
+			rewards: [{
+				id: "6EABB5B5DDDD5DFB"
+				item: "gtnf:twilight_portal_generator"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [
+				{
+					count: 2L
+					id: "62D82129FFD46481"
+					item: { Count: 2, id: "twilightforest:raven_feather" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2F82FB03B2E15558"
+					item: { Count: 4, id: "twilightforest:firefly" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0379A0C899A83DFE"
+					item: { Count: 16, id: "twilightforest:torchberries" }
+					type: "item"
+				}
+				{
+					id: "1E90AE890F0FE4A7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "twilightforest:logs"
+						}
+					}
+					title: "Any #twilightforest:logs"
+					type: "item"
+				}
+			]
+			title: "Stuck?"
+			x: 1.5d
+			y: 10.125d
 		}
 	]
 	subtitle: ["Tame electricity and make your first machines"]
