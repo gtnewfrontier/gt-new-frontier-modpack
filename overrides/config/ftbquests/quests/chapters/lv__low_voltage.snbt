@@ -237,7 +237,7 @@
 			description: [
 				"Make some Battery Alloy, used for Battery Hulls."
 				""
-				"Antimony is found in the &cNether&r, so don't forget to check its Ore Tab."
+				"Antimony is found in the &cNether&r, and Lead is found in the &aTwilight Forest&r so don't forget to check their Ore Tabs."
 				""
 				"&9Note:&r This quest does &lnot&r contain functional Batteries - head downwards for that."
 			]
@@ -2369,6 +2369,12 @@
 		}
 		{
 			dependencies: ["54F4CA08A20523D9"]
+			can_repeat: true
+			description: [
+				"If you accidentally lose/destroy your portal, you'll be stuck."
+				""
+				"Collecting a few items from the Twilight Forest can help you find your way back home :)"
+			]
 			id: "30AE33155749A3E0"
 			rewards: [{
 				id: "1F6D225455DA1E3F"
