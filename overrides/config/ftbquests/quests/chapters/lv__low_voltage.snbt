@@ -2495,7 +2495,7 @@
 		}
 		{
 			dependencies: ["6AE9434345FAC3E9"]
-			description: ["Our first step is getting chalcocite from the nether. You'll want to throw that into a macerater to get te crushed variant"]
+			description: ["Our first step is getting chalcocite from the nether. You'll want to throw that into a macerater to get the crushed variant"]
 			icon: "gtceu:raw_chalcocite"
 			id: "3729D01FBC654862"
 			tasks: [{
