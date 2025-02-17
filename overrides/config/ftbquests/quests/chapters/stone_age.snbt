@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["31E78E162F2C97C1"]
+			description: ["Just like in GTNH, we have Slice of Life installed. Currently there are no penalties, however in future expansions we will add negative bonuses to not keeping a balanced and nutritious diet"]
 			icon: "minecraft:carrot"
 			id: "4B36521123CA3A3F"
 			shape: "rsquare"
@@ -36,6 +37,7 @@
 		}
 		{
 			dependencies: ["013A0BF0700859E4"]
+			description: ["Start putting that new fuel to use"]
 			id: "71A26B7E0DADEB83"
 			tasks: [{
 				count: 10L
@@ -48,6 +50,7 @@
 		}
 		{
 			dependencies: ["71A26B7E0DADEB83"]
+			description: ["Your first GregTech \"tool\". You'll be using these quite a bit, may want to make a few extra"]
 			id: "4FD5F88375F9F873"
 			tasks: [{
 				count: 2L
@@ -87,6 +90,7 @@
 				"1BDF1E09A00A8F70"
 				"7695E2C03C1CAF1F"
 			]
+			description: ["Crafting bricks... with extra steps!"]
 			id: "38D03E88C1812A28"
 			tasks: [
 				{
@@ -107,6 +111,7 @@
 		}
 		{
 			dependencies: ["38D03E88C1812A28"]
+			description: ["Already getting into multiblock machines? This will be your primary fuel generation, both the solid and fluid byproducts can be used in your furnaces"]
 			id: "4C85AC534A63BD47"
 			shape: "rsquare"
 			size: 1.5d
@@ -128,6 +133,7 @@
 		}
 		{
 			dependencies: ["4C85AC534A63BD47"]
+			description: ["Let's get a few charcoal to start us off. Finally we can craft torches"]
 			id: "013A0BF0700859E4"
 			tasks: [{
 				count: 16L
@@ -140,6 +146,7 @@
 		}
 		{
 			dependencies: ["4B36521123CA3A3F"]
+			description: ["Check out the GT Ore Vein tab in EMI, you can search for an ore and see what veins it spawns in, which y-levels, and what dimensions. Some ores are gated behind different dimensions (The Nether, Twilight Forest, etc) so you'll have to travel there before being able to progress"]
 			id: "4518C8B094E17ACB"
 			tasks: [{
 				id: "3E104802F0F577B7"
@@ -151,6 +158,7 @@
 		}
 		{
 			dependencies: ["4518C8B094E17ACB"]
+			description: ["Copper and Tin are also essential throughout this modpack. Find some of each and get ready to make your first alloyed metal!"]
 			id: "78507126AE170E6C"
 			tasks: [
 				{
@@ -175,6 +183,7 @@
 				"78507126AE170E6C"
 				"4FD5F88375F9F873"
 			]
+			description: ["You'll need to grind those freshly smelted ingots back down into dust before making your first bronze. Yay more crafting!"]
 			id: "1EA6DB3AB3E65491"
 			tasks: [
 				{
@@ -195,6 +204,7 @@
 		}
 		{
 			dependencies: ["1EA6DB3AB3E65491"]
+			description: ["Take those ground dusts and craft it the old fashioned minecraft way. Use EMI to see different recipes and ways you can do it later on!"]
 			id: "4386C8B280AA77F7"
 			tasks: [
 				{
@@ -215,6 +225,7 @@
 		}
 		{
 			dependencies: ["4518C8B094E17ACB"]
+			description: ["Let's start with a simple quest, find some iron!"]
 			id: "0CBF0A6D1F8FF647"
 			tasks: [{
 				count: 48L
@@ -279,6 +290,7 @@
 				"313F704303E5935B"
 			]
 			dependency_requirement: "one_completed"
+			description: ["This may seem like a LOT of manual crafting (it is). A good rule of thumb throughout GregTech is if you need something, craft 10x of them. You may not have the materials, but keep this in mind going forward. Even if you think you'll get better materials later, most LV machines last you well into LuV+ tiers :)"]
 			id: "26B35F58813215C8"
 			shape: "rsquare"
 			size: 1.5d
@@ -373,7 +385,7 @@
 		}
 		{
 			dependencies: ["3D44CBE56F4839CE"]
-			description: ["Bronze > Iron but more effort to create, you pick"]
+			description: ["Bronze has a slightly faster mining speed but lower durability than its iron tool counterparts. Pick whichever material you have more of. Once you reach the steam age, you'll have steel at your disposal"]
 			id: "313F704303E5935B"
 			tasks: [{
 				id: "5AFAF0007032AC56"
@@ -384,6 +396,7 @@
 		}
 		{
 			dependencies: ["26B35F58813215C8"]
+			description: ["Most (if not all) vanilla mechanics have changed. Use the quest book, EMI, and our Discord for any/all help. Congratulations on almost making it out of the stone age"]
 			id: "532176D1B80C4798"
 			tasks: [{
 				id: "7B33FC19D9F8783B"
@@ -395,6 +408,7 @@
 		}
 		{
 			dependencies: ["532176D1B80C4798"]
+			description: ["Can you feel the pressure building? We're really cooking now. Is it me, or is it getting hot in here? Okay that's enough from me. Congratulations on your first GregTech machine! This will be your *super high throughput incredibly OP* power generation, at least until you unlock any of the other methods"]
 			id: "72787F9AA4CCEDCD"
 			shape: "rsquare"
 			size: 1.5d

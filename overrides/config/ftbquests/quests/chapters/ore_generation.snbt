@@ -478,7 +478,7 @@
 				}
 			]
 			title: "Apatite"
-			x: 2.25d
+			x: 1.7999999999999998d
 			y: 3.15d
 		}
 		{
@@ -1352,6 +1352,39 @@
 			}]
 			x: 4.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["41730E340B3D8EDA"]
+			description: ["This may not have much use to you now.. but you'll definitely want to consider it for it's early game source of Nickel. The rest will come later :)"]
+			icon: "gtceu:apatite_ore"
+			id: "61DD48AD4C25417D"
+			size: 0.9d
+			subtitle: "Source of Soapstone, Talc, Glauconite Sand, and Pentlandite"
+			tasks: [
+				{
+					id: "264CD3DD2FD32A8F"
+					item: "gtceu:raw_soapstone"
+					type: "item"
+				}
+				{
+					id: "57F9AA7BED65B85D"
+					item: "gtceu:raw_talc"
+					type: "item"
+				}
+				{
+					id: "58A5F569211A50AE"
+					item: "gtceu:raw_glauconite_sand"
+					type: "item"
+				}
+				{
+					id: "78BD1F93133A7899"
+					item: "gtceu:raw_pentlandite"
+					type: "item"
+				}
+			]
+			title: "Lubricant"
+			x: 2.6999999999999997d
+			y: 3.15d
 		}
 	]
 	subtitle: ["Ores galore, and so much more"]
