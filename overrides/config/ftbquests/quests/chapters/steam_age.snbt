@@ -988,55 +988,6 @@
 			y: 0.7292091836734826d
 		}
 		{
-			dependencies: ["1FFD2242B94A7378"]
-			description: [
-				"&dPotin Fluid Pipes&r have a &avery high throughput&r for the material tier and cost. You may want to look into making some of these to aid with fluid logistics."
-				""
-				"To get &dPotin&r, you should start by crafting its &eDust&r form."
-				""
-				"This quest calls for either the small or normal pipe. Get either size to complete it."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o &dPotin Fluid Pipes&f were first seen in &9GT++&f, an addon to GT5, and are a considerable power spike for players in a relatively unknown pack called &4GT:NH&f. We wanted to spread some of that joy."
-				""
-				"&oIn the real world, &dPotin&f is an alloy used in coins, not pipes. GTCEu just gets more unrealistic by the day..."
-			]
-			icon: "gtceu:potin_normal_fluid_pipe"
-			id: "3C70B0717E9377A4"
-			rewards: [{
-				count: 6
-				id: "18C834E9EC619985"
-				item: "gtceu:potin_plate"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "...I'm going into battle, and I need only your finest Potin."
-			tasks: [{
-				id: "159D19181DC4DE59"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:potin_small_fluid_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:potin_normal_fluid_pipe"
-							}
-						]
-					}
-				}
-				title: "Potin Pipes!"
-				type: "item"
-			}]
-			title: "Potin Seller..."
-			x: -1.125d
-			y: 1.875d
-		}
-		{
 			dependencies: ["03DBF1961AE21C76"]
 			description: [
 				"With the creation of this machine, many recipes that once required you to use a hammer can instead be made here!"
@@ -1704,8 +1655,8 @@
 				type: "item"
 			}]
 			title: "Aesthetic Ultra"
-			x: -2.1577721088435453d
-			y: 0.7399489795918583d
+			x: -2.31d
+			y: 0.66d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

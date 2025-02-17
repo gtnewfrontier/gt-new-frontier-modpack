@@ -337,4 +337,12 @@ ServerEvents.recipes((event) => {
         "minecraft:wooden_shovel",
         "#minecraft:shovels"
     );
+
+	/** GTCEU */
+
+    event.replaceInput(
+        { output: "gtceu:steam_grinder" },
+        "gtceu:potin_gear",
+        "gtceu:invar_gear"
+    );
 });

@@ -78,7 +78,7 @@
 				type: "checkmark"
 			}]
 			title: "Ore Generation"
-			x: 2.0d
+			x: 2.25d
 			y: 0.0d
 		}
 		{
@@ -111,8 +111,8 @@
 				}
 			]
 			title: "Limonite"
-			x: 1.5d
-			y: -3.5d
+			x: 0.8999999999999999d
+			y: -2.6999999999999997d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -143,8 +143,8 @@
 				}
 			]
 			title: "Magnetite"
-			x: 2.5d
-			y: -3.5d
+			x: 2.25d
+			y: -3.15d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -180,8 +180,8 @@
 				}
 			]
 			title: "Pyrite"
-			x: 3.5d
-			y: -3.5d
+			x: 3.5999999999999996d
+			y: -2.6999999999999997d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -218,7 +218,7 @@
 			]
 			title: "Chalcopyrite"
 			x: 4.5d
-			y: -3.0d
+			y: -2.25d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -240,8 +240,8 @@
 				}
 			]
 			title: "Cassiterite"
-			x: 5.0d
-			y: -2.0d
+			x: 4.95d
+			y: -1.3499999999999999d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -277,8 +277,8 @@
 				}
 			]
 			title: "Cassiterite Sand"
-			x: 5.5d
-			y: -1.0d
+			x: 5.3999999999999995d
+			y: -0.44999999999999996d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -293,12 +293,12 @@
 			subtitle: "Source of pollution"
 			tasks: [{
 				id: "5FC26FB906B6F0A2"
-				item: "minecraft:coal"
+				item: "gtceu:raw_coal"
 				type: "item"
 			}]
 			title: "Coal"
-			x: 5.5d
-			y: 0.0d
+			x: 5.3999999999999995d
+			y: 0.44999999999999996d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -328,13 +328,13 @@
 				}
 				{
 					id: "00FC22EEB40F9783"
-					item: "minecraft:coal"
+					item: "gtceu:raw_coal"
 					type: "item"
 				}
 			]
 			title: "Graphite"
-			x: 5.5d
-			y: 1.0d
+			x: 4.95d
+			y: 1.3499999999999999d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -370,11 +370,11 @@
 				}
 			]
 			title: "Gamer Rage"
-			x: 5.0d
-			y: 2.0d
+			x: 4.5d
+			y: 2.25d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["1F6DF38FCDD40D83"]
 			description: [
 				"This vein starts to become notable for its Magnesium output starting in the midgame."
 				""
@@ -382,7 +382,7 @@
 			]
 			icon: "gtceu:olivine_ore"
 			id: "7C1B5559A03F6E02"
-			size: 0.9d
+			size: 1.0d
 			subtitle: "Source of Magnesium"
 			tasks: [
 				{
@@ -407,8 +407,8 @@
 				}
 			]
 			title: "Olivine"
-			x: 4.5d
-			y: 3.0d
+			x: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -444,8 +444,8 @@
 				}
 			]
 			title: "Garnet"
-			x: 3.5d
-			y: 3.5d
+			x: 3.5999999999999996d
+			y: 2.6999999999999997d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -478,8 +478,8 @@
 				}
 			]
 			title: "Apatite"
-			x: 2.5d
-			y: 3.5d
+			x: 2.25d
+			y: 3.15d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -510,11 +510,11 @@
 				}
 			]
 			title: "Redstone"
-			x: 1.5d
-			y: 3.5d
+			x: 0.8999999999999999d
+			y: 2.6999999999999997d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["1F6DF38FCDD40D83"]
 			description: [
 				"Both Sapphire variants serve as your primary source of Aluminium until you can unlock other electrolysis recipes in &bMV&r."
 				""
@@ -522,7 +522,7 @@
 			]
 			icon: "gtceu:sapphire_ore"
 			id: "6EFE154D32A2155E"
-			size: 0.9d
+			size: 1.0d
 			subtitle: "Source of Aluminium"
 			tasks: [
 				{
@@ -547,8 +547,8 @@
 				}
 			]
 			title: "Sapphire"
-			x: 0.5d
-			y: 3.5d
+			x: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -567,8 +567,8 @@
 				type: "item"
 			}]
 			title: "Oilsands"
-			x: -0.5d
-			y: 3.0d
+			x: 0.0d
+			y: 2.25d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -604,8 +604,8 @@
 				}
 			]
 			title: "Soapstone"
-			x: -1.0d
-			y: 2.0d
+			x: -0.44999999999999996d
+			y: 1.3499999999999999d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -641,8 +641,8 @@
 				}
 			]
 			title: "Lapis"
-			x: -1.5d
-			y: 1.0d
+			x: -0.8999999999999999d
+			y: 0.44999999999999996d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -678,15 +678,15 @@
 				}
 			]
 			title: "Pyrolusite"
-			x: -1.5d
-			y: 0.0d
+			x: -0.8999999999999999d
+			y: -0.44999999999999996d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["1F6DF38FCDD40D83"]
 			description: ["The most consistent source of Lead and Silver."]
 			icon: "gtceu:galena_ore"
 			id: "14587AE142D84E12"
-			size: 0.9d
+			size: 1.0d
 			subtitle: "Source of Lead, Silver"
 			tasks: [
 				{
@@ -706,15 +706,15 @@
 				}
 			]
 			title: "Galena"
-			x: -1.5d
-			y: -1.0d
+			x: 2.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["1F6DF38FCDD40D83"]
 			description: ["Your one and only trusty source for Nickel."]
 			icon: "gtceu:nickel_ore"
 			id: "38C955F6CBDD95BD"
-			size: 0.9d
+			size: 1.0d
 			subtitle: "Source of Nickel, Cobalt"
 			tasks: [
 				{
@@ -739,8 +739,8 @@
 				}
 			]
 			title: "Nickel"
-			x: -1.0d
-			y: -2.0d
+			x: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -778,8 +778,8 @@
 				}
 			]
 			title: "Mica"
-			x: -0.5d
-			y: -3.0d
+			x: -0.44999999999999996d
+			y: -1.3499999999999999d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -815,8 +815,8 @@
 				}
 			]
 			title: "Mineral Sand"
-			x: 0.5d
-			y: -3.5d
+			x: 0.0d
+			y: -2.25d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
@@ -1339,6 +1339,19 @@
 			title: "Pitchblende"
 			x: 11.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["54F4CA08A20523D9"]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "1F6DF38FCDD40D83"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "4F60864D4F4058E2"
+				title: "Twilight Forest"
+				type: "dimension"
+			}]
+			x: 4.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["Ores galore, and so much more"]
