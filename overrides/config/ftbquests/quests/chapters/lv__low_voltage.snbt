@@ -39,8 +39,8 @@
 				item: "gtceu:lv_fluid_regulator"
 				type: "item"
 			}]
-			x: -1.125d
-			y: 1.125d
+			x: -2.31d
+			y: 0.0d
 		}
 		{
 			dependencies: ["38993B4697B0E16C"]
@@ -233,13 +233,16 @@
 			y: 3.360459183673477d
 		}
 		{
-			dependencies: ["4B979482EF026BFF"]
+			dependencies: [
+				"4B979482EF026BFF"
+				"13433B1E756D495B"
+			]
 			description: [
 				"Make some Battery Alloy, used for Battery Hulls."
 				""
 				"Antimony is found in the &cNether&r, and Lead is found in the &aTwilight Forest&r so don't forget to check their Ore Tabs."
 				""
-				"&9Note:&r This quest does &lnot&r contain functional Batteries - head downwards for that."
+				"&9Note:&r This quest does &lnot&r contain functional Batteries - head north east for that."
 			]
 			icon: "gtceu:battery_alloy_ingot"
 			id: "6D9D54FAB21EC086"
@@ -267,8 +270,8 @@
 				}
 			]
 			title: "Battery Preparations!"
-			x: 3.96d
-			y: 2.64d
+			x: -5.437714285714279d
+			y: 7.551428571428573d
 		}
 		{
 			dependencies: ["1C767009F505A813"]
@@ -577,7 +580,7 @@
 				type: "item"
 			}]
 			title: "Basic Thermal Centrifuge"
-			x: -0.375d
+			x: -1.125d
 			y: 3.375d
 		}
 		{
@@ -711,10 +714,7 @@
 			y: 3.375d
 		}
 		{
-			dependencies: [
-				"37307A46E70011D3"
-				"6D9D54FAB21EC086"
-			]
+			dependencies: ["6D9D54FAB21EC086"]
 			description: [
 				"&aBatteries&r can be put into the energy slot at the bottom middle of machine GUIs, or in a &3Battery Buffer&r."
 				""
@@ -1034,7 +1034,7 @@
 				type: "item"
 			}]
 			title: "Universal Macerator"
-			x: -1.125d
+			x: -0.375d
 			y: 3.375d
 		}
 		{
@@ -1196,7 +1196,7 @@
 			y: 5.625d
 		}
 		{
-			dependencies: ["199361B5FEC959EA"]
+			dependencies: ["257DB4B39B2A928E"]
 			description: [
 				"&aSoldering Alloy&r is used solely as a &9Fluid&r, and in most cases is &dinterchangeable&r in circuit recipes as a cheaper alternative to Tin&r."
 				""
@@ -1213,8 +1213,8 @@
 				type: "item"
 			}]
 			title: "Soldering Alloy"
-			x: 7.875d
-			y: 5.625d
+			x: 2.2765714285714367d
+			y: 9.008571428571429d
 		}
 		{
 			dependencies: [
@@ -1254,8 +1254,8 @@
 				}
 			]
 			title: "Sapphire"
-			x: -2.25d
-			y: 5.625d
+			x: -3.375d
+			y: 6.75d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
@@ -1806,8 +1806,8 @@
 				type: "item"
 			}]
 			title: "First MV Circuit!"
-			x: 7.875d
-			y: 7.875d
+			x: 6.762285714285717d
+			y: 7.837142857142858d
 		}
 		{
 			dependencies: ["2F1CCFEBAB71B1F3"]
@@ -1827,7 +1827,7 @@
 			}]
 			title: "Aluminium Dust"
 			x: -3.375d
-			y: 6.75d
+			y: 7.875d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -2350,7 +2350,10 @@
 			y: 4.29d
 		}
 		{
-			dependencies: ["63CD0236B337EAAD"]
+			dependencies: [
+				"63CD0236B337EAAD"
+				"713C8D6A20BF3A0E"
+			]
 			description: [
 				"Similar to GTNH, some ores/resources are gated by other dimensions"
 				""
@@ -2358,18 +2361,25 @@
 			]
 			id: "54F4CA08A20523D9"
 			size: 0.75d
-			tasks: [{
-				id: "472AFCEA344811C3"
-				item: "gtnf:twilight_portal_generator"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "472AFCEA344811C3"
+					item: "gtnf:twilight_portal_generator"
+					type: "item"
+				}
+				{
+					dimension: "twilightforest:twilight_forest"
+					id: "244E21F389441EA4"
+					type: "dimension"
+				}
+			]
 			title: "Into the Twilight"
-			x: 2.25d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
-			dependencies: ["54F4CA08A20523D9"]
 			can_repeat: true
+			dependencies: ["54F4CA08A20523D9"]
 			description: [
 				"If you accidentally lose/destroy your portal, you'll be stuck."
 				""
@@ -2415,8 +2425,116 @@
 					type: "item"
 				}
 			]
-			x: 2.25d
+			x: 0.0d
 			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1FFD2242B94A7378"
+				"13433B1E756D495B"
+			]
+			description: [
+				"&dPotin Fluid Pipes&r have a &avery high throughput&r for the material tier and cost. You may want to look into making some of these to aid with fluid logistics."
+				""
+				"To get &dPotin&r, you should start by crafting its &eDust&r form."
+				""
+				"This quest calls for either the small or normal pipe. Get either size to complete it."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o &dPotin Fluid Pipes&f were first seen in &9GT++&f, an addon to GT5, and are a considerable power spike for players in a relatively unknown pack called &4GT:NH&f. We wanted to spread some of that joy."
+				""
+				"&oIn the real world, &dPotin&f is an alloy used in coins, not pipes. GTCEu just gets more unrealistic by the day..."
+			]
+			icon: "gtceu:potin_normal_fluid_pipe"
+			id: "3C70B0717E9377A4"
+			rewards: [{
+				count: 6
+				id: "18C834E9EC619985"
+				item: "gtceu:potin_plate"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "...I'm going into battle, and I need only your finest Potin."
+			tasks: [{
+				id: "159D19181DC4DE59"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:potin_small_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_normal_fluid_pipe"
+							}
+						]
+					}
+				}
+				title: "Potin Pipes!"
+				type: "item"
+			}]
+			title: "Potin Seller..."
+			x: -6.93d
+			y: 7.59d
+		}
+		{
+			dependencies: ["37307A46E70011D3"]
+			description: ["So you want to know how to get lead?"]
+			id: "6AE9434345FAC3E9"
+			size: 1.0d
+			tasks: [{
+				id: "73618D48C1411950"
+				title: "Lead?"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6AE9434345FAC3E9"]
+			description: ["Our first step is getting chalcocite from the nether. You'll want to throw that into a macerater to get the crushed variant"]
+			icon: "gtceu:raw_chalcocite"
+			id: "3729D01FBC654862"
+			tasks: [{
+				id: "7D21D8DE7599A9FE"
+				item: "gtceu:crushed_chalcocite_ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3729D01FBC654862"
+				"772F7CD63D31966A"
+			]
+			description: ["Our second task is to thermal centrifuge the crushed chalcocite, for massicot dust."]
+			id: "785ABF4E54544A64"
+			tasks: [{
+				id: "12E06799ED3D1E6D"
+				item: "gtceu:massicot_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"785ABF4E54544A64"
+				"32B08E6F414A00C0"
+			]
+			description: ["The last step is to electrolyze the massicot dust for sweet sweet lead. You may have noticed that this is a VERY slow process. Maybe you can invest those first few lead ingots into a twilight portal generator? "]
+			id: "13433B1E756D495B"
+			tasks: [{
+				id: "3981130F56134D6B"
+				item: "gtceu:lead_dust"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 6.5d
 		}
 	]
 	subtitle: ["Tame electricity and make your first machines"]
