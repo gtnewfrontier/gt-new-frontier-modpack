@@ -26,7 +26,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Pressure can be good sometimes"
 			tasks: [{
 				id: "77ECBBA179EC9B3F"
@@ -54,8 +54,8 @@
 				type: "item"
 			}]
 			title: "No More Penalty"
-			x: -0.09909863945578223d
-			y: -2.260051020408156d
+			x: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
@@ -74,7 +74,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.5d
+			size: 1.0d
 			subtitle: "No, it's Steve with a glider!"
 			tasks: [{
 				id: "1D0F8D4470DFFD19"
@@ -88,8 +88,8 @@
 				type: "item"
 			}]
 			title: "Is it a Phantom? Is it an Elytra?"
-			x: 1.9417176870748278d
-			y: -2.5865816326530435d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
@@ -133,7 +133,7 @@
 				}
 			]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Pressure! Pushin' down on me..."
 			tasks: [{
 				id: "0DC74FB54995F3F1"
@@ -161,8 +161,8 @@
 				type: "item"
 			}]
 			title: "High Pressure"
-			x: -0.1399149659863994d
-			y: -1.4233163265306032d
+			x: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -196,7 +196,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.3d
+			size: 1.5d
 			subtitle: "Steel Yourself for Greater Things"
 			tasks: [
 				{
@@ -212,8 +212,8 @@
 				}
 			]
 			title: "Primitive Blast Furnace"
-			x: 1.125d
-			y: -1.5d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
@@ -243,7 +243,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Steel, Schrödinger's alloy"
 			tasks: [
 				{
@@ -266,8 +266,8 @@
 				}
 			]
 			title: "We Need More Steel!"
-			x: 3.0d
-			y: -1.5d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
@@ -319,7 +319,7 @@
 				}
 			]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Why WOULDN'T it be made of Steel?"
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -328,8 +328,8 @@
 				type: "dimension"
 			}]
 			title: "Journey to the Nether"
-			x: 4.125d
-			y: -1.5d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
@@ -366,7 +366,7 @@
 				}
 			]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "A little bit of exploring never hurt anyone"
 			tasks: [{
 				count: 16L
@@ -375,8 +375,8 @@
 				type: "item"
 			}]
 			title: "S is for Sulfur"
-			x: 5.625d
-			y: -1.5d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["77EA56D16A9B3BFC"]
@@ -395,7 +395,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.2d
+			size: 1.0d
 			subtitle: "Low Voltage beckons..."
 			tasks: [{
 				count: 6L
@@ -405,8 +405,8 @@
 				type: "item"
 			}]
 			title: "The First of Many Motors"
-			x: 6.75d
-			y: -1.5d
+			x: 6.0d
+			y: -2.5d
 		}
 		{
 			description: [
@@ -436,7 +436,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "#realism"
 			tasks: [{
 				count: 4L
@@ -445,8 +445,8 @@
 				type: "item"
 			}]
 			title: "Greg has struck again"
-			x: 7.875d
-			y: -1.5d
+			x: 8.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -470,7 +470,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Just kidding, tanks for fluids"
 			tasks: [{
 				id: "5876092FAA1763E0"
@@ -478,8 +478,8 @@
 				type: "item"
 			}]
 			title: "Armoured Tanks"
-			x: -1.125d
-			y: -0.375d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -504,7 +504,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.1d
+			size: 1.0d
 			subtitle: "There's no such thing as \"free\" water"
 			tasks: [{
 				id: "03501AB173BA60EE"
@@ -512,8 +512,8 @@
 				type: "item"
 			}]
 			title: "Primitive Water Pump"
-			x: 0.0d
-			y: -0.375d
+			x: -1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
@@ -537,7 +537,7 @@
 				}
 			]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Reduce the amount of malding by molding"
 			tasks: [
 				{
@@ -557,8 +557,8 @@
 				}
 			]
 			title: "Malding"
-			x: 2.25d
-			y: -0.375d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["249374557D095913"]
@@ -576,7 +576,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Steam Extractor extracts..."
 			tasks: [{
 				id: "12A46916B1BC17EC"
@@ -584,8 +584,8 @@
 				type: "item"
 			}]
 			title: "Steam Extractor"
-			x: 4.5d
-			y: -0.375d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -601,7 +601,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Did you think we would force you to use treetaps...?"
 			tasks: [{
 				count: 32L
@@ -610,8 +610,8 @@
 				type: "item"
 			}]
 			title: "Sticky Resin"
-			x: 5.609685374149663d
-			y: -0.38507653061223124d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -636,7 +636,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Put that resin to use!"
 			tasks: [
 				{
@@ -652,8 +652,8 @@
 				}
 			]
 			title: "Rubbering up"
-			x: 6.75d
-			y: -0.375d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -675,7 +675,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The easier component for circuits"
 			tasks: [{
 				id: "35CFB9E695DE3549"
@@ -683,8 +683,8 @@
 				type: "item"
 			}]
 			title: "Electronics #1: Resistors"
-			x: 7.875d
-			y: -0.375d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -712,7 +712,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Liquids, gases... we don't discriminate"
 			tasks: [{
 				id: "006E5756DD2CFB97"
@@ -736,8 +736,8 @@
 				type: "item"
 			}]
 			title: "Fluid Pipes"
-			x: -1.125d
-			y: 0.75d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["72787F9AA4CCEDCD"]
@@ -762,7 +762,7 @@
 			]
 			id: "5DD49D500327A0E2"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Putting the Steam in Steam Age"
 			tasks: [{
 				id: "0F864E85D4956919"
@@ -770,8 +770,8 @@
 				type: "item"
 			}]
 			title: "Pressure Cookin'"
-			x: 0.0d
-			y: 0.75d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5DD49D500327A0E2"]
@@ -788,7 +788,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Surprisingly Steamy"
 			tasks: [{
 				id: "03BA041BE9C347FD"
@@ -796,8 +796,8 @@
 				type: "item"
 			}]
 			title: "Steam Machine Behaviour"
-			x: 1.125d
-			y: 0.75d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -814,7 +814,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Alloy Smelter makes alloys..."
 			tasks: [{
 				id: "2F3B195A110E41C2"
@@ -822,8 +822,8 @@
 				type: "item"
 			}]
 			title: "Steam Alloy Smelter"
-			x: 2.25d
-			y: 0.75d
+			x: 2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["249374557D095913"]
@@ -842,7 +842,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The harder component for circuits"
 			tasks: [{
 				count: 2L
@@ -851,8 +851,8 @@
 				type: "item"
 			}]
 			title: "Electronics #3: Vacuum Tubes"
-			x: 3.375d
-			y: 0.75d
+			x: 4.0d
+			y: 0.506505102040812d
 		}
 		{
 			dependencies: [
@@ -888,7 +888,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Must be satisfying, right?"
 			tasks: [
 				{
@@ -903,8 +903,8 @@
 				}
 			]
 			title: "Glass, at last!"
-			x: 3.375d
-			y: -0.375d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["48AED37B4E20A99A"]
@@ -923,7 +923,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "A completely fictional alloy"
 			tasks: [{
 				id: "4D3C4CF6577957A1"
@@ -931,8 +931,8 @@
 				type: "item"
 			}]
 			title: "Red Alloy"
-			x: 5.625d
-			y: 0.75d
+			x: 7.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -984,8 +984,8 @@
 				}
 			]
 			title: "Electronics #4: The Circuit"
-			x: 6.752542517006802d
-			y: 0.7292091836734826d
+			x: 8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -1005,7 +1005,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Forge Hammer hammers..."
 			tasks: [{
 				id: "4F4074D7CE5A61A0"
@@ -1013,8 +1013,8 @@
 				type: "item"
 			}]
 			title: "Steam Forge Hammer"
-			x: 0.0d
-			y: 1.875d
+			x: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -1035,7 +1035,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Macerator macerates..."
 			tasks: [{
 				id: "6DFD6AC8CF31305C"
@@ -1043,11 +1043,11 @@
 				type: "item"
 			}]
 			title: "Steam Macerator"
-			x: 1.125d
-			y: 1.875d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["48AED37B4E20A99A"]
+			dependencies: ["4DF8ED9B730D8E9E"]
 			description: ["Invar has &650% more durability&r when used in GregTech tools compared to Iron (yes, that is the same as &aWrought Iron&r), and comes with inherent &bEfficiency I&r. Great for mining - you might want to consider using this in your tools if you &5haven't unlocked&r Steel."]
 			id: "76F61E499780C30B"
 			rewards: [{
@@ -1081,7 +1081,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "An Iron-Nickel alloy"
 			tasks: [{
 				count: 3L
@@ -1097,8 +1097,8 @@
 				type: "item"
 			}]
 			title: "Invar"
-			x: 2.25d
-			y: 1.875d
+			x: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1121,7 +1121,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The circuit-er part of circuits..."
 			tasks: [
 				{
@@ -1144,8 +1144,8 @@
 				}
 			]
 			title: "Electronics #2: Circuit Boards"
-			x: 5.625d
-			y: 1.875d
+			x: 5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1C50A758A1DE25CB"]
@@ -1161,7 +1161,7 @@
 			icon: "gtceu:crushed_gold_ore"
 			id: "7813F183681E0342"
 			shape: "circle"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "...and how do I get rid of it?"
 			tasks: [{
 				id: "1C4CFA0AD3125A6D"
@@ -1169,11 +1169,14 @@
 				type: "checkmark"
 			}]
 			title: "What is this Mess?!"
-			x: 0.0d
-			y: 3.0d
+			x: -0.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["1C50A758A1DE25CB"]
+			dependencies: [
+				"1C50A758A1DE25CB"
+				"76F61E499780C30B"
+			]
 			description: [
 				"&o...or perhaps it was the opposite?&r"
 				""
@@ -1193,7 +1196,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Steam Oven's elder brother"
 			tasks: [
 				{
@@ -1224,8 +1227,8 @@
 				}
 			]
 			title: "Steam Grinder"
-			x: 1.125d
-			y: 3.0d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["76F61E499780C30B"]
@@ -1249,7 +1252,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Steam Grinder's big brother"
 			tasks: [
 				{
@@ -1286,8 +1289,8 @@
 				}
 			]
 			title: "Steam Oven"
-			x: 2.25d
-			y: 3.0d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1320,7 +1323,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "A higher-tech Backpack! "
 			tasks: [{
 				id: "459D19A750BB8440"
@@ -1332,8 +1335,8 @@
 				type: "item"
 			}]
 			title: "Portable Cell"
-			x: 4.495399659863949d
-			y: 0.243494897959188d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -1345,7 +1348,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "The Steam Compressor compresses..."
 			tasks: [{
 				id: "21C99D59F1BE48A3"
@@ -1353,8 +1356,8 @@
 				type: "item"
 			}]
 			title: "Steam Compressor"
-			x: 1.125d
-			y: -0.375d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
@@ -1373,7 +1376,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.5d
+			size: 1.0d
 			subtitle: "Take some weight off your inventory"
 			tasks: [
 				{
@@ -1388,8 +1391,8 @@
 				}
 			]
 			title: "Tool Belt"
-			x: 2.4927380952380958d
-			y: -2.1580102040816165d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["48AED37B4E20A99A"]
@@ -1417,7 +1420,7 @@
 			icon: "gtceu:tin_small_item_pipe"
 			id: "539CF1B85725786D"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "All your logistics woes are solved"
 			tasks: [{
 				id: "158F4EEDC214A3BA"
@@ -1425,28 +1428,18 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:tin_small_item_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:nickel_small_item_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:cobalt_small_item_pipe"
-							}
-						]
+						items: [{
+							Count: 1b
+							id: "gtceu:tin_small_item_pipe"
+						}]
 					}
 				}
 				title: "Earlygame Item Pipes"
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 3.375d
-			y: 1.875d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["54AF8696674766B4"]
@@ -1471,7 +1464,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "A lower-tech Personal Cell!"
 			tasks: [{
 				id: "193A62DF98B59838"
@@ -1479,8 +1472,8 @@
 				type: "item"
 			}]
 			title: "Backpacks"
-			x: 4.495399659863949d
-			y: 1.2720663265306271d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
@@ -1505,7 +1498,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "I'm the trouble starter, punkin' instigator..."
 			tasks: [
 				{
@@ -1521,8 +1514,8 @@
 				}
 			]
 			title: "Fuel Pit"
-			x: 1.390697278911567d
-			y: -2.9743367346938605d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["40DE888E6025C646"]
@@ -1561,7 +1554,7 @@
 				}
 			]
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "So long, and Tanks for all the fish!"
 			tasks: [
 				{
@@ -1630,8 +1623,8 @@
 				}
 			]
 			title: "Multiblock Tanks"
-			x: 0.5539625850340073d
-			y: -2.8110714285714167d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1FFD2242B94A7378"]
@@ -1647,7 +1640,7 @@
 			icon: "gtceu:steel_frame"
 			id: "27240865315F9530"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Spaghetti has never looked so swanky!"
 			tasks: [{
 				id: "431894F9877BC900"
@@ -1655,8 +1648,22 @@
 				type: "item"
 			}]
 			title: "Aesthetic Ultra"
-			x: -2.31d
-			y: 0.66d
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["48AED37B4E20A99A"]
+			description: ["Nickel is no longer found in the overworld. Sorry! You'll need to wait until LV to be able to sustainably mine those veins. For now, look for a lubricant vein in the Overworld and use one of the secondary ores to smelt your first Nickel :)"]
+			id: "4DF8ED9B730D8E9E"
+			tasks: [{
+				count: 16L
+				id: "16FB1F4F7DF5892B"
+				item: { Count: 16, id: "gtceu:raw_pentlandite" }
+				type: "item"
+			}]
+			title: "Nickel you say?"
+			x: 2.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

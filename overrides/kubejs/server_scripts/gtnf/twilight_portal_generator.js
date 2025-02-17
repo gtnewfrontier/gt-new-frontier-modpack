@@ -7,6 +7,7 @@ ServerEvents.recipes((event) => {
             "4x gtceu:steel_ingot",
             "1x minecraft:diamond"
         )
+        .inputFluids(Fluid.of("gtceu:soldering_alloy", 288))
         .itemOutputs("gtnf:twilight_portal_generator")
         .duration(600)
         .EUt(16);
