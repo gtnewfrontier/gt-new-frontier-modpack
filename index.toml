@@ -1810,6 +1810,11 @@ hash = "4fd14b860b891ddb3b3aa8d8be3482da806ddd26c3fd37675c6b7be1f3a23e8e"
 metafile = true
 
 [[files]]
+file = "mods/chloride.pw.toml"
+hash = "d79ea108e2df8e7fe6a76e6cf5a46f3945e972e94ca023e208d603bd43d86e97"
+metafile = true
+
+[[files]]
 file = "mods/citadel.pw.toml"
 hash = "5a4b03567f23fe0aac7806bd7cc9734138bf5fc098e98c1bb552d5b288bef258"
 metafile = true
@@ -2342,6 +2347,11 @@ metafile = true
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "5ca42f4c23aee558ed76923d4fb92ecee736ebacb53790445c09d46bd9ccb27e"
+metafile = true
+
+[[files]]
+file = "mods/remove-terralith-intro-message.pw.toml"
+hash = "2e9dead89853555c8d909fe2549af2db5e5051c690fae695df93d2369aa8314c"
 metafile = true
 
 [[files]]
