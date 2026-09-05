@@ -1,0 +1,13 @@
+name = "Mo' Than Enough Guns"
+filename = "M'TEG-1.1.2-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ddc1df1941857427bee1ca34a022ca04af70015e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6780773
+project-id = 978748
