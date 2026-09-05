@@ -1,5 +1,0 @@
-
-#General settings
-[profiles]
-	#Block to put underneath a bed so that it qualifies as a teleporter bed
-	specialBedBlock = "gtnf:lost_portal_generator"

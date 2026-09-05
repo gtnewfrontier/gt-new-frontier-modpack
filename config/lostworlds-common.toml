@@ -1,0 +1,8 @@
+
+#General settings
+[general]
+	#A list of structures that should not generate on lost_islands worlds
+	excludedStructuresIslands = ["minecraft:ocean_monuments", "minecraft:ancient_cities", "minecraft:mineshafts"]
+	#A list of structures that should not generate on lost_spheres worlds
+	excludedStructuresSpheres = ["minecraft:ocean_monuments", "minecraft:mineshafts", "minecraft:ancient_cities", "minecraft:villages", "minecraft:village_plains", "minecraft:village_desert", "minecraft:village_savanna", "minecraft:village_snowy", "minecraft:village_taiga"]
+

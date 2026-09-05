@@ -1,0 +1,4 @@
+# Exclude repo related files
+.git/**
+.gitattributes
+README.md
