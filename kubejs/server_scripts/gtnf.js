@@ -219,7 +219,7 @@ ServerEvents.recipes((event) => {
     }
 
     event.remove({ output: "minecraft:barrel" });
-    event.remove({ output: "sophistsophisticatedstorage:barrel" });
+    event.remove({ output: "sophisticatedstorage:barrel" });
     event.remove({ output: "sophisticatedstorage:limited_barrel_1" });
     event.remove({ output: "sophisticatedstorage:limited_barrel_3" });
     event.remove({ output: "sophisticatedstorage:limited_barrel_2" });

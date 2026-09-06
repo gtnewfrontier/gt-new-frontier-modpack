@@ -47,6 +47,7 @@ update or the settings are lost.
 | `config/sophisticatedbackpacks-common.toml` | `chestLootEnabled` | **false** | backpacks are crafted, not looted |
 | `config/sophisticatedcore-common.toml` | `enabledItems` | extended | we ship Sophisticated Storage as well as Backpacks |
 | `config/curios-client.toml` | `enableButton` | true | QoL |
+| `config/invtweaks-client.toml` | `sorting.containerOverrides` | kept | This **is** the live config of Inventory Tweaks ReFoxed (`invtweaks-1.20.1-1.2.0.jar`, modid `invtweaks`) — not an Inventory Profiles Next leftover. Task 07 verified and kept it. Its `containerOverrides` name classes from mods we don't ship (Refined Storage, Integrated Dynamics, Thermal, LaserIO, …); those are inert strings, harmless to leave. |
 | `config/inventoryessentials-common.toml` | `bulkTransferArmorSets` | true | QoL |
 
 ## Do not ship
@@ -55,7 +56,7 @@ update or the settings are lost.
 |---|---|
 | `config/fml.toml` early-window width/height | machine-specific (currently 1920x1080) |
 | `config/voicechat/username-cache.json` | already gitignored |
-| `config/inventoryprofilesnext/`, `config/invtweaks-client.toml` | mods not installed — delete (task 07) |
+| `config/inventoryprofilesnext/` | Inventory Profiles Next is not installed — deleted (task 07). `mods/libipn.pw.toml` still ships IPN's library without IPN itself; that is a mod-list question for the mod audit. |
 
 ## Script-level gameplay deltas
 

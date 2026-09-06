@@ -849,18 +849,6 @@ file = "config/inventoryessentials-common.toml"
 hash = "cb40d18902e7c827a313d836267b62a1848d4a0ec12b2e1a330124cff08a13a3"
 
 [[files]]
-file = "config/inventoryprofilesnext/GTBH - v0.0.1/villager-trading-config.json"
-hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
-
-[[files]]
-file = "config/inventoryprofilesnext/integrationHints/exampleIntegrationHints.json"
-hash = "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a"
-
-[[files]]
-file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "a44027e5b5bf7106a7657a84978cbdb46b0d55ac9db0cf77636d4670c4ebfdc3"
-
-[[files]]
 file = "config/inventorysorter-client.toml"
 hash = "a9a90c120d374d82018b03e579f1a4df8b4c5218e47a5c59a06fb3284661195f"
 
@@ -1442,7 +1430,7 @@ hash = "d2f9b2c263d1fefa26c4e38c1e233749a796f82cfe704867573154c84f8bc911"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/ae2.js"
-hash = "767c3db7729bae43bba56ea8340a29b8f225be4fa68ecf1cc7734b809f37bcfb"
+hash = "d526d57c81df6a4c07293ed166fe0712b313f154926442a7236d8a749769cf42"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/ae2wtlib.js"
@@ -1467,10 +1455,6 @@ hash = "4b8db54232c2656870078377ea6c6a97ec84f963a983da808f9398bdd1939df4"
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/crafting_storage.js"
 hash = "e68a97b24aa63aa8290b9891b02af7499ccd7f9a1dc2ef2cc3d183d660c48177"
-
-[[files]]
-file = "kubejs/server_scripts/appliedenergistics2/extendedae2.js"
-hash = "b1198b4dca49c8a4aa4203dfea3e1b0c680675f4db09ba94fad59e8e8910b095"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/inscriber.js"
@@ -1509,16 +1493,8 @@ file = "kubejs/server_scripts/appliedenergistics2/terminals.js"
 hash = "7588ffcb734f4ba3caecea9259dff93d4b66b4e7ebc1fe254645a6fb3fa3fa89"
 
 [[files]]
-file = "kubejs/server_scripts/building/architects_palette.js"
-hash = "421278dae6afb4be35316fbd62f78a6caf4c153810930f5ccdbaa33002597e24"
-
-[[files]]
 file = "kubejs/server_scripts/building/building_blocks.js"
 hash = "3e76f5e2c87a2a2eddece553c0d662535fd23a5ddb4eacc7b459ecb9507640c8"
-
-[[files]]
-file = "kubejs/server_scripts/building/building_gadgets.js"
-hash = "78b19f7b0d522c1a864e8f8db4bbb1fc5ca0637c18027b3aa32cad0dc0e1fad1"
 
 [[files]]
 file = "kubejs/server_scripts/building/chisel.js"
@@ -1562,7 +1538,7 @@ hash = "3ef4090c877d7eae7e7b0426bd25d05e2abf3c1afa1eca49891ca83eb0cdd842"
 
 [[files]]
 file = "kubejs/server_scripts/gtnf.js"
-hash = "50c936081a62a8cbf5545165c373b135514abe3f3d224c1a68f74ede5fc4d9c3"
+hash = "3844e7eef800aee15f72fd85490d890eef965f39afd8ef40aec975618ce200b4"
 
 [[files]]
 file = "kubejs/server_scripts/gtnf/lost_portal_generator.js"
