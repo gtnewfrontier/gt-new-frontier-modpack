@@ -40,3 +40,50 @@ The quest book also introduces story-driven elements to immerse you further, mak
 **A Challenge Worth Taking** GregTech: New Frontier is for those who thrive on strategy, problem-solving, and long-term goals. If you're looking for a slow-paced, highly rewarding journey through the ultimate Minecraft tech modpack, this is it.
 
 _Are you ready to master GregTech and prove yourself an expert?_ Download today and begin the adventure!
+
+* * *
+
+### **Versions**
+
+| | |
+|---|---|
+| Minecraft | 1.20.1 |
+| Loader | Forge 47.3.0 |
+| GregTech | GTCEu Modern 1.6.3 |
+| Pack | v0.4.3 |
+
+A rebaseline onto Forge 47.4.10 and GTCEu 8.0.0 is in progress — see
+[`docs/ROADMAP.md`](docs/ROADMAP.md).
+
+### **Installing**
+
+**CurseForge / Prism / MultiMC** — download the pack zip from the
+[CurseForge page](https://legacy.curseforge.com/minecraft/modpacks/gregtech-new-frontier)
+and import it. That zip is what this repository builds: `manifest.json` plus everything
+under `overrides/`.
+
+**From this repository** — zip `manifest.json` together with `overrides/` and import the
+result as a CurseForge pack. A [packwiz](https://packwiz.infra.link/) definition, which
+will also give a one-command install and a server pack, lands in phase 1 of the roadmap.
+
+### **Contributing**
+
+Start with [`docs/ROADMAP.md`](docs/ROADMAP.md) — it is the authoritative status of what
+is being worked on. [`docs/PROCESS.md`](docs/PROCESS.md) explains how work is split into
+design sessions and build tasks, [`docs/ANALYSIS.md`](docs/ANALYSIS.md) records the known
+defects, and [`docs/VISION.md`](docs/VISION.md) says what the pack is for.
+
+### **Credits and licence**
+
+GregTech: New Frontier is a hard fork of
+[GregTech-Modern-Community-Pack](https://github.com/GregTechCEu/GregTech-Modern-Community-Pack),
+forked at commit
+[`519a656`](https://github.com/GregTechCEu/GregTech-Modern-Community-Pack/commit/519a656)
+(upstream v1.12.1, 2024-12-22). Much of the configuration and KubeJS scripting in this
+pack derives from that work — thanks to [ursamina](https://github.com/ursamina),
+[Deepacat](https://github.com/Deepacat) and its
+[contributors](https://github.com/GregTechCEu/GregTech-Modern-Community-Pack/graphs/contributors).
+
+Bundled mods, shaders and resource packs remain under their own licences. Everything in
+this repository is licensed under the GNU Lesser General Public License v2.1, the same
+licence as upstream — see [`LICENSE`](LICENSE).
