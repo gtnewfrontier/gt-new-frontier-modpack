@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry("gtceu:recipe_type", (event) => {
   event
     .create("construction_core")
-    .category("test")
+    .category("gtnf")
     .setEUIO("in")
     .setMaxIOSize(2, 1, 1, 0)
     .setSlotOverlay(false, false, GuiTextures.BOX_OVERLAY)

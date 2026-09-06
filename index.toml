@@ -690,7 +690,7 @@ hash = "4e0913a2fef137b2ba6345a2ce3e6104fb0872efe194c5eb7cbb75782b933fc6"
 
 [[files]]
 file = "config/fml.toml"
-hash = "3fd987863d44b17100e1846b0d068440d13fa38c2cd491f9fc5ca4f29eb06765"
+hash = "2b9614f647e17ef44ca8b90f296bbf482ac5bb977f8e215eee9a6d1b17eb3bba"
 
 [[files]]
 file = "config/forge-client.toml"
@@ -1334,7 +1334,7 @@ hash = "31d97485689e44bb144f8754d5a404a544ad0d4582520c9344119096f72cb327"
 
 [[files]]
 file = "kubejs/assets/gtceu/lang/en_us.json"
-hash = "e68faf911e5ea4384a0f480ced0303b117dbed4be32c43b89bf5bb240f880ed3"
+hash = "75a9bdebe500ae378b32a9b341d6d46a73a0d48fcc029e44af2e320b264d3495"
 
 [[files]]
 file = "kubejs/assets/gtnf/textures/item/twilight_portal_generator.png"
@@ -1367,10 +1367,6 @@ hash = "53346f4f9385066a670017585ffd5ab8a392563f205ba45e23a47847e0dfe8c4"
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/example_item.png"
-hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/greg_icon.png"
@@ -1407,10 +1403,6 @@ hash = "c065b796f20c74d17770b301d60e6b0595c40334381903d1df987b42ccabb6e6"
 [[files]]
 file = "kubejs/assets/sophisticatedbackpacks/textures/entity/backpack.png"
 hash = "a3f24536d05bd0dd3e98ecbb9479806e0df26be7ad7595dca92c469a3f4cc035"
-
-[[files]]
-file = "kubejs/client_scripts/example.js"
-hash = "152019ed6e0410a82805a95ea10f1ad1a17beaf2b50864d89b8fa9d172129ac7"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -1593,24 +1585,12 @@ file = "kubejs/startup_scripts/components/hsla-steel.js"
 hash = "2df8bceaa0bcb871203b094c657461eb9b78cc4fc20d63d95388d2e1d0f95a2e"
 
 [[files]]
-file = "kubejs/startup_scripts/example.js"
-hash = "395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"
-
-[[files]]
-file = "kubejs/startup_scripts/gtbh.js"
-hash = "42aaaef9ef3f74bace3733a1eee48abd07b88f35b4eb88d645cd12ab523f4259"
-
-[[files]]
 file = "kubejs/startup_scripts/gtceu/Blocks and Items/dimension_markers.js"
 hash = "475ff3ad803e37e7468933b028f1bcf8a3f86c43a58e678b87b43e87ba7d369a"
 
 [[files]]
 file = "kubejs/startup_scripts/gtceu/World Gen/dimension_markers.js"
 hash = "efefbeeec7ece48a626f4fc995dec4967a65b74d8856fd998f0201b7c365d650"
-
-[[files]]
-file = "kubejs/startup_scripts/gtnf/dimension_markers.js"
-hash = "63134ae01476f398d6d370f6a16c3602490c0dfc474d03584ed5eb8e8f43dacb"
 
 [[files]]
 file = "kubejs/startup_scripts/gtnf/lost_portal_generator.js"
@@ -1626,7 +1606,7 @@ hash = "3ac20364d4f3a22858fb0a10d8692c254909f024be0d0b26eeebd0ecbe942d5f"
 
 [[files]]
 file = "kubejs/startup_scripts/icons.js"
-hash = "509f876d9767bf536a5452021bef3dff8cf1d10345f2b4aba8d2df529763edbe"
+hash = "df08c04d15365e5b8126435e7abe7f0b5ff84d7fa908f84990c2ea97e3650e12"
 
 [[files]]
 file = "kubejs/startup_scripts/machinery/construction_core.js"
@@ -1637,16 +1617,16 @@ file = "kubejs/startup_scripts/machinery/greenhouse.js"
 hash = "f01a4811ba1c2de98fe5da5595c104faeb5396ae2ff64744da777d87fc4c02a3"
 
 [[files]]
-file = "kubejs/startup_scripts/material_testing/material.js"
-hash = "1251ce19a3fb1d2b029c1cb2b1ed3020e07e514eaad8786b5a3c96e4a1e0713a"
+file = "kubejs/startup_scripts/materials.js"
+hash = "f3c91969f460d87d9f4e145f2c73fa58160aedeedb53f58bc1d168dde7716af6"
 
 [[files]]
 file = "kubejs/startup_scripts/recipes/construction_core.js"
-hash = "b611e4931649648378da167b2cd2c4574614d4efec579959e2d1c87e995f04af"
+hash = "03c7e2bfab51ba5a47282ac12d9514a2c317230fdb56ae1c6479ef3cac5c3fa8"
 
 [[files]]
 file = "kubejs/startup_scripts/recipes/greenhouse.js"
-hash = "e3fa23749515ff0720ceff36d06d1c36872b41eb41b62b2d0098ea9d47603add"
+hash = "03f410a68b9eab63fe3ee151498a8b4be5da7c4688261458b67e4bd3fe9df48b"
 
 [[files]]
 file = "mods/ae2-crafting-tree.pw.toml"

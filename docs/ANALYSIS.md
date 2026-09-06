@@ -53,14 +53,10 @@ KubeJS reports these as errors on every load and the recipes silently never exis
 ### 2.3 Unfinished / leftover content
 
 - `gtnf:lost_portal_generator` is registered with the placeholder texture `kubejs:block/example_block`. Its sibling `gtnf:twilight_portal_generator` is finished.
-- `startup_scripts/gtbh.js` registers `gtbh:stick_bundle` and `gtbh:stone_bundle` — a namespace from a different pack, no textures exist, nothing references them.
-- `startup_scripts/gtnf/dimension_markers.js` is a copy of the gtceu one with every registration call deleted — dead file.
-- `startup_scripts/example.js` and `client_scripts/example.js` are the KubeJS stock samples.
-- `startup_scripts/icons.js` sets `Platform.mods.kubejs.name = "GregTech Community Pack"` — upstream branding on our loading screen.
-- Custom recipe types `greenhouse` and `construction_core` are registered under `.category("test")`.
-- `sophisticated_backpacks/upgrades.js` contains the namespace typo `sophistsophisticatedstorage`.
-- `config/fml.toml` ships a 1920x1080 early-window size — a developer machine setting.
-- `startup_scripts/material_testing/material.js` defines a `fluix` material; upstream has since reworked it (`.dust()` to `.gem()` plus a `materialModification` script). Ours is the older, half-finished version.
+- ~~`startup_scripts/gtbh.js`~~, ~~`startup_scripts/gtnf/dimension_markers.js`~~, ~~the two `example.js` samples~~, ~~`Platform.mods.kubejs.name = "GregTech Community Pack"`~~, ~~`.category("test")`~~, ~~the 1920x1080 `config/fml.toml` early window~~ — **all fixed in task 09.**
+- The `sophistsophisticatedstorage` typo was never in `sophisticated_backpacks/upgrades.js`; the only occurrence was in `gtnf.js`, fixed in task 07.
+- `startup_scripts/materials.js` (was `material_testing/material.js`) defines the `fluix` material. It is **live, not a leftover** — `server_scripts/appliedenergistics2/ae2.js` uses `#forge:plates/fluix`, and GENERATE_PLATE on our `.dust()` fluix is what provides it. Upstream has since reworked it (`.dust()` to `.gem()`); we keep `.dust()` because AE2 already tags `ae2:fluix_crystal` as `forge:gems/fluix`, so a second gtceu fluix gem would only duplicate it. Revisit at task 16.
+- `example_item.png` was unused and is deleted; `example_block.png` stays until task 10 retextures the Lost Portal Generator.
 
 ### 2.4 Structural
 

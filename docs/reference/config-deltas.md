@@ -54,7 +54,7 @@ update or the settings are lost.
 
 | File | Why |
 |---|---|
-| `config/fml.toml` early-window width/height | machine-specific (currently 1920x1080) |
+| `config/fml.toml` early-window width/height | machine-specific. Reset to Forge's default 854x480 in task 09 — do not re-commit a local value. |
 | `config/voicechat/username-cache.json` | already gitignored |
 | `config/inventoryprofilesnext/` | Inventory Profiles Next is not installed — deleted (task 07). `mods/libipn.pw.toml` still ships IPN's library without IPN itself; that is a mod-list question for the mod audit. |
 
