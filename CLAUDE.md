@@ -34,9 +34,9 @@ Also read: `docs/ROADMAP.md` (what's next, authoritative status), `docs/ANALYSIS
 | `docs/` | process, roadmap, analysis, task files, design records, reference |
 | `.claude/commands/` | `/task` and `/design` session triggers |
 
-`manifest.json` and `modlist.html` are the retired CurseForge definition, kept until
-task 06 deletes them; packwiz regenerates both on export. `.packwizignore` keeps
-`docs/`, `.claude/` and the repo metadata out of the shipped pack.
+`manifest.json` and `modlist.html` are not tracked — packwiz generates both into the
+exported CurseForge zip. `.packwizignore` keeps `docs/`, `.claude/` and the repo
+metadata out of the shipped pack.
 
 ## Rules
 

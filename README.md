@@ -59,12 +59,12 @@ A rebaseline onto Forge 47.4.10 and GTCEu 8.0.0 is in progress — see
 
 **CurseForge / Prism / MultiMC** — download the pack zip from the
 [CurseForge page](https://legacy.curseforge.com/minecraft/modpacks/gregtech-new-frontier)
-and import it. That zip is what this repository builds: `manifest.json` plus everything
-under `overrides/`.
+and import it. That zip is what this repository builds.
 
-**From this repository** — zip `manifest.json` together with `overrides/` and import the
-result as a CurseForge pack. A [packwiz](https://packwiz.infra.link/) definition, which
-will also give a one-command install and a server pack, lands in phase 1 of the roadmap.
+**From this repository** — this pack is a [packwiz](https://packwiz.infra.link/)
+definition. The GitHub Action on every push uploads the importable CurseForge zip as the
+`gt-new-frontier-curseforge` artifact; to build it yourself, run `packwiz curseforge
+export`. For a server, see [`serverpack/README.md`](serverpack/README.md).
 
 ### **Contributing**
 

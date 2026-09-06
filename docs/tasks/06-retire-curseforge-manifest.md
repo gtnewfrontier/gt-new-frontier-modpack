@@ -1,6 +1,6 @@
 # 06 — Retire the CurseForge manifest
 
-**Status:** not started
+**Status:** done
 **Depends on:** 04
 
 ## Goal
