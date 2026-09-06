@@ -1,6 +1,6 @@
 # 02 — Repo metadata
 
-**Status:** not started
+**Status:** done — commit `6099c48`
 
 ## Goal
 

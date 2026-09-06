@@ -18,7 +18,7 @@ matching upstream v1.15.0. We remain a hard fork; upstream is a reference only.
 Nothing else is safe until diffs are readable.
 
 - [x] `01-normalize-line-endings.md` — `.gitattributes`, one LF renormalise commit
-- [ ] `02-repo-metadata.md` — LICENSE, README refresh, `.gitignore`
+- [x] `02-repo-metadata.md` — LICENSE, README refresh, `.gitignore`
 
 ## Phase 1 — Packwiz
 
@@ -75,3 +75,4 @@ needs to know.
 |---|---|---|---|
 | 2026-09-06 | analysis + plan | — | fork point identified as upstream `519a656` |
 | 2026-09-06 | 01 line endings | `752d933` | Index was always LF — the CRLF came from Git-for-Windows' system `core.autocrlf=true` on checkout, so no renormalise commit was needed. Working tree is now 0 CRLF files. Upstream uses `* -text` and stores 10 files as CRLF, so keep `--strip-trailing-cr` when diffing (`docs/reference/upstream.md`). Worktree `../gtcpm-fork` is checked out at `519a656`. |
+| 2026-09-06 | 02 repo metadata | `6099c48` | LICENSE is upstream's LGPL-2.1 verbatim; the pack is licensed the same as the work it derives from. README now states 1.20.1 / Forge 47.3.0 / GTCEu Modern 1.6.3 (CF file `6081505`) — update that table at task 11. `overrides/config/voicechat/username-cache.json` was gitignored but still tracked; it is now untracked and deleted. `.gitignore` uses `**/voicechat/...` so it survives the `overrides/` flatten in task 03. |
