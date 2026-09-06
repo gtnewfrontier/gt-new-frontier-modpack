@@ -34,8 +34,13 @@ diff -rq ../gtcpm-fork ./ | grep -v '\.git'
 diff --strip-trailing-cr -w ../gtcpm-fork/config/gtceu.yaml config/gtceu.yaml
 ```
 
-Always pass `--strip-trailing-cr -w` until task 01 has normalised line endings, or
-every file reads as 100% changed.
+Keep passing `--strip-trailing-cr`. Task 01 made our side LF everywhere, but upstream
+uses `* -text` and has 10 CRLF-stored files under `kubejs/` (`gregtech/machines.js`,
+`gregtech/temporary_fixes.js`, both `sophisticated_backpacks/` scripts,
+`building/building_blocks.js`, `building/xtones.js`, `appliedenergistics2/ae2wtlib.js`,
+`startup_scripts/machinery/construction_core.js`, `assets/emi/category/properties/categories.json`,
+`assets/sophisticatedbackpacks/lang/en_us.json`), so those still read as 100% changed
+without it. `-w` is only needed when whitespace is genuinely noise.
 
 To see what upstream changed since we forked:
 

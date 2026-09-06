@@ -1,6 +1,6 @@
 # 01 — Normalise line endings
 
-**Status:** not started
+**Status:** done (2026-09-06)
 
 ## Goal
 

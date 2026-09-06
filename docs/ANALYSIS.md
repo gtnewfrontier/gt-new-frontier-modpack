@@ -64,7 +64,7 @@ KubeJS reports these as errors on every load and the recipes silently never exis
 
 ### 2.4 Structural
 
-- **Every file was re-committed with CRLF line endings.** Diffing against upstream shows ~14,000 changed lines; the real delta is ~2,500. There is no `.gitattributes`. Fix this before any upstream comparison work.
+- ~~**Every file was re-committed with CRLF line endings.**~~ **Fixed in task 01, and the diagnosis was half wrong.** The committed blobs were always LF; the CRLF came from Git-for-Windows' system-level `core.autocrlf=true` rewriting them on *checkout*, so only the working tree was CRLF. `.gitattributes` with `* text=auto eol=lf` overrides it. `git add --renormalize .` staged nothing, confirming the index needed no rewrite.
 - **`config/gtceu.yaml` predates our own GT version.** It still carries `nativeEUToFE`, `feToEuRatio`, `hideFacadesInJEI` — keys GT has since renamed. GT drops unknown keys silently when it rewrites the file, so our difficulty settings can disappear during an update with no error. This is why `docs/reference/config-deltas.md` exists.
 - No LICENSE, no CI, no server pack, no build tooling. `modlist.html` is committed by hand.
 - `shaderpacks/` ships 8.1 MB of pre-patched Complementary + Euphoria Patches, while both are also listed as CurseForge projects in the manifest and Euphoria Patches regenerates the patched pack at runtime. Probably redundant — verify before deleting.

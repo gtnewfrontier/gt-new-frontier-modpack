@@ -17,7 +17,7 @@ matching upstream v1.15.0. We remain a hard fork; upstream is a reference only.
 
 Nothing else is safe until diffs are readable.
 
-- [ ] `01-normalize-line-endings.md` — `.gitattributes`, one LF renormalise commit
+- [x] `01-normalize-line-endings.md` — `.gitattributes`, one LF renormalise commit
 - [ ] `02-repo-metadata.md` — LICENSE, README refresh, `.gitignore`
 
 ## Phase 1 — Packwiz
@@ -74,3 +74,4 @@ needs to know.
 | Date | Task | Commit | Note |
 |---|---|---|---|
 | 2026-09-06 | analysis + plan | — | fork point identified as upstream `519a656` |
+| 2026-09-06 | 01 line endings | `752d933` | Index was always LF — the CRLF came from Git-for-Windows' system `core.autocrlf=true` on checkout, so no renormalise commit was needed. Working tree is now 0 CRLF files. Upstream uses `* -text` and stores 10 files as CRLF, so keep `--strip-trailing-cr` when diffing (`docs/reference/upstream.md`). Worktree `../gtcpm-fork` is checked out at `519a656`. |
