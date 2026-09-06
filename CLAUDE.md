@@ -34,8 +34,9 @@ Also read: `docs/ROADMAP.md` (what's next, authoritative status), `docs/ANALYSIS
 | `docs/` | process, roadmap, analysis, task files, design records, reference |
 | `.claude/commands/` | `/task` and `/design` session triggers |
 
-Until task 03 lands, pack content sits under `overrides/` with a CurseForge
-`manifest.json`; after task 06 both are gone and packwiz generates them on export.
+`manifest.json` and `modlist.html` are the retired CurseForge definition, kept until
+task 06 deletes them; packwiz regenerates both on export. `.packwizignore` keeps
+`docs/`, `.claude/` and the repo metadata out of the shipped pack.
 
 ## Rules
 

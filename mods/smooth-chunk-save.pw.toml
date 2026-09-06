@@ -1,0 +1,13 @@
+name = "Server Performance - Smooth Chunk Save"
+filename = "smoothchunk-1.20.1-4.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7449b406723228b3fda3bcd0db5635288030dee5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6118213
+project-id = 582327

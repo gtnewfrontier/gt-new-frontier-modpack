@@ -22,7 +22,7 @@ Nothing else is safe until diffs are readable.
 
 ## Phase 1 — Packwiz
 
-- [ ] `03-packwiz-bootstrap.md` — import `manifest.json`, flatten `overrides/` to root
+- [x] `03-packwiz-bootstrap.md` — import `manifest.json`, flatten `overrides/` to root
 - [ ] `04-packwiz-export-ci.md` — GitHub Action building the CurseForge zip
 - [ ] `05-serverpack.md` — `start.sh` / `start.ps1` + server README
 - [ ] `06-retire-curseforge-manifest.md` — delete `manifest.json` and `modlist.html`
@@ -76,3 +76,4 @@ needs to know.
 | 2026-09-06 | analysis + plan | — | fork point identified as upstream `519a656` |
 | 2026-09-06 | 01 line endings | `752d933` | Index was always LF — the CRLF came from Git-for-Windows' system `core.autocrlf=true` on checkout, so no renormalise commit was needed. Working tree is now 0 CRLF files. Upstream uses `* -text` and stores 10 files as CRLF, so keep `--strip-trailing-cr` when diffing (`docs/reference/upstream.md`). Worktree `../gtcpm-fork` is checked out at `519a656`. |
 | 2026-09-06 | 02 repo metadata | `6099c48` | LICENSE is upstream's LGPL-2.1 verbatim; the pack is licensed the same as the work it derives from. README now states 1.20.1 / Forge 47.3.0 / GTCEu Modern 1.6.3 (CF file `6081505`) — update that table at task 11. `overrides/config/voicechat/username-cache.json` was gitignored but still tracked; it is now untracked and deleted. `.gitignore` uses `**/voicechat/...` so it survives the `overrides/` flatten in task 03. |
+| 2026-09-06 | 03 packwiz bootstrap | `COMMIT` | `pack.toml` / `index.toml` / 183 metafiles at root; `overrides/` flattened (1225 `git mv`s). All 183 CF entries imported, none distribution-blocked at import time — whether FindMe still blocks the *export* is unverified, check at task 04/05. Two of the 183 are shaders, not mods: packwiz doesn't know the shaderpack category and dropped them in the repo root, so they were moved to `shaderpacks/` by hand — `mods/` holds 181. `.packwizignore` patterns are anchored with a leading `/`; unanchored `README.md` (upstream's form) also swallowed `config/NoChatReports/README.md`. packwiz is not on PATH by default: `go install github.com/packwiz/packwiz@latest`, binary lands in `~/go/bin`. |

@@ -1,0 +1,13 @@
+name = "GregTech New Frontier"
+author = "BGxArrow"
+version = "0.5.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "9f436e8f04805113df3997ddf7ed28dc46a72ef6b93182302c95f74209e8bffb"
+
+[versions]
+forge = "47.3.0"
+minecraft = "1.20.1"

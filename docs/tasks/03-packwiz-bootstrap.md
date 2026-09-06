@@ -1,6 +1,6 @@
 # 03 — Packwiz bootstrap
 
-**Status:** not started
+**Status:** done
 **Depends on:** 01
 
 ## Goal
