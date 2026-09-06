@@ -1,6 +1,6 @@
 # 07 — Remove dead mod code
 
-**Status:** not started
+**Status:** done (`dacd842`)
 
 ## Goal
 
