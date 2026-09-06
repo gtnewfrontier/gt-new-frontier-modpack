@@ -1038,11 +1038,11 @@
 				"16B735F9C391D260"
 			]
 			description: [
-				"In lieu of GTCEu's &3Ender Fluid Links&r being fully implemented, &dEnder Storage&r makes its way into the pack."
+				"In lieu of GTCEu's &3Ender Fluid Links&r being fully implemented, &dEnderTanks&r makes its way into the pack."
 				""
-				"Recipes have been adjusted to a &asimilar tier&r. You can change the \"frequency\" of &6each tank&r by using dye on the wool pads on top."
+				"You can change the \"frequency\" of &6each tank&r by using dye on the wool pads on top."
 				""
-				"You can also make similar &3Ender Chests&r to transport items - which is nice, because there's currently &cno way&r to wirelessly transport items in base &bGTCEu&r! Don't ever say we don't treat you!"
+				"You can also make similar &3EnderChests&r to transport items - which is nice, because there's currently &cno way&r to wirelessly transport items in base &bGTCEu&r! Don't ever say we don't treat you!"
 				""
 				"Lastly, using a &eDiamond&r on an Ender Tank will lock the tank to your own &dprivate frequency&r, which is helpful if you're playing on a server."
 			]
@@ -1052,7 +1052,7 @@
 			subtitle: "Ender? I ha- Ok, this joke is old"
 			tasks: [{
 				id: "5AAF6386B4AA7C69"
-				item: "enderstorage:ender_tank"
+				item: "endertanks:ender_tank"
 				type: "item"
 			}]
 			title: "Ender Fluid Linking"

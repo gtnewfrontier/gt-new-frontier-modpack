@@ -718,7 +718,7 @@ hash = "3e55b8dcd4102bc6914224195eb84b08dfeee803dde1da9c5b4a2cf19018b812"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ev__extreme_voltage.snbt"
-hash = "c8173e99a089c3360f621f5765a7d71dd4c4c65b35a14503c6a8dac6fdb2a57d"
+hash = "e32ded97c7390894dee5e0ae54e8846965481f83c366e4bd19415295f6b51748"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heating_coils.snbt"
@@ -758,7 +758,7 @@ hash = "1eb066c606b3974c6c1d41ca2f8b995fb1d43e736179866fa3f706d8cf5e3081"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_processing.snbt"
-hash = "c015e99c4b4038cf9f28cba0341fcb43781bef8d4059f17fa599cb1301734d90"
+hash = "756081393f7b4f0da64caa0cac8b706fb6d4963ce674b218cfc39950abcd09bd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/progression.snbt"
@@ -782,7 +782,7 @@ hash = "8f5eec1c3b8902a23c6ab74c338551a0a43e73be9b9caf6a9afc5227e53adeaf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/uv__ultimate_voltage.snbt"
-hash = "d32f3ba0518aa8fae7d88f5bb65311904583bfd25f82a11487398fc461e4bb88"
+hash = "fe1d3db0dda9353ace81241e95e1db5258c4be55b4311366edcd0f468c108046"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/zpm__zero_point_module.snbt"
@@ -790,7 +790,7 @@ hash = "c4bb8d0062c6f63a357abd33a7b7aec169f9db246f059c56ac88d5153ebc3c39"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "38c4c3073b715d1295857a4b85ac7a11d04b671c25a64e4d1d739ac329f7dccf"
+hash = "2f4c6e4ddd0f94804788acf851a3d45a43655e80e348f79b53c6c19557616410"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/bronze_age.snbt"

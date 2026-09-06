@@ -40,18 +40,18 @@
 		{
 			dependencies: ["6F15D7574B8F6DB5"]
 			description: [
-				"Crafting the &aUltimate Battery&r marks the end of GTCEu and the GregTech Community Modpack. &6Congratulations!&r"
+				"Crafting the &aUltimate Battery&r puts you at the top of GTCEu's voltage ladder. &6Congratulations!&r"
 				""
-				"Now that you've finished the mod, there's a few things you should do:"
+				"UV is as far as the tech tree goes in &bGregTech: New Frontier&r right now. What sits past it is still being built."
 				""
-				"- &9Join the GTCEu Discord&r and tell us about how your playthrough went! Feel free to show off your battery :) "
+				"In the meantime, a few things you should do:"
 				""
 				"- &eGo outside&r (and start playing GregTech in real life, right?). Integrate back into regular society."
 				""
 				"- &cBlow up your world with TNT and GT Dynamite&r. &nPlease, please, PLEASE make a backup first!!!&r"
 				""
 				"&6&lThank you for playing the pack! :D&r"
-				"- The GregTech Community Pack Dev Team"
+				"- The GregTech: New Frontier team"
 			]
 			hide_details_until_startable: true
 			hide_text_until_complete: true

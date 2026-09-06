@@ -10,7 +10,7 @@
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	icon: "gtceu:gregification_hazard_sign_block"
-	lock_message: "eSFSDF"
+	lock_message: "Not yet. Finish what came before it."
 	loot_crate_no_drop: {
 		boss: 0
 		monster: 600
