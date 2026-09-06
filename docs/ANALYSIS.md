@@ -66,8 +66,9 @@ KubeJS reports these as errors on every load and the recipes silently never exis
 
 - ~~**Every file was re-committed with CRLF line endings.**~~ **Fixed in task 01, and the diagnosis was half wrong.** The committed blobs were always LF; the CRLF came from Git-for-Windows' system-level `core.autocrlf=true` rewriting them on *checkout*, so only the working tree was CRLF. `.gitattributes` with `* text=auto eol=lf` overrides it. `git add --renormalize .` staged nothing, confirming the index needed no rewrite.
 - **`config/gtceu.yaml` predates our own GT version.** It still carries `nativeEUToFE`, `feToEuRatio`, `hideFacadesInJEI` — keys GT has since renamed. GT drops unknown keys silently when it rewrites the file, so our difficulty settings can disappear during an update with no error. This is why `docs/reference/config-deltas.md` exists.
-- No LICENSE, no CI, no server pack, no build tooling. `modlist.html` is committed by hand.
+- ~~No LICENSE, no CI, no server pack, no build tooling. `modlist.html` is committed by hand.~~ **Fixed in tasks 02, 04, 05 and 06:** LGPL-2.1 LICENSE, a packwiz export Action, `serverpack/start.{sh,ps1}`, and `manifest.json` / `modlist.html` deleted now that packwiz generates both.
 - `shaderpacks/` ships 8.1 MB of pre-patched Complementary + Euphoria Patches, while both are also listed as CurseForge projects in the manifest and Euphoria Patches regenerates the patched pack at runtime. Probably redundant — verify before deleting.
+- **The shipped Complementary version is one release behind what Euphoria Patches wants.** A client boot of the task-06 export logs `EuphoriaPatcher: You need to have ComplementaryShaders_r5.4 installed!` and refuses to patch. We pin **r5.3** in both `shaderpacks/*.pw.toml` (file ids `5874236` / `5874235`) and in the pre-patched `... + EuphoriaPatches_1.4.3` folders, but the Euphoria Patches *mod* jar we ship expects r5.4. Fix by bumping both shader pins during task 13 and regenerating or deleting the pre-patched folders — the two have to move together, which is the argument for deleting them.
 
 ## 3. Quest book
 
