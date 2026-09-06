@@ -1,0 +1,32 @@
+name: build-modpack
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build-pack:
+    name: Export the CurseForge pack with packwiz
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '>=1.19.0'
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Export pack
+        run: packwiz curseforge export
+
+      - name: Upload pack artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gt-new-frontier-curseforge
+          path: GregTech New Frontier-*.zip
+          if-no-files-found: error
