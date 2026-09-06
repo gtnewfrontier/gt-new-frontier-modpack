@@ -24,7 +24,7 @@ Nothing else is safe until diffs are readable.
 
 - [x] `03-packwiz-bootstrap.md` — import `manifest.json`, flatten `overrides/` to root
 - [x] `04-packwiz-export-ci.md` — GitHub Action building the CurseForge zip
-- [ ] `05-serverpack.md` — `start.sh` / `start.ps1` + server README
+- [x] `05-serverpack.md` — `start.sh` / `start.ps1` + server README
 - [ ] `06-retire-curseforge-manifest.md` — delete `manifest.json` and `modlist.html`
 
 ## Phase 2 — Defect cleanup *(parallel)*
