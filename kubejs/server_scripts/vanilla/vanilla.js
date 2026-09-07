@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
     .centrifuge("gtceu:slimeballs_centrifuge")
     .itemInputs("slime_ball")
     .outputFluids("gtceu:glue 250")
-    .itemOutputs("#forge:dusts/asbestos")
+    .itemOutputs("gtceu:asbestos_dust")
     .duration(200)
     .EUt(24);
 
