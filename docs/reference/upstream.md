@@ -50,6 +50,9 @@ git -C ../GregTech-Modern-Community-Pack diff 519a656..HEAD -- kubejs config
 
 ## What upstream did after our fork (worth cherry-picking)
 
+The quest book has its own three-way delta in `quest-delta.md` — quest ids, not diff
+lines. Use that rather than reading `git diff` over `config/ftbquests`.
+
 **Resolved by task 16** (2026-09-07) — every line below was taken, adapted or declined;
 `docs/tasks/16-cherry-pick-upstream-fixes.md` records which, and why. Kept here as the
 shape of what a future re-review of upstream should look at.

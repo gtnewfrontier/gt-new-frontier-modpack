@@ -47,7 +47,7 @@ Sequential. Do not start until Phase 0 and 1 are done.
 - [x] `14-boot-and-triage.md` — first launch, zero-KubeJS-error gate
 - [x] `15-reapply-config-deltas.md` — restore intent after configs regenerate
 - [x] `16-cherry-pick-upstream-fixes.md` — take upstream's recipe fixes
-- [ ] `17-port-upstream-quest-content.md` — the 7 quests and chapter text upstream added
+- [ ] `17-port-upstream-quest-content.md` — 7 quests + text upstream added, 1 stale quest of ours
 
 ## Phase 4 — Design, then build, one mechanic at a time
 

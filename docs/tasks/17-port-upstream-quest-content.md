@@ -5,8 +5,9 @@
 
 ## Goal
 
-Take the seven quests and the chapter text upstream added after our fork point, and
-close the quest-book gap that task 16's review deliberately left open.
+Take the seven quests and the chapter text upstream added after our fork point, drop
+the one quest of ours that teaches a mechanic GT 8 removed, and close the quest-book
+gap that task 16's review deliberately left open.
 
 ## Why
 
@@ -25,7 +26,9 @@ It does **not** decide chapter structure, groups, or ordering; that is still bac
 ## What the delta actually is
 
 Established in the task-16 follow-up, from an id-level comparison of the fork point,
-upstream `97dda02`, and our tree. Reproduce with:
+upstream `97dda02`, and our tree. The full three-way delta, the method, and the traps
+are in **`docs/reference/quest-delta.md`** — read that first; this task is the build
+half of it. Reproduce the raw diff with:
 
 ```sh
 git -C ../GregTech-Modern-Community-Pack diff 519a656..HEAD -- config/ftbquests
@@ -89,7 +92,26 @@ plus quest layout moves we should ignore — our layout is ours).
 4. **Chapter text.** Walk the diff for the five chapters listed above and take the
    description changes. Skip every `x:`/`y:` hunk — upstream's layout is not ours.
 
-5. **Do not take**, and the reason for each, so the next session doesn't re-open it:
+5. **Two quests of ours that upstream deleted** (`quest-delta.md` direction 3 — the
+   direction a two-way diff can't see, because our file and the fork point agree and
+   only upstream moved). Both are in `ev__extreme_voltage.snbt`:
+
+   - **`7B23AF5B6B62BC19` "Even More Byproducts" — delete or rewrite it.** It teaches
+     *"Each overclock above the required tier will add that % bonus to the chanced
+     output"*, and **GT 8 removed that mechanic**: `api.recipe.content.Content` is now
+     the record `(content, chance, maxChance)`, GT 7's `tierChanceBoost` field is gone,
+     and the only mention left in the jar is in the KubeJS binding `ContentJS`. Upstream
+     deleted this quest and rewrote their IV macerator quest from "Better Ore Processing
+     for chanced Byproducts" to "Faster Ore Processing" in the same release. Our EV
+     Macerator quest is currently teaching a mechanic that does not exist. Deleting it
+     resets no progress for anyone who has not completed it; if you would rather keep the
+     node, keep the id and rewrite the description to be about speed.
+   - `7EF57E379F736FBB` "Item P2P Tunnels" — teaches attunement by right-clicking a
+     tunnel with a vanilla chest. Still true, but task 16 added stonecut conversion
+     between the five tunnel types, so it now describes the long way round. Worth a
+     sentence, not a deletion.
+
+6. **Do not take**, and the reason for each, so the next session doesn't re-open it:
    - `reward_tables/gallium_arsenide.snbt` — orphaned upstream too; `grep -rn
      1D60D15906F07624` over their whole quest tree matches only its own definition.
    - `gtceu.snbt` — upstream's "guide to GTCEu Modern" onboarding chapter. We replaced
@@ -109,6 +131,7 @@ plus quest layout moves we should ignore — our layout is ours).
 
 - The seven quests are in the book, each reachable from its dependency, none sitting on
   top of another quest.
+- "Even More Byproducts" no longer teaches tier-scaled chanced outputs.
 - The five chapters carry upstream's text improvements.
 - `tips_and_tricks_2.snbt` is LF and the tree has zero CRLF files.
 - Headless dedicated server boots with **0 ERROR** in all three KubeJS logs, and no
