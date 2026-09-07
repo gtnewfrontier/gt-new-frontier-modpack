@@ -714,7 +714,7 @@ hash = "3e55b8dcd4102bc6914224195eb84b08dfeee803dde1da9c5b4a2cf19018b812"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ev__extreme_voltage.snbt"
-hash = "017c376f21b2acdc1f094ac5bf36462c92916cb8d79762e6925f6f191213e8d4"
+hash = "9d497043225b0d083d6857b6f191e8b96f4b9be1bc66e86b60b4a50d792488f5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heating_coils.snbt"
@@ -722,7 +722,7 @@ hash = "0743327d39740220a14e88cb097fca20c23fad1282d7dfbeeabab29ddfb319f8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hv__high_voltage.snbt"
-hash = "5d5395791437722bfcc70059aa5a763d57b38bb0bec6c1fb09090645d4f4b779"
+hash = "69ab36769aa2842e619b7360f21b951cf154a20dc205b33f4140f402216dc1b9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/introduction.snbt"
@@ -730,7 +730,7 @@ hash = "8912ea2b9e15d52765850784109fa9d482c809431b7b6be2cae42e3d9508984a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/iv__insane_voltage.snbt"
-hash = "81fcc20edff00fed7196c75b456a0c14b811198dfe00b83da2cff677b90f72c2"
+hash = "b5ba241490b30512a81e977f758da3c4ce6bf974e28800d5a4cf125e1af236e2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/luv__ludicrous_voltage.snbt"
@@ -738,7 +738,7 @@ hash = "d3c007614eed5e446c031a8b4f1ad8ba177fcd1c64797f7582a1ea22580add02"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv__low_voltage.snbt"
-hash = "3fb492b390ec46dddd85042ece9ae03aabb25e85d673441663cc09d508b28267"
+hash = "9969b81b19883b753b720940d6866481d647a15738d4d37a56719682f4e81a5f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/multiblock_dilemma.snbt"
@@ -746,7 +746,7 @@ hash = "462a645dd07253e7258054b4fb97309890ae56c610bd8a58abe616d603f08cca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mv__medium_voltage.snbt"
-hash = "74fe01700d8c473f02214e4c4c2b5e569fe98704a989e76b092a23673d75297d"
+hash = "c0af3b7d61ffce7cba2653c5c12aed5ff1b105e87119e56f2064767084ca6a38"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_generation.snbt"
@@ -766,7 +766,7 @@ hash = "d8b19cc14f333b02b471492fad153fce4fcfe42892fe82e31963649f1e0c4205"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam_age.snbt"
-hash = "5693c72bda17c454cb4791a9ce54c89760552efa0ef3025e20f773d07542b135"
+hash = "fc72f8e75f3a1320f962a89f3b57ff9055ff5f814c0370ebf4d806ccbb21efe8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stone_age.snbt"
@@ -774,7 +774,7 @@ hash = "074f876292f98a5d3cea662619d8c90fa02d3782546885bca377d435d06352a1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tips_and_tricks_2.snbt"
-hash = "8f5eec1c3b8902a23c6ab74c338551a0a43e73be9b9caf6a9afc5227e53adeaf"
+hash = "171da1ebd53987df974781fcd70c04b6a4bd3f6d507f6aeb9b914ecef2d3a007"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/uv__ultimate_voltage.snbt"
