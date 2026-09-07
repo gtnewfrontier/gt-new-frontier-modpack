@@ -764,19 +764,19 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"You've probably noticed the &9\"chance per tier\"&r when hovering over the bonus outputs in &2EMI&r Each overclock above the required tier will add that % bonus to the chanced output!"
+				"The &3EV Macerator&r processes ore &6faster&r than the tiers below it, because every voltage step above a recipe's requirement overclocks it."
 				""
-				"This means using an &3EV Macerator&r will yield &6more Byproducts&r!"
+				"&9Note:&r Tier does &cnot&r change chanced byproducts. The chance shown in &2EMI&r is the chance you get, at every tier."
 			]
 			id: "7B23AF5B6B62BC19"
 			size: 0.75d
-			subtitle: "Avarice and hedonism in a single block"
+			subtitle: "Same ores, less waiting"
 			tasks: [{
 				id: "4EC5F44332F7533B"
 				item: "gtceu:ev_macerator"
 				type: "item"
 			}]
-			title: "Even More Byproducts"
+			title: "Faster Ore Processing"
 			x: 5.625d
 			y: 6.75d
 		}
@@ -1704,6 +1704,8 @@
 			dependencies: ["39E7997F3080250A"]
 			description: [
 				"To turn a P2P Tunnel into an &aItem P2P Tunnel&r, right-click it in the world with a &dvanilla Chest&r."
+				""
+				"&9Note:&r This pack also lets you &dstonecut&r an &aME P2P Tunnel&r straight into any of the five tunnel types, which is quicker than attuning each one by hand."
 				""
 				"Item P2P Tunnels are useful in a more abstract way so let's start with an example."
 				"{@pagebreak}"

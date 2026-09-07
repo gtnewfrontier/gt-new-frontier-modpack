@@ -5,6 +5,8 @@ level rather than the diff-line level. Line counts lie here: upstream's `+277/-7
 `lv__low_voltage` is two new quests and a lot of prose.
 
 Computed 2026-09-07 against fork point `519a656`, upstream `97dda02`, ours `09a7162`.
+**Directions 1 and 3 were closed by task 17** — the counts in the *Ours* column below are
+post-task-17.
 **Recompute after every upstream pull** — the numbers below are a snapshot, not a rule.
 
 ## How to recompute
@@ -35,16 +37,16 @@ Computed 2026-09-07 against fork point `519a656`, upstream `97dda02`, ours `09a7
 | `introduction` | — | — | **19 (ours only)** |
 | `iv__insane_voltage` | 37 | 37 | 37 |
 | `luv__ludicrous_voltage` | 45 | 45 | 42 |
-| `lv__low_voltage` | 73 | 75 | 78 |
+| `lv__low_voltage` | 73 | 75 | 80 |
 | `multiblock_dilemma` | 42 | 42 | 41 |
-| `mv__medium_voltage` | 70 | 74 | 69 |
+| `mv__medium_voltage` | 70 | 74 | 73 |
 | `ore_generation` | 45 | 45 | 46 |
 | `ore_processing` | 20 | 20 | 19 |
 | `progression` | 45 | 45 | 45 |
 | `renewability_and_you` | 20 | 20 | 20 |
 | `steam_age` | 40 | 40 | 40 |
 | `stone_age` | — | — | **19 (ours only)** |
-| `tips_and_tricks_2` | 20 | 21 | 20 |
+| `tips_and_tricks_2` | 20 | 21 | 21 |
 | `uv__ultimate_voltage` | 24 | 24 | 24 |
 | `zpm__zero_point_module` | 29 | 29 | 29 |
 
@@ -53,17 +55,24 @@ We replaced upstream's `gtceu.snbt` — their "guide to GTCEu Modern" onboarding
 deliberate identity choice and it is why every `order_index` of ours sits one below
 theirs. It is also why two `linked_quest` nodes had to go (below).
 
-`tips_and_tricks_2.snbt` is the **only** chapter still byte-identical to the fork point,
-so upstream's version of that one file can be copied wholesale.
+`tips_and_tricks_2.snbt` was the **only** chapter still byte-identical to the fork point,
+so upstream's version of that one file was copied wholesale in task 17. It is now
+byte-identical to upstream's instead.
 
-## Direction 1 — upstream added, we don't have
+## Direction 1 — upstream added, we don't have — **closed by task 17**
 
 Seven quests, every task item pure `gtceu:`, every dependency target present in our
-pack. Owned by `docs/tasks/17-port-upstream-quest-content.md`, which carries the ids,
-dependencies, upstream x/y and which four collide with a quest of ours.
+pack. All seven are now in the book under upstream's own quest and task ids:
 
 `lv`: Nitrogen, Gotta go fast. `mv`: a polyethylene-nugget quest, Desulfurization,
 Heavy Fuel, Wood Tar. `tips_and_tricks_2`: Colored Buses.
+
+Coordinates are **ours, not upstream's** — four of the seven landed on top of a quest we
+already had, so they were placed by hand against our own layout. `74180AC57AE9F0FE`
+(the Hydrocarbons hub) is a leaf here: upstream rewired their Brewery / US Simulator /
+America Simulator onto it, we did not, so it hangs off the MV gate `7567E885B7166603`
+with nothing depending on it. Its directional prose, and Heavy Fuel's "check the Quest
+to the left", were retargeted to our layout.
 
 Not a gap: `reward_tables/gallium_arsenide.snbt`. `grep -rn 1D60D15906F07624` over
 upstream's whole quest tree matches only its own definition — it is an orphan there too.
@@ -94,7 +103,7 @@ CurseForge pack, so no reason was ever written down. Every one resolves anyway:
 (design backlog #4) re-adds the mod. The two link nodes were *required* removals — they
 pointed into a chapter we don't ship.
 
-## Direction 3 — upstream deleted, we still have
+## Direction 3 — upstream deleted, we still have — **closed by task 17**
 
 The direction that is easy to miss, because our file and the fork point agree and only
 upstream moved. Two quests, both in `ev__extreme_voltage`, both stale under GT 8:
@@ -124,3 +133,10 @@ upstream moved. Two quests, both in `ev__extreme_voltage`, both stale under GT 8
 - Quest files carry GT tool NBT. GT 8 keeps durability in the vanilla `Damage` tag at
   the item-tag root, **not** inside `GT.Tool` — see task 16. Anything ported from
   upstream's older commits needs checking for the old shape.
+
+Both were handled in task 17 without deleting a node: `7B23AF5B6B62BC19` kept its id and
+its `gtceu:ev_macerator` task but is now **"Faster Ore Processing"**, and says outright
+that tier does not change chanced byproducts; `7EF57E379F736FBB` gained a sentence
+pointing at the stonecut conversion. The same dead mechanic was also removed from three
+chapter descriptions upstream had already fixed — the LV Sifter, the IV Rare Earth
+centrifuge, and the IV Macerator (`05003665368F5A57`, retitled by upstream too).

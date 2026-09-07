@@ -29,14 +29,15 @@
 				""
 				"You will need to take a peek at the &9Distillation&r Quest to get to grips with the power of distillation..."
 				"{@pagebreak}"
-				"There are recipes that can accept &bNitrogen&r to double the speed. This isn't quite worth pursuing right now, but Nitrogen will eventually be free and infinite."
 				""
-				"You should be more than fine with a single &3LV Energy Hatch&r, and Superconductors to supply a steady &d64 EU/t&r. Additionally, &3Cupronickel Coils&r are perfect when you're getting used to the Pyrolyse Oven, but you may want to upgrade to &bKanthal&r eventually."
+				"&9Note: &rWith &d40 EU/t&r recipes, it needs either 1 &bMV&r energy hatch or 2 &7LV&r energy hatches. Multiblocks will &cnot&r use 2A of one tier to reach the next one for recipe voltage minimums. "
+				""
+				"In other words, the controller needs to say at least \"&bMV&r\" in the GUI to run recipes which say \"&bMV&r\" in EMI, even if they can draw enough EU/t with a lower tier hatch configuration. On the bright side, if you're using two &7LV&r hatches, you can choose to only power one, leaving the other disconnected - as long as you supply enough EU."
 				""
 				"{@pagebreak}"
-				"&9&lNote:&r&l The Plant path is one path you can take towards &9&lEthylene&r&l, which is a necessary chemical in progressing to &6HV&r&l. The other path involves Oil.&r"
+				"The Pyrolyse Oven remains &doptional&r, should you choose to use Breweries instead. However, it is very rewarding to construct one either for Power, or for the various Byproducts, and we highly recommend you give it a look."
 				""
-				"The Pyrolyse Oven remains &doptional&r. However, it is very rewarding to construct one either for Power, or for the various Byproducts, and we highly recommend you give it a look."
+				"There are recipes that can accept &bNitrogen&r to double the speed. This isn't quite worth pursuing right now, but Nitrogen will eventually be free and infinite."
 				""
 				"&l&3Lore:&r&o In GT5u, the structure for the Pyrolyse Oven was infamously a giant box with only 9 coils inside. Players usually spent several minutes debugging what is wrong due to a lack of a EMI preview."
 			]
@@ -109,7 +110,7 @@
 			description: [
 				"The Brewery can be used to make &aLubricant&r from &aRedstone&r and &aCreosote&r/&aOil&r. Lubricant has some niche uses, namely being used in the &3Cutter&r to significantly reduce the duration of its recipes."
 				""
-				"The Brewery is a very, very slow machine, but it requires almost no power to run its recipes. Building &2many Breweries&r will help you obtain enough Biomass on your quest for plastic."
+				"The Brewery is a very, very slow machine, but it requires almost no power to run its recipes. Building &2many Breweries&r will help you obtain enough Biomass on your quest for plastic. Oh, and you can use it to brew &dPotions&r too!"
 				""
 				"&9Note:&r The Brewery \"unlocks\" the Biomass path towards &9Ethylene&r. The same can be done in the &3Pyrolyse Oven&r. The other path involves Oil.&r"
 				"{@pagebreak}"
@@ -619,7 +620,7 @@
 			description: [
 				"&3Molecular Assemblers&r can be used to automate Crafting Table recipes, which means you can automate just about anything now."
 				""
-				"To maximise the number of recipes a single Molecular Assembler can do, make a 3D matrix of Molecular Assemblers and ME Interfaces - where each component is surrounded on 6 sides by the other."
+				"To maximise the number of recipes a single Molecular Assembler can do, make a 3D matrix of Molecular Assemblers and ME Pattern Providers - where each component is surrounded on 6 sides by the other."
 				""
 				"Using higher-tier materials in crafting will yield more Molecular Assemblers."
 				"{@pagebreak}"
@@ -643,7 +644,7 @@
 		{
 			dependencies: ["315169840E06110F"]
 			description: [
-				"Making &aAE2 Presses&r will unlock all the &9Processors&r from AE2. This opens up &9ME Drives&r, &9ME Interfaces,&r &9ME Crafting CPUs&r... that's almost the rest of AE2 at your fingertips! &7(Or at least... not until you obtain Silicon Ingots.)&r"
+				"Making &aAE2 Presses&r will unlock all the &9Processors&r from AE2. This opens up &9ME Drives&r, &9ME Pattern Providers,&r &9ME Crafting CPUs&r... that's almost the rest of AE2 at your fingertips! &7(Or at least... not until you obtain Silicon Ingots.)&r"
 				""
 				"AE2 &9Printed Circuits&r are now made in the &3Forming Press&r."
 			]
@@ -1191,7 +1192,7 @@
 			description: [
 				"Better &6HV&r Circuits - much &dcheaper&r and easier to make than before."
 				""
-				"You should now be &aready to move on&r to the HV Chapter, unless you're yet to scale up your Power Production."
+				"Before you move on to &6HV&r, make sure you have scaled up your Power Production, and automated the most important processes with AE2!"
 			]
 			icon: "gtceu:micro_processor_assembly"
 			id: "5063FDFFBE3E4855"
@@ -1293,6 +1294,9 @@
 				""
 				"&aPolyethylene (PE)&r is the key to unlocking &6many new things&r. It's commonly used as &dSheets&r, or in &dFluid&r form."
 				""
+				"In addition, some recipes are now more efficient! Check out diodes and machine hulls (both &8LV&r and &bMV&r)."
+				""
+				"{@pagebreak}"
 				"&l&3Lore:&r&o The OreDict and fluid name for Polyethylene in 1.12.2 GTCEu was &bplastic&f, for cross-mod compatibility."
 			]
 			icon: "gtceu:polyethylene_plate"
@@ -1320,7 +1324,7 @@
 			description: [
 				"&aPatterns&r are used for AE2 autocrafting. Using &aPolyvinyl Chloride&r increases the yield by &64 times&r, and higher-tier plastics have even greater yields."
 				""
-				"&3Molecular Assemblers&r aren't available for a little while more, but you can still automate machines with &9ME Interfaces&r."
+				"Don't get too excited, though - to really get into the automation side of AE2, you'll need to get some &dSilicon Ingots&r first."
 				""
 				"A sub-note for autocrafting... whilst it's possible to perform chemical chains on-demand with AE2, doing so can build some bad habits that'll come back around to bite you in higher tiers. We urge you to passive things wherever you can."
 			]
@@ -1602,7 +1606,7 @@
 				""
 				"The Extruder shapes solid materials into (almost!) any form using &aIngots&r. This is a great way to reduce the amount of microcrafting, as well as keeping a high conversion ratio."
 				""
-				"The Extruder can make &6Bolts&r, &6&6Small Gears&r, &6Gears&r, and &6&6Rings&r at the highest efficiency in a single step!"
+				"The Extruder can make &6Rods&r, &6Bolts&r, &6&6Small Gears&r, &6Gears&r, and &6&6Rings&r at the highest efficiency in a single step!"
 				""
 				"You may also like to use it for &dPipes&r, &dLong Rods&r, and &dRotors&r."
 			]
@@ -2315,6 +2319,102 @@
 			title: "200IQ"
 			x: -1.123469387755101d
 			y: 2.445153061224488d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"Welcome to your first (of many) forays into &bHydrocarbons&r! You may already know a few of them, like Petrol, Plastic, Alcohol... well, in GregTech, you'll mass-produce many of these things, and more! This topic can be confusing at times, so you'll want to read carefully in order to avoid getting lost in the details. Now..."
+				"{@pagebreak}"
+				"Here in &bMV&r, there are two main goals of working with Hydrocarbons - Power and Plastics. The interesting part is how you'll accomplish this. There are two main paths you can take: &6Petrochemicals&r and &aBiochemicals&r. Both have their pros and cons - Petrochemicals typically provide &9higher yields&r and &benergy-efficiency&r, while Biochemicals are fully &drenewable&r. Your source of Power and Plastics is entirely &bup to you&r."
+				"{@pagebreak}"
+				"Ready to dive in? The &6Petrochemical&r route(s) are just to the right of this quest - you've got three options here. For those with green thumbs, the &2Biochemical&r routes are further right, past the &3Distillery&r. Best of luck!"
+			]
+			icon: "gtceu:polyethylene_nugget"
+			id: "74180AC57AE9F0FE"
+			shape: "square"
+			size: 0.75d
+			subtitle: "Getting industrial"
+			tasks: [{
+				id: "093E71F51E1ECA6F"
+				title: "Hydrocarbons"
+				type: "checkmark"
+			}]
+			x: -3.375d
+			y: -1.875d
+		}
+		{
+			dependencies: ["6A304E453D74C57C"]
+			description: [
+				"If you've tried to distill an Oil into &eLight Fuel, Heavy Fuel&r, etc., you might've realised that you can't. Instead, you've gotten this &6sulfurized&r version of it. How dreadful!"
+				""
+				"To fix this, we'll need to &6desulfurize&r it. Combine whatever you'd like to desulfurize with &9Hydrogen Gas&r in a &3Chemical Reactor&r to produce the pure product, along with a byproduct of &aHydrogen Sulfide&r. What now?"
+				"{@pagebreak}"
+				""
+				"Luckily, &aHydrogen Sulfide&r is perfectly &drecycled&r in an &3Electrolyzer&r."
+				""
+				"To automate this process, simply place your &3Chemical Reactor&r and your &3Electrolyzer&r next to each other. Be sure to &cenable input from the output side&r. We've graciously provided a &3Fluid Filter&r so that your desulfurized prize doesn't go into your Electrolyzer too - remember to set it to filter both input/extract so that the right fluids can flow both ways!"
+				""
+				"{@pagebreak}"
+				"But now, how do we get our refined goodies out of our &3Chemical Reactor&r? This is where the Electric Pump comes in - use it on a different face of the Chemical Reactor and extract your prize!"
+				""
+				"&l&bTip&r&r: You only need two buckets of &9Hydrogen Gas&r. The easiest way of obtaining it is by electrolyzing water. You don't need to mass-produce Hydrogen (yet), don't worry!"
+			]
+			icon: "gtceu:sulfur_dust"
+			id: "5898743D8D6C2690"
+			rewards: [{
+				id: "7252A11E3828603C"
+				item: "gtceu:fluid_filter"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "Waiter! Why is there Sulfur in my soup?"
+			tasks: [{
+				id: "3F4C5D4741ABEE3C"
+				item: "gtceu:hydrogen_bucket"
+				type: "item"
+			}]
+			title: "Desulfurization"
+			x: -3.375d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5898743D8D6C2690"]
+			description: [
+				"Heavy Fuel can be obtained from many sources, but your best bet is distilling it from &eHeavy Oil&r. "
+				""
+				"You could just burn it in a combustion generator now for &9Power&r, but there's something even greater... check the &3Diesel&r quests nearby."
+			]
+			id: "035CF39E6CC98B77"
+			progression_mode: "linear"
+			size: 0.666d
+			subtitle: "Things are getting really Heavy around here..."
+			tasks: [{
+				id: "4BA6939D643E63A6"
+				item: "gtceu:heavy_fuel_bucket"
+				type: "item"
+			}]
+			title: "Heavy Fuel"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53DC6E32C41C94C3"]
+			description: [
+				"This is the main way of getting &9Power&r via the &aBiochemical&r route. Put Logs in the &3Pyrolyse Oven&r for &9Wood Tar&r. The Charcoal you obtain can then be processed in &3Extractors&r for even more &9Wood Tar&r!"
+				""
+				"Check out the Distillation quest to see what you can do with this wondrous substance."
+			]
+			id: "37AAB88A9EDCC862"
+			size: 0.66d
+			tasks: [{
+				id: "7EC058F5FE8478D1"
+				item: "gtceu:wood_tar_bucket"
+				type: "item"
+			}]
+			title: "Wood Tar"
+			x: 0.0d
+			y: 0.375d
 		}
 	]
 	subtitle: ["Venture into petrochemistry and refine electronics"]

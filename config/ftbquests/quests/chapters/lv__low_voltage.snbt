@@ -347,7 +347,7 @@
 				""
 				"The &7Front Face&r should be obvious.\\nThe &9Output Face&r is the face with a dot or hole on it. By default, this is at the back of the machine as you place it."
 				""
-				"Machines can &aauto-output&r through their output face. To enable auto-output, click the appropriate button in the GUI. Fluid and item auto-outputs are toggled separately. Further control over auto-outputs can be achieved with &dFilters&r and &dCovers&r, which are explained in the quest to the upper left of this one."
+				"Machines can &aauto-output&r through their output face. To enable auto-output, click the appropriate button in the GUI. Fluid and item auto-outputs are toggled separately. Further control over outputs can be achieved with &dFilters&r and &dCovers&r, which are explained in the quest to the upper left of this one."
 				"{@pagebreak}"
 				"Right-clicking a machine with a &5Wrench&r changes the output side, and shift-right-clicking changes the front side. Keep in mind that the front side &ccannot&r also be the output side! "
 				""
@@ -377,7 +377,7 @@
 			description: [
 				"You could make any other &7LV&r Machine, but it would be easiest to start with the most useful one. We know, we know... you wanna make some of the crazier stuff first, but trust us, this is the best starting point."
 				""
-				"The Wiremill lets you make &6two Wires from one Ingot&r. That should be three times cheaper than what you were doing up until now!"
+				"The Wiremill lets you make &6two Wires from one Ingot&r. That should be three times cheaper than what you were doing up until now! &8&oPlus, aren't you sick of crafting Wire Cutters?&r"
 				""
 				"To the right of this Quest, you'll find some important machines which will grant you cheaper intermediates."
 				"{@pagebreak}"
@@ -433,11 +433,11 @@
 		{
 			dependencies: ["32EA7E81885C8E87"]
 			description: [
-				"The Lathe is an important machine to help shape metals. Thanks to it, you can turn &6one Ingot into two Rods&r, and &6one Bolt into one screw&r. That's twice the efficiency on those recipes as opposed to crafting by hand."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o The GregTech 5 Lathe produces one Rod and 2 small piles of Dust per Ingot. We also have a setting for this in GTCEu, but it's turned off by default."
+				"The Lathe is an important machine to help shape metals. Thanks to it, you can turn &6one Ingot into one Rod and 2 small piles of Dust&r, and &6one Bolt into one screw&r. That's twice the material efficiency on those recipes as opposed to crafting by hand. "
 				""
-				"&oThe GT6 Lathe acts like GT5's, but Bolts lathe into one Screw and 1/72 of a pile of Dust. Disgusting!"
+				"However the &bMV&r &3Extruder&r has the ability to turn &6one Ingot&r directly into &6two Rods&r alongside its many other functions."
+				""
+				"&l&3Lore:&r &oThe GT6 Lathe acts like GTm's lathe, but Bolts lathe into one Screw and 1/72 of a pile of Dust. Disgusting!"
 			]
 			id: "07E7678095258EDB"
 			rewards: [{
@@ -487,7 +487,9 @@
 			description: [
 				"&dSneak right-click&r when in hand to activate your Magnet. Do it again to deactivate. The battery capacity of your magnet depends on the battery used to craft it."
 				""
-				"&9Note:&r If you're worried about getting overwhelmed by Cobblestone or Netherrack, use the trash can from FTB Utilities (top left corner of your inventory) to void them."
+				"If you're worried about getting overwhelmed by Cobblestone or Netherrack, use the trash can from FTB Utilities (top left corner of your inventory) to void them"
+				""
+				"&9Note:&r The magnet has a whitelist filter turned on by default (in other words, it's not going to pick anything up.) Right-click the magnet to tinker with the item filter settings. There's even a &ctag filter&r - you could, for example, whitelist only &braw ores&r!"
 			]
 			id: "3ECD9C9B909CCCCC"
 			shape: "rsquare"
@@ -509,15 +511,19 @@
 				""
 				"If you want Steam-based power production, this will be your first port-of-call. Other power options are listed in the &bMV&r chapter."
 				""
+				"One \"easy\" fuel option is producing &dCharcoal&r from &3Coke Ovens&r. One piece of Charcoal lasts 20s in the LBB and the wood can be sourced from a tree farm."
+				""
 				"&cImportant:&r This Boiler &lCAN&r also &cexplode&r similarly to the regular Boilers! Usually, the explosion can be rather devastating... but it's configured to not damage blocks or entities in this modpack."
 				"{@pagebreak}"
 				"&cWater supply is &lcrucial&r&r. Dedicate a &3Primitive Pump&r with a &7LV&r Output Hatch in the &lsame chunk&r as the Boiler. Any biome will still be enough to supply enough water."
 				""
-				"Once fully heated up, the &3LBB&r produces 800 Steam per tick, which is &d400EU/t&r after conversion, or 12.5 Basic Steam Turbines. Such (relatively!) immense power comes at the cost of &la lot&r of burnable fuel."
+				"Once fully heated up, the &3LBB&r produces 800 Steam per tick, which is &d400EU/t&r after conversion, or 12.5 Basic Steam Turbines. Such (relatively!) immense power comes at the cost of automating fuel."
 				"{@pagebreak}"
 				"&5&lWith this in consideration&r, the GUI lets you &9throttle&r the Boiler down to 25% power for 200 Steam per tick. That's &d100EU/t&r, or slightly above 3 Basic Steam Turbines."
 				""
 				"&9Note:&r An in-depth tutorial about Multiblocks is given after you get the &3Electric Blast Furnace&r. We recommend you aim for that first."
+				""
+				"&l&3Lore:&r&o The LBB used to be terrible, however it recently got rebalanced in 7.3.0 to make it actually viable to use."
 			]
 			id: "33263404ED38C6D2"
 			rewards: [{
@@ -546,6 +552,9 @@
 				"If you weren't already enamoured, the 1x variant also covers 2 Amps. Isn't that nice?"
 				""
 				"Now is a good time to replace your crappy &aTin Cables&r. Recycle them in the &3Packager&r to recover both the Tin and Rubber used to craft them."
+				"{@pagebreak}"
+				"Can't figure out how to make some of these? Here's a hint - &eTricalcium Phosphate&r and &2Pyrolusite&r ought to help."
+				""
 				"{@pagebreak}"
 				"&l&3Lore:&r&o No version of GregTech has had actual Superconductors for &7LV&f up until Gregicality and GTCEu, though some modpacks had lossless cables."
 			]
@@ -589,8 +598,6 @@
 				"The Sifter sifts &dGem type&r &aPurified Ores&r to find &aExquisite&r and &aFlawless&r Gems, which can be cut into normal Gems. It also finds &aPurified Dusts&r of that gem. Overall, this gives a &6higher yield&r than other means."
 				""
 				"A small amount of &dFlawless Emeralds&r will be required in &bMV&r, and running ores in &3Sifting Machine&r is how you obtain these."
-				""
-				"Each higher tier of &3Sifter&r increases the chance of all Gem types to be found, at the cost of more energy. "
 				""
 				"&9Note:&r If you crushed Gem Ores (such as Diamond), it is critical you use this machine to recover the actual gems in non dust form. However, this is a rather slow process, so you may want to smelt this type of ore directly into the Gem."
 			]
@@ -664,6 +671,8 @@
 				"By clicking the &6Circuit Configuration Slot&r in machines, you can create a &bghost Programmed Circuit&r. "
 				""
 				"This is a \"&7fake circuit&r\" that allows you to select a configuration for recipes. There's no need to spend your circuits crafting &bProgrammed Circuits&r anymore."
+				""
+				"The purpose of this ghost circuit is to prevent &drecipe clashes&r - for example, the same Wiremill can produce wires of different thicknesses, with the same material!"
 				""
 				"&dElectric Machines&r and &dItem Input Buses&r will have a Ghost Circuit Slot."
 				"{@pagebreak}"
@@ -752,6 +761,8 @@
 				"By itself, the Battery Buffer does nothing. However, if you place batteries inside its internal storage, it will act as a power buffer."
 				""
 				"The &3Battery Buffer&r handles &9two Amps in&r, and &9one Amp out&r, &dper Battery&r. The output side has the dot, and all other sides are used as inputs."
+				""
+				"Our recommendation is to have your generators input energy into it, and power your machines from the output side. This is because the Battery Buffers will demand many Amps of power when it charges, and this could prevent you from using your other machines if it's set up in a way where it can divert power from your other machines to itself."
 				""
 				"&6It'll also charge &lboth&r EU and RF Tools inside it&r."
 				""
@@ -887,7 +898,9 @@
 		{
 			dependencies: ["32EA7E81885C8E87"]
 			description: [
-				"&7LV&r will require you to craft a lot of different machines! Here's a friendly tip if you're struggling to set goals: pick an item in a later quest and go backwards from there."
+				"&7LV&r will require you to craft a lot of different machines! You may also find it useful to have multiple of the same machine, set to different programmed circuit values."
+				""
+				"Here's a friendly tip if you're struggling to set goals: pick an item in a later quest and go backwards from there."
 				""
 				"With that in mind... why don't we start with a &5Fusion Reactor&r? Never mind, slightly too ambitious - let's check a closer goal instead. Ah, yes, the &3Electric Blast Furnace&r - the main \"end goal\" of &7LV&r - should be a good target."
 				""
@@ -1165,7 +1178,7 @@
 				""
 				"You can also do the same for &6Gears&r and &6Small Gears&r, which will then be superseded when you make a &3MV Extruder&r."
 				""
-				"&9Note:&r Some metals require higher voltages than &7LV&r for Fluid Extraction, so make sure to keep an eye on the recipe tier in EMI."
+				"&9Note:&r Some metals, like Steel, require higher voltages than &7LV&r for Fluid Extraction, so make sure to keep an eye on the recipe tier in EMI."
 			]
 			icon: "gtceu:rotor_casting_mold"
 			id: "115C4226F6473F0C"
@@ -1294,6 +1307,8 @@
 				"2F1CCFEBAB71B1F3"
 			]
 			description: [
+				"If you haven't made a &eMixer&r yet, you'll need it to craft this."
+				""
 				"For now, you should use &9Water&r for its recipes instead of trying to acquire Lubricant."
 				""
 				"The &3Cutting Machine&r additionally unlocks converting &6Rods into four Bolts&r."
@@ -1553,6 +1568,7 @@
 				"You can use it to make easier &aWrought Iron&r, double your &aGlass&r, and gain access to &aAnnealed Copper&r."
 				""
 				"It can also recycle various components and machines back to their original material."
+				""
 				"{@pagebreak}"
 				"&l&3Lore:&r&o Previous versions had both the Arc Furnace and the &bPlasma Arc Furnace&f. In that case, why not use one machine for both? Well, that's exactly what we thought - but we ultimately decided to remove one of the two &bplasma&f recipes. And then the other &bplasma&f recipe. "
 				""
@@ -1584,13 +1600,15 @@
 				""
 				"If only the quest book had more information!"
 				"{@pagebreak}"
-				"Surprise! The best source according to us &7(!)&r is &acentrifuging Air&r after making a &dGas Collector&r, which you might not be able to make just yet. This recipe also gives &aNitrogen&r, which is handy as it can speed up certain &3Electric Blast Furnace&r recipes&r."
+				"The best way to get &bOxygen&r is by electrolyzing &bSilicon Dioxide&r. Silicon Dioxide is obtained from various sources, most notably Glass Dust. We would &chighly&r recommend setting up an automated, passive line of machines for Oxygen via this method! At first, the machines will consume tons of power, but once the machine buffers are filled up, the machines will rarely turn on. "
 				""
-				"The second best source according to us &7(!)&r is &aelectrolyzing Silicon Dioxide&r. Silicon Dioxide is obtained from various sources, such as Glass Dust, Granite Dust and Black Granite Dust."
+				"To figure out how to get renewable Glass for this purpose, check out the relevant quest in the &eRenewables \\& You&r section."
 				"{@pagebreak}"
-				"The third best source according to us &7(!)&r is &aelectrolyzing Water&r. In reality, electrolysis of water is more suitable for &aHydrogen production&r due to the higher energy cost."
+				"Another method is &acentrifuging Air&r after making a &dGas Collector&r, which you might not be able to make just yet. This recipe also gives &aNitrogen&r, which is handy as it can speed up certain &3Electric Blast Furnace&r recipes&r."
 				""
-				"The fourth best source according to us &7(!)&r is &ato not void&r it, EVER! Any Oxygen obtained from any source is worth something and should be stored in Tanks."
+				"Technically, you could source it by &aelectrolyzing Water&r. In reality, electrolysis of water is more suitable for &aHydrogen production&r due to the higher energy cost."
+				""
+				"Try your best not to &cvoid&r Oxygen! This applies to most fluids and chemicals in GregTech, and is a good habit to pick up. The less Oxygen you void, the less energy and time you spend on generating more."
 				""
 				"&eNote:&r Submit a fluid by having it stored in a &lbucket&r in your inventory. Sorry - it's an FTB Quests quirk."
 			]
@@ -1598,7 +1616,7 @@
 			id: "1A77CA35F054F988"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Achtually, it's Dioxygen..."
+			subtitle: "Ackshually, it's Dioxygen..."
 			tasks: [{
 				id: "1F76ED94CDBD13E1"
 				item: "gtceu:oxygen_bucket"
@@ -1717,7 +1735,7 @@
 				"{@pagebreak}"
 				"&9Note:&r This pack includes &5Fluix Crystals&r, but they are generated as a GT material, rather than the default AE2 Fluix Crystals. To get them, put &dFluix Dust&r in the &aAutoclave&r, which is made from &7Certus Quartz Dust&r, &eNether Quartz Dust&o&r and &cRedstone&r in a &aMixer&r. No need to charge the Certus Quartz. It gets... charged in the Mixer... or something like that."
 				"{@pagebreak}"
-				"Additionally - a &6warning&r. Clicking on the Guide button in Applied Energistics 2 machine GUIs will most likely &ccrash your game&r due to an incompatibility with &eStarlight&r. If you're looking for guides on &bApplied Energistics 2&r, more information can be found:"
+				"Feel free to use AE2's in-game guide! Alternatively, you could consider:"
 				""
 				"The official &dApplied Energistics 2&r website: &9https://appliedenergistics.org/guides&r"
 				""
@@ -1856,7 +1874,7 @@
 				""
 				"The &3Rock Breaker&r generates different types of igneous Rocks. In order to operate, &9Water&r and &cLava&r (doesn't need to be source blocks) must both be adjacent to it. Those rocks might be pulverized and electrolyzed into certain materials."
 				""
-				"Certain rocks, such as &b&cRed Granite&r, need up to &5EV&r power to generate."
+				"Certain rocks, such as &b&cRed Granite&r, need, at minimum, &5EV&r power to generate."
 				""
 				"&eAny&r Rock Breaker will complete this Quest."
 				"{@pagebreak}"
@@ -2005,7 +2023,7 @@
 				""
 				"&eFish Oil&r can be extracted from Fish, which can be used for &6Bio Diesel&r."
 				""
-				"Get &eany&r tier Fisher to complete this quest. (They only go up to &5EV&r. If you forsee needing enough Fish to justify an &1IV&r or higher Fisher, make a feature request on our GitHub or Discord.)"
+				"Get &eany&r tier Fisher to complete this quest. (They only go up to &5EV&r. If you foresee needing enough Fish to justify an &1IV&r or higher Fisher, make a feature request on our GitHub or Discord.)"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_fisher"
@@ -2146,6 +2164,8 @@
 				"&9Note 1:&r All Electric Tools have a lot more durability than indicated, as they use Energy to prevent damage from being applied! On top of that, they can be enchanted as Pickaxes can."
 				""
 				"&9Note 2:&r Drills can now be configured to different ranges, not just the maximum or a single block."
+				""
+				"&9Note 3:&r You can now craft electric versions of other tools too! Hooray for less Wire Cutter crafting!"
 				"{@pagebreak}"
 				"&l&3Lore:&r&o Up until GTCEu, Electric tools required Stainless Steel, which locked players out of experiencing their glory until &6HV&f!"
 			]
@@ -2535,6 +2555,127 @@
 			}]
 			x: -6.5d
 			y: 6.5d
+		}
+		{
+			dependencies: ["15928F50AE80A5CF"]
+			description: ["&bNitrogen&r is commonly obtained from centrifuging air. It's very useful, speeding up recipes in many multiblocks like the &bElectric Blast Furnace&r and the &6Pyrolyse Oven&r. We would &chighly&r recommend setting up a dedicated passive line to generate Nitrogen!"]
+			id: "7D7A4CC66A3C193F"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Free nitro?"
+			tasks: [{
+				id: "0C95F5A0FEC594A3"
+				item: "gtceu:nitrogen_bucket"
+				type: "item"
+			}]
+			title: "Nitrogen"
+			x: 2.4375d
+			y: 7.875d
+		}
+		{
+			dependencies: [
+				"257DB4B39B2A928E"
+				"581CDF545E1EA1FD"
+			]
+			description: [
+				"&3Concrete&r and &3Studs&r are two decorative block families added that increse your speed when walking on them, with &3Concrete&r increasing your speed more."
+				""
+				"Get &9either&r of them to complete this quest."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:light_concrete"
+			id: "41DD503169987D50"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Subsonic!"
+			tasks: [{
+				id: "755F679F2DA97A4F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:light_concrete"
+							}
+							{
+								Count: 1b
+								id: "gtceu:dark_concrete"
+							}
+							{
+								Count: 1b
+								id: "gtceu:white_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:orange_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:magenta_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:light_blue_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:yellow_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lime_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:pink_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:gray_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:light_gray_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:cyan_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:purple_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:blue_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:brown_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:green_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:red_studs"
+							}
+							{
+								Count: 1b
+								id: "gtceu:black_studs"
+							}
+						]
+					}
+				}
+				title: "Blocks"
+				type: "item"
+			}]
+			title: "Gotta go fast"
+			x: 3.375d
+			y: 9.0d
 		}
 	]
 	subtitle: ["Tame electricity and make your first machines"]

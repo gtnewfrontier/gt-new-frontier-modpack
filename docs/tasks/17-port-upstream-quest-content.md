@@ -1,6 +1,6 @@
 # 17 — Port upstream's new quest content
 
-**Status:** not started
+**Status:** done (2026-09-07)
 **Depends on:** 16
 
 ## Goal

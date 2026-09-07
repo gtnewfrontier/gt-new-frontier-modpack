@@ -275,6 +275,8 @@
 				"Time to say goodbye to your &4Primitive Water Pumps&r. They've done you proud."
 				""
 				"Place this on the side of a machine to give it &616 buckets&o&r&r of Water every second!"
+				""
+				"Later on in &5EV&r, you can use these to craft Infinite Water Cells for your AE2 network."
 			]
 			icon: "gtceu:infinite_water_cover"
 			id: "78464574AF8A27AC"
@@ -352,7 +354,7 @@
 				"16B735F9C391D260"
 			]
 			description: [
-				"&bDigital fluid storage&r is pretty cool. Each &b1k ME Fluid Storage Cell&r holds up to &d5 types&r of fluid, and can hold &6over 8,000 buckets&r of those 5 fluid types! That's more than a &3Super Tank 2&r!"
+				"&bDigital fluid storage&r is pretty cool. Each &b1k ME Fluid Storage Cell&r holds up to &d18 types&r of fluid, and can hold &6over 8,000 buckets&r when partitioned to one fluid type! That's more than a &3Super Tank 2&r!"
 				""
 				"You may want to &4format&r Fluid Storage Cells to certain types to prevent the network from clogging. Make a &3Cell Workbench&r to do so."
 			]
@@ -381,7 +383,7 @@
 				""
 				"&3HV Energy Hatches&r will be nice additions so you can run your Multiblocks (mainly your Electric Blast Furnace and Large Chemical Reactor) directly off a &6HV&r line."
 				""
-				"This time around, you won't need to upgrade your EBF with 2 Energy Hatches to progress to &5EV&r - phew!"
+				"You'll need to upgrade your EBF with &32 Energy Hatches&r to obtain &eNichrome coils&r - fun!"
 			]
 			icon: "gtceu:hv_energy_input_hatch"
 			id: "5DBBD9B1F5B01F4E"
@@ -448,6 +450,8 @@
 				"Visiting &dThe End&r allows you to access a richer Bauxite vein, as well as &9Ilmenite&r - an even better source of Rutile."
 				""
 				"&9Tip:&r Ore processing for &aBauxite&r is ridiculously good! Including the &3Thermal Centrifuge&r step easily &6triples&r your &aRutile&r yield."
+				""
+				"&9Bonus Tip:&r There is also an alternate route you can process &aPurified Bauxite&r in a &3Mixer&r and process into a greater return of &aRutile&r, however this is much harder to initally batch so it is more ideal to use when you set up a dedicated Titanium processing line."
 			]
 			icon: "gtceu:rutile_dust"
 			id: "59DFC4DA7D29C315"
@@ -642,7 +646,7 @@
 				"1C55AE6AD5BDE304"
 				"6958029B5514D4EC"
 			]
-			description: ["&a4A&r of &bMV&r energy transmission may be appealing, but you probably don't need these at this point. The option is always there if you need it."]
+			description: ["&a4A&r of &bMV&r energy transmission may be appealing, but you probably don't need these at this point. Frankly, you might find it easier to just jump straight to the &6HV&r Superconductors. The option is always there if you need it. Boron can be obtained as a Salt processing byproduct."]
 			icon: "gtceu:magnesium_diboride_double_wire"
 			id: "72F0DFAF5CC6D0FE"
 			shape: "rsquare"
@@ -1069,7 +1073,7 @@
 			description: [
 				"If you've killed an Enderman before, you may have noticed it dropped &aEnderpearl Dust&r instead of an Ender Pearl. In order to get &aEnder Pearls&r, you must make them from Enderpearl Dust in the &3Implosion Compressor&r."
 				""
-				"&9Pro tip for non-Peaceful players&r: Trapping Endermen in Boats makes them much easier to kill! Use a &dButchery Knife&r when slaying Endermen for the Looting 3 bonus."
+				"&9Pro tip for non-Peaceful players&r: Trapping Endermen in Boats makes them much easier to kill! They also have a higher spawn rate in &dWarped Forests&r in the &4Nether&r compared to other locations before &9The End&r."
 				""
 				"In the long term, &aEnderpearl Dust&r should be made in an &3HV Mixer&r."
 			]
