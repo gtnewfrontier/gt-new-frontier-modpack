@@ -59,10 +59,10 @@
 					Count: 2
 					id: "gtceu:flint_mortar"
 					tag: {
+						Damage: 0
 						DisallowContainerItem: 0b
 						GT.Behaviours: { }
 						GT.Tool: {
-							Damage: 0
 							MaxDamage: 63
 						}
 						HideFlags: 2

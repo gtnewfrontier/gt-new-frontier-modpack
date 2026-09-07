@@ -726,11 +726,11 @@ hash = "5d5395791437722bfcc70059aa5a763d57b38bb0bec6c1fb09090645d4f4b779"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/introduction.snbt"
-hash = "4c71588ae42af53492ae65fbe9a1738b0b4f1697f98e616b8ff5e17dab3f4fcb"
+hash = "8912ea2b9e15d52765850784109fa9d482c809431b7b6be2cae42e3d9508984a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/iv__insane_voltage.snbt"
-hash = "75b7a5e0e789e8294b24b9171ff756a67b32ed5bdde6e0b3a5020302e6100e43"
+hash = "81fcc20edff00fed7196c75b456a0c14b811198dfe00b83da2cff677b90f72c2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/luv__ludicrous_voltage.snbt"
@@ -738,7 +738,7 @@ hash = "d3c007614eed5e446c031a8b4f1ad8ba177fcd1c64797f7582a1ea22580add02"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv__low_voltage.snbt"
-hash = "9633fb9e562f23457bf8320378c013d1486f80fc894e9927b04e64fe55bf331c"
+hash = "3fb492b390ec46dddd85042ece9ae03aabb25e85d673441663cc09d508b28267"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/multiblock_dilemma.snbt"
@@ -754,7 +754,7 @@ hash = "1eb066c606b3974c6c1d41ca2f8b995fb1d43e736179866fa3f706d8cf5e3081"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_processing.snbt"
-hash = "756081393f7b4f0da64caa0cac8b706fb6d4963ce674b218cfc39950abcd09bd"
+hash = "ac75ba0763081ccce5e74b62c6396b22b789210d2580b5697e68b792d2e8ed29"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/progression.snbt"
@@ -766,11 +766,11 @@ hash = "d8b19cc14f333b02b471492fad153fce4fcfe42892fe82e31963649f1e0c4205"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam_age.snbt"
-hash = "c7373013a0f78f360b9aedaa9344d175f484302a1fa2ea2d0a07586a3724d0af"
+hash = "5693c72bda17c454cb4791a9ce54c89760552efa0ef3025e20f773d07542b135"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stone_age.snbt"
-hash = "3dfbb9196b1b628aa5bebf465e65d7f860f6bf9b324959f5c2741821dc38cd54"
+hash = "074f876292f98a5d3cea662619d8c90fa02d3782546885bca377d435d06352a1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tips_and_tricks_2.snbt"
@@ -778,7 +778,7 @@ hash = "8f5eec1c3b8902a23c6ab74c338551a0a43e73be9b9caf6a9afc5227e53adeaf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/uv__ultimate_voltage.snbt"
-hash = "fe1d3db0dda9353ace81241e95e1db5258c4be55b4311366edcd0f468c108046"
+hash = "d3ad49d2c0c9d9dcf348e6f0bc037de39233af3b4e58b7f232888196a24d54ce"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/zpm__zero_point_module.snbt"
@@ -1354,7 +1354,7 @@ hash = "d2f9b2c263d1fefa26c4e38c1e233749a796f82cfe704867573154c84f8bc911"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/ae2.js"
-hash = "d526d57c81df6a4c07293ed166fe0712b313f154926442a7236d8a749769cf42"
+hash = "e47e1b06c9c8f6d9eb07ce2c68b38807fb6e982b534abf23f1aed2b11c86a754"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/ae2wtlib.js"
@@ -1386,7 +1386,7 @@ hash = "9d7b9fab086897c3448beb9a8b6120d71312d9bf382726f8d108793c33efdebb"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/inter_providers.js"
-hash = "7b2903c315b6dd1b0fe938e7f8220f4ca621b945373aa82a6a40b326cdfe6044"
+hash = "0eb7125658dfa184e47ee4dce359735b4e8a0eb2bce2080eb85c50a035da9fe7"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/molecular_assemblers.js"
@@ -1402,7 +1402,7 @@ hash = "ef31a184c3685322b9a0f38d7e692e352ef1da698b74f835bf120c3b709e075c"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/pressing.js"
-hash = "4a7d34021202b814ad578b2c217c6e4e893d232ef7e4cb4bd5ab793aec5a34ae"
+hash = "6f305c23029c58e99ffc1b30dc337a5ef312682c7207eef44ed2ba0f9efc5b42"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/removals.js"
@@ -1414,7 +1414,7 @@ hash = "a184a4372a849553c142772f0f3a434fb59d0fa242c317deb2556451bd9880a5"
 
 [[files]]
 file = "kubejs/server_scripts/appliedenergistics2/terminals.js"
-hash = "7588ffcb734f4ba3caecea9259dff93d4b66b4e7ebc1fe254645a6fb3fa3fa89"
+hash = "112efce9d01676bcd0de0ab882fbeb8c114a303154b4f7e48dba37b1b7242c10"
 
 [[files]]
 file = "kubejs/server_scripts/building/building_blocks.js"
@@ -1458,7 +1458,7 @@ hash = "707e8764ab9a6da50636a67bb0e50a4fca9cfb0fd0d4ed7340ecb28a6a278ff2"
 
 [[files]]
 file = "kubejs/server_scripts/gregtech/wood_unification.js"
-hash = "3ef4090c877d7eae7e7b0426bd25d05e2abf3c1afa1eca49891ca83eb0cdd842"
+hash = "4b4b92765b4150ace7c1aad90b3f718e2ebbce41d6b64dc59cb37d4c5adeddb0"
 
 [[files]]
 file = "kubejs/server_scripts/gtnf.js"
@@ -1498,7 +1498,7 @@ hash = "5c87d9314fd7b9e4c1b737b8742f01fc88fccebf7e777b3e67bbbd49b7be3d0a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/gregtech.js"
-hash = "e586325a5342247db88d21d5f040540c26134ac9dd0c1f55bf0d79b2c8ae1585"
+hash = "6d1bc28bdaecc1597d7a7590f27ceb1a94cd27643fd8c453bec9605047f264a7"
 
 [[files]]
 file = "kubejs/server_scripts/tags/items.js"

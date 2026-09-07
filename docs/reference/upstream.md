@@ -50,7 +50,9 @@ git -C ../GregTech-Modern-Community-Pack diff 519a656..HEAD -- kubejs config
 
 ## What upstream did after our fork (worth cherry-picking)
 
-Reviewed in `docs/tasks/16-cherry-pick-upstream-fixes.md`:
+**Resolved by task 16** (2026-09-07) — every line below was taken, adapted or declined;
+`docs/tasks/16-cherry-pick-upstream-fixes.md` records which, and why. Kept here as the
+shape of what a future re-review of upstream should look at.
 
 - **GT 7 to 8 script API migration** — see `gt8-api-migration.md`. Take all of it.
 - `wood_unification.js` — circuit numbers and stair ratios corrected (`circuit(1)` to `circuit(13)`/`circuit(7)`, `6x planks` to `3x planks`); the old recipes conflict with GT's own.
