@@ -537,6 +537,10 @@ file = "config/chat_heads.json5"
 hash = "744e6977b53f264ff47a1925451f7bd7083eb6bd7bff2505980cc3e9ca4ca0e2"
 
 [[files]]
+file = "config/chloride-client.toml"
+hash = "7762c3c4beec61195d142ef5415fcf231035186e0e459714a2c150ec7899141e"
+
+[[files]]
 file = "config/citadel-common.toml"
 hash = "0a41518641bbb4133fc61b934e8663ae5271ffd8190a281e5b35d1efd97fb3e3"
 
@@ -605,10 +609,6 @@ file = "config/displaydelight-common.toml"
 hash = "5154ea6bcdcbff621995bbd5081c7234144cf76b9160484033e201175e58b53e"
 
 [[files]]
-file = "config/embeddium++.toml"
-hash = "611165e50d93f62e80c2a22f8d344b3aa1fa59946fd6b1835acb691ea9c9bd9a"
-
-[[files]]
 file = "config/embeddium-fingerprint.json"
 hash = "b2ef9ae6b38a9dff3dc95bff5064956e95a9102021b4a9bc34df3a89245c56e4"
 
@@ -659,10 +659,6 @@ hash = "6713fe6d14a898826c783e2531370836d3f95aaeef174867d808dca702d45f45"
 [[files]]
 file = "config/etf_warnings.json"
 hash = "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e"
-
-[[files]]
-file = "config/euphoria_patcher.properties"
-hash = "7d0bfba8907b0a95119a276acf5fb6377521bcdbf15aa9f9b99b7d8591c724bc"
 
 [[files]]
 file = "config/farmersdelight-client.toml"
@@ -826,7 +822,7 @@ hash = "774631c740366a8dfef9c646d5f60a9939299f3627180ab9ac4d540c76af4081"
 
 [[files]]
 file = "config/gtceu.yaml"
-hash = "825934816267e597202eebf6c4bc2d1323e4bb0f4fe8468fc68d91475199ba9f"
+hash = "20e0c7826f9cd578d411199e741f71f1e29beb9c8603d5a44848fdccd97739f7"
 
 [[files]]
 file = "config/hangglider-client.toml"
@@ -883,30 +879,6 @@ hash = "4bd417cbaaad3aa7cbe49c00799938ddd932321a462a030bed0d9d313bcb7dae"
 [[files]]
 file = "config/jeg-common.toml"
 hash = "2d8f0ad16517f0e5222497c3adcc9b9e7857427ccfec4b0c487706250a8fd179"
-
-[[files]]
-file = "config/jei/blacklist.cfg"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = "config/jei/jei-client.ini"
-hash = "cba337712ed12b05bbbe3c7a046d88cdba7c2b301f4dbcfb47cfd82e3759897e"
-
-[[files]]
-file = "config/jei/jei-colors.ini"
-hash = "30ffef1681a9b0255e65a756406f85b1cca8b0bb3c0fab357c2727e325401bd0"
-
-[[files]]
-file = "config/jei/jei-debug.ini"
-hash = "44e73ad4423c5bf0381da8e934861ac552cca4a12d4a007801cacf6eb85d12e9"
-
-[[files]]
-file = "config/jei/jei-mod-id-format.ini"
-hash = "07052785400b48d3757dbbcfff0b50899fbaed1ac54ea09bc9024ea7f73b7644"
-
-[[files]]
-file = "config/jei/recipe-category-sort-order.ini"
-hash = "a91fa1ed21bff827278f3f031c88b3b6ac1a84be247dd685a48569957b699803"
 
 [[files]]
 file = "config/jeresources-common.toml"
@@ -1073,10 +1045,6 @@ file = "config/patchouli-client.toml"
 hash = "3b6236845f6a5ff8804487b63b0d74305b91316dc9a008362838607b0be3bd8e"
 
 [[files]]
-file = "config/pdgamerules-common.yaml"
-hash = "2819985d73b1fc85fc7fea314719c27348f13b8453dc0991d3821cf251e692f3"
-
-[[files]]
 file = "config/polymorph-integrations.toml"
 hash = "47c2b8a65ca08ee0a73400bf6b8ccc0a831b4c220fa95097eff6216456fc511a"
 
@@ -1173,10 +1141,6 @@ file = "config/spark/config.json"
 hash = "992ba9f3a4a7ce3de112eb95575328956fdc3ce6781c455ebce7b23db7e7da42"
 
 [[files]]
-file = "config/structureessentials.json"
-hash = "ec164f1fe477be89620cddc469a5ec7ff0f0059e384c9a8ec4888849ee9b0df0"
-
-[[files]]
 file = "config/tectonic.json"
 hash = "8cc0e09d587ca52bbff30ffa48d8583ad1eb3f3a81bfc58fa6837235bc3115d0"
 
@@ -1247,38 +1211,6 @@ hash = "323737c2bd12d1f45b3f7f110960d13c89a7048a58176d36f144948df340b02b"
 [[files]]
 file = "config/watut-item-arm-adjustments.json"
 hash = "3712c9bde81fbb2d90dc12c2b0c2ca8e30a2ca03890026c830d7934807f5f8fc"
-
-[[files]]
-file = "config/xaerominimap-common.txt"
-hash = "b410746ddef0f7dd5f1d860ef3fcd6ad29c10988abbf6281181cb9c3acb628ca"
-
-[[files]]
-file = "config/xaerominimap.txt"
-hash = "d498f3e621def1ae5ba455a3722ba99e16e05fc194abd376c22a8edbb74aa557"
-
-[[files]]
-file = "config/xaerominimap_entities.json"
-hash = "747f11c2cbcf4168758f1c550a1f7fa47039c5fab8f4e5216ae2e1d749a3703a"
-
-[[files]]
-file = "config/xaeropatreon.txt"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = "config/xaeroworldmap-common.txt"
-hash = "ab09b6171d1f5f9c15d3ea653be739b53bca6f88db1ec38ae80575143c4c68cd"
-
-[[files]]
-file = "config/xaeroworldmap.txt"
-hash = "6cae8c6c64eeebf4dd15076b8f172a440bf1ece460aef63d3abe206e2d45fe8f"
-
-[[files]]
-file = "config/xray-client.toml"
-hash = "f7823af587a18b84fb255bba35468af2d6bf5226f64ba3884d1c499957764748"
-
-[[files]]
-file = "config/xray/block_store.json"
-hash = "9d0bfca35a8b560213d89b1a287c7e71190ee7aad77ba4246f6da9576f5e6e32"
 
 [[files]]
 file = "defaultconfigs/ftbchunks/client-config.snbt"

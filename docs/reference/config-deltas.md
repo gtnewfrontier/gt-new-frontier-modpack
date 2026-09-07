@@ -4,10 +4,14 @@ Every deliberate deviation from a mod's default (or from upstream's value) lives
 Mod updates rewrite config files and drop unknown keys without warning — this file is
 the only durable record of what we meant. **If you change a config, add the row.**
 
-Baseline for the "upstream" column: `519a656` (fork point). Values captured 2026-09-06
-from the current tree; re-verify after task 15.
+Baseline for the "upstream" column: `519a656` (fork point). Values last verified
+**2026-09-07 (task 15)** against the configs the task-14 boot regenerated, not against
+the tree — every row below was read out of a file a mod had just written.
 
 ## `config/gtceu.yaml` — difficulty
+
+`config/gtceu.yaml` is now the file **GT 8 itself wrote** on the task-14 boot, so its
+shape matches the pinned build. All ten rows survived regeneration unchanged.
 
 | Key | Upstream | Ours | Why |
 |---|---|---|---|
@@ -27,17 +31,27 @@ Also present in ours and worth keeping: `steamMultiParallelAmount: 8`, the
 `treeFellingDelay: 2`, `minimap.toggle.journeyMapIntegration: true` (we ship JourneyMap,
 not Xaero's).
 
-**Stale keys** — see `gt8-api-migration.md`; `nativeEUToFE`, `feToEuRatio`,
-`euToFeRatio`, `enableFEConverters`, `hideFacadesInJEI`, `hideFilledCellsInJEI`,
-`shouldWeatherOrTerrainExplosion` must be re-set under their new names after the GT
-update or the settings are lost.
+**The GT 7→8 rename scare was a false alarm.** `nativeEUToFE`, `feToEuRatio`,
+`euToFeRatio`, `enableFEConverters` and `shouldWeatherOrTerrainExplosion` are all still
+live under their old names in the build we pin — checked against the jar's class files,
+see `gt8-api-migration.md`. Nothing was lost and nothing needed re-setting.
+
+**Keys GT 8 dropped**, all of which we held at the default, so no intent went with them:
+`allUniqueStoneTypes`, `recipeProgressLowEnergy`, `rightToolbar`; `defaultUIColor` and
+`animationTime` moved under a new `ui:` section.
+
+**Keys GT 8 added**, all left at GT's defaults — we have no stated intent about any of
+them, and defaults are the null choice: the three `enable*Recycling` toggles and their
+yields, `oreIndicators`, `batchDuration`, `replaceWithCobbleVersion`,
+`maintenanceCheckRate`, `minerSpeed`, `temperaturesInCelsius`, `machinesHaveBERsByDefault`,
+`createCompat`, and the `bloom:` / `ui:` / `tankItemFluidPreview:` blocks.
 
 ## `config/ae2/common.json`
 
 | Key | Upstream | Ours | Why |
 |---|---|---|---|
-| `channels` | `infinite` | **`default`** | AE2 channels are ON — a deliberate difficulty choice. Upstream disables them. **Confirm this is still intended** before the rebaseline; if yes, the quest book must teach channels. |
-| `portableCell` energy | 200000 | 20000 | likely stale default rather than intent — verify |
+| `channels` | `infinite` | **`default`** | AE2 channels are ON — a deliberate difficulty choice. Upstream disables them. **The quest book still teaches upstream's version** — see design backlog #10. |
+| `portableCell` energy | 200000 | 20000 | **Not our intent — AE2's own default.** `AEConfig$CommonConfig` does `addInt("portableCell", 20000)`; the 200000 is upstream's edit, which we simply never took. Row kept only so nobody "restores" it again. |
 
 ## Other mods
 
@@ -45,11 +59,11 @@ update or the settings are lost.
 |---|---|---|---|
 | `config/defaultoptions-common.toml` | `defaultDifficulty` | **NORMAL** | upstream ships PEACEFUL; combat matters here |
 | `config/sophisticatedbackpacks-common.toml` | `chestLootEnabled` | **false** | backpacks are crafted, not looted |
-| `config/sophisticatedcore-common.toml` | `enabledItems` | extended | we ship Sophisticated Storage as well as Backpacks |
+| `config/sophisticatedcore-common.toml` | `enabledItems` | extended | we ship Sophisticated Storage as well as Backpacks. The mod appends newly-added items to this list itself on first run; that is not our intent and does not need mirroring into the repo. |
 | `config/curios-client.toml` | `enableButton` | true | QoL |
 | `config/invtweaks-client.toml` | `sorting.containerOverrides` | kept | This **is** the live config of Inventory Tweaks ReFoxed (`invtweaks-1.20.1-1.2.0.jar`, modid `invtweaks`) — not an Inventory Profiles Next leftover. Task 07 verified and kept it. Its `containerOverrides` name classes from mods we don't ship (Refined Storage, Integrated Dynamics, Thermal, LaserIO, …); those are inert strings, harmless to leave. |
 | `config/inventoryessentials-common.toml` | `bulkTransferArmorSets` | true | QoL |
-| `config/embeddium++.toml` | whole file | **orphaned** | Embeddium++ was renamed to Chloride at task 13 (`chloride-FORGE-mc1.20.1-v1.8.1.jar`, modid `embeddiumplus` -> `chloride`), so nothing reads this file any more. It holds a real intent worth carrying over — FPS display on, entity/tile-entity distance culling enabled at 4096/32 — plus culling whitelists for mods the pack does not ship (`iceandfire`, `create`, `waterframes`), which are upstream cruft. Task 15 moves the intent to Chloride's own config and deletes this. |
+| `config/chloride-client.toml` | `fpsDisplay.mode`, `culling.*` | ADVANCED; entity and tile-entity distance culling on at 4096/32 | Carries the intent that used to live in `config/embeddium++.toml`. Chloride **migrated it itself** on the task-14 boot — the regenerated file already held our values, including the culling whitelists. Task 15 shipped that file and dropped the `iceandfire` / `create` / `waterframes` whitelist entries, which named mods the pack does not ship. |
 
 ## Do not ship
 
@@ -58,6 +72,12 @@ update or the settings are lost.
 | `config/fml.toml` early-window width/height | machine-specific. Reset to Forge's default 854x480 in task 09 — do not re-commit a local value. |
 | `config/voicechat/username-cache.json` | already gitignored |
 | `config/inventoryprofilesnext/` | Inventory Profiles Next is not installed — deleted (task 07). `mods/libipn.pw.toml` still ships IPN's library without IPN itself; that is a mod-list question for the mod audit. |
+| `config/jei/` | Deleted in task 15. All five `.ini` files sat at 100% of JEI's documented defaults, `blacklist.cfg` was 0 bytes, and `recipe-category-sort-order.ini` is a cache JEI writes, not intent — but the whole directory was on JEI 15's old format and threw ~50 parse errors on the task-14 boot before being silently replaced. Shipping nothing is the same end state without the errors. |
+| `config/structureessentials.json` | Deleted in task 15. Same story: every value was the documented default, and the file's format changed under it (`autoBiomeCompat` grew a sub-object, `minimumStructureDistance` is new). |
+| `config/euphoria_patcher.properties` | Deleted in task 15. Euphoria Patches 1.10.0 reads `config/euphoria_patcher/settings.toml` instead, and every value in the old file was a default. |
+| `config/pdgamerules-common.yaml` | Deleted in task 15 — Per Dimension Gamerules is not installed, so the file was inert. **It held real intent that the pack no longer implements**: `doMobLoot: false` in the Nether and `doDaylightCycle: false` in `lostcities:lostcity`. Whether to bring either back — and with which mod — is design backlog #11. |
+| `config/xaerominimap*`, `config/xaeroworldmap*`, `config/xaeropatreon.txt` | Deleted in task 15 — Xaero's minimap and world map are not installed; we ship JourneyMap (see `journeyMapIntegration` above). |
+| `config/xray/`, `config/xray-client.toml` | Deleted in task 15 — the XRay mod is not installed. |
 
 ## Script-level gameplay deltas
 

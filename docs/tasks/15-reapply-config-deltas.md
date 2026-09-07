@@ -1,6 +1,6 @@
 # 15 — Re-apply config deltas
 
-**Status:** not started
+**Status:** done
 **Depends on:** 14
 
 ## Goal

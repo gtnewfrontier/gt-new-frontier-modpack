@@ -99,18 +99,24 @@ material trips it, check the issue before assuming our script is wrong.
 
 ## Config key renames (GT 7 to 8)
 
-`config/gtceu.yaml` keys that no longer exist and are silently dropped:
+**This table was wrong for the build we pin.** Task 15 checked every name against
+`gtceu-1.20.1-8.0.0-20260826.220408-269.jar` itself (searching the decompressed class
+entries, since the jar's strings live inside deflated `.class` files) and against the
+`config/gtceu.yaml` GT wrote on the task-14 boot. Build 269 still reads the **old**
+names:
 
-| Old | New |
+| Key | Status in build 269 |
 |---|---|
-| `nativeEUToFE` | `nativeEUToPlatformNative` |
-| `enableFEConverters` | `enablePlatformConverters` |
-| `feToEuRatio` / `euToFeRatio` | `platformToEuRatio` / `euToPlatformRatio` |
-| `hideFacadesInJEI` | `hideFacadesInRecipeViewer` |
-| `hideFilledCellsInJEI` | `hideFilledCellsInRecipeViewer` |
-| `shouldWeatherOrTerrainExplosion` | `doTerrainExplosion` |
+| `nativeEUToFE` | live — `api/capability/compat/EUToFEProvider.class`; `nativeEUToPlatformNative` does not exist |
+| `enableFEConverters` | live — `common/CommonProxy.class`; `enablePlatformConverters` does not exist |
+| `feToEuRatio` / `euToFeRatio` | live — `api/capability/compat/FeCompat.class`; the `platform*` names do not exist |
+| `shouldWeatherOrTerrainExplosion` | live — `common/data/machines/GTMachineUtils.class`; `doTerrainExplosion` does not exist |
+| `hideFacadesInJEI` -> `hideFacadesInRecipeViewer` | **real**, and already done — our file was on the new name before the rebaseline |
+| `hideFilledCellsInJEI` -> `hideFilledCellsInRecipeViewer` | same |
 
-Our current `gtceu.yaml` is on the **old** side of every one of these.
+So the `EU <-> FE` and explosion renames belong to a GT build later than the one we pin.
+Re-check this table if the GT pin moves (task 11 deliberately held at 269 to match
+upstream v1.15.0).
 
 ## Files in this pack that need the migration
 
@@ -128,6 +134,8 @@ Checked in task 12 and left alone, with the evidence:
 - `kubejs/startup_scripts/gtnf/world_gen_layers.js` — `WorldGenLayerBuilder.targets/.dimensions` unchanged
 - `kubejs/startup_scripts/gtceu/World Gen/dimension_markers.js` — `DimensionMarker.Builder` still has `iconSupplier`/`tier`; `.overrideName(...)` is new but optional, and KubeJS still binds `Item.getItem(ResourceLocation) -> Item`, which is what `iconSupplier` wants
 
-Still outstanding:
+Done in task 15:
 
-- `config/gtceu.yaml` — task 15
+- `config/gtceu.yaml` — replaced with the file GT 8 itself wrote on the task-14 boot.
+  All ten difficulty deltas survived the regeneration unchanged; nothing needed
+  re-setting under a new name.

@@ -19,6 +19,8 @@ Nothing here is a task. Nothing here is decided.
 | 7 | **Danger model** — hazards, mob scaling, Serene Seasons, death penalty, difficulty defaults. What makes the world hostile without being tedious? | — | open |
 | 8 | **The ending** — what UV means in this pack, what the finale is, whether anything sits past it. | — | open |
 | 9 | **Release and distribution** — versioning, changelog, CurseForge upload, playtest gate. Parked until there's something to release. | — | parked |
+| 10 | **AE2 channels** — the config says channels are ON (`channels: default`), the quest book says they are off. Which one is the pack? | 6 | open |
+| 11 | **Per-dimension gamerules** — a dropped mod used to turn mob loot off in the Nether and freeze the day cycle in Lost Cities. Do we want either back, and with what? | 5, 7 | open |
 
 ## Context each question starts from
 
@@ -37,5 +39,13 @@ Facts already established, so a cold session doesn't re-derive them:
 - GT hazards and environmental hazards are on; difficulty defaults to NORMAL.
 - 679 quests cover GregTech and nothing else. IV/UV/ZPM are still upstream's text.
 - Two gun mods are installed and ungated.
+- `config/ae2/common.json` sets `channels: default` (channels ON) — upstream sets
+  `infinite` (off). Four quest entries still carry upstream's text and tell the player
+  channels are gone: `ev__extreme_voltage.snbt:520,530`,
+  `mv__medium_voltage.snbt:2049`, `ore_processing.snbt:443`. Config and quest book
+  currently contradict each other (backlog #10).
+- `config/pdgamerules-common.yaml` (deleted in task 15) recorded an intent the pack no
+  longer implements: `doMobLoot: false` in the Nether, `doDaylightCycle: false` in
+  `lostcities:lostcity`. Per Dimension Gamerules is not installed (backlog #11).
 
 Sources: `docs/ANALYSIS.md`, `docs/VISION.md`, `docs/reference/config-deltas.md`.
