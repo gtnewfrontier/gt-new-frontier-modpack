@@ -1,13 +1,21 @@
+# Pinned: Factory Blocks 1.4.0 moved to Chisel Reborn 2.0.0's renamed package —
+# its optional ChiselSupport calls com.periut.chisel.block.ChiselGroupLookup, which
+# does not exist in the chisel-forge-1.20.1-1.8.0.jar this pack pins (that jar has
+# com.matthewperiut.chisel.block.ChiselGroupLookup), so COMMON_SETUP crashes with
+# NoClassDefFoundError. 1.3.1 targets the old package. Chisel is pinned back for its
+# own reason (cryonicconfig) — see mods/chisel-reborn.pw.toml. Mod audit (design
+# backlog #4) can lift both together.
 name = "Factory Blocks [Forge/Fabric/NeoForge]"
-filename = "factory_blocks-forge-1.4.0+mc1.20.1.jar"
+filename = "factory_blocks+forge-1.3.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"
-hash = "1d5b4e5694a141952be0460dd85c286ea31d0d5e"
+hash = "6916f7bde5dc6a2d5907892e6d41f35d6c409e30"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 6267781
+file-id = 5331731
 project-id = 640001
