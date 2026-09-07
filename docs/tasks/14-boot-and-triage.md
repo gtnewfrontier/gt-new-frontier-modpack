@@ -19,6 +19,13 @@ The updated pack launches to a new world with zero KubeJS errors and no crash.
    4. `logs/kubejs/server.log` — recipe script errors (missing items, renamed ids)
    5. `latest.log` warnings for removed/renamed recipe ids
 
+   Task 13 updated 106 mod pins, so step 2.1 is the likely one this time. Four mods are
+   pinned back with reasons in their `.pw.toml` (JourneyMap, Chisel Reborn,
+   RightClickHarvest, Tectonic) — if the boot reports a dependency problem for any of
+   them, read that comment before touching the pin. Two mods changed modid:
+   `embeddiumplus` -> `chloride` (leaves `config/embeddium++.toml` orphaned, task 15)
+   and Simple Voice Chat now also registers `voicechat_api`.
+
 3. Create a new world. Check:
    - quest book opens, all 18 chapters render
    - GT ore veins generate (`/gtceu` prospecting or creative flight in a fresh chunk)
@@ -28,6 +35,12 @@ The updated pack launches to a new world with zero KubeJS errors and no crash.
      (`defaultconfigs/lostcities-server.toml` `specialBedBlock`)
    - both portal generators show correct names and assembler recipes in EMI
    - Greenhouse and Construction Core form and run a recipe
+   - the AE2 terminal opens and AE2's guide (now the separate **GuideME** mod, added
+     at task 13 as a new mandatory AE2 dependency) is reachable
+   - a shaderpack is selectable and `latest.log` no longer carries
+     `EuphoriaPatcher: You need to have ComplementaryShaders_r5.x installed!` — task 13
+     moved both pins to r5.9 and deleted the pre-patched folders, so Euphoria Patches
+     has to regenerate `Complementary… + EuphoriaPatches_…` on first launch
 
 4. Log every fix as its own commit; if a fix is large, split it into a new task file
    rather than growing this one.

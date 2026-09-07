@@ -49,6 +49,7 @@ update or the settings are lost.
 | `config/curios-client.toml` | `enableButton` | true | QoL |
 | `config/invtweaks-client.toml` | `sorting.containerOverrides` | kept | This **is** the live config of Inventory Tweaks ReFoxed (`invtweaks-1.20.1-1.2.0.jar`, modid `invtweaks`) — not an Inventory Profiles Next leftover. Task 07 verified and kept it. Its `containerOverrides` name classes from mods we don't ship (Refined Storage, Integrated Dynamics, Thermal, LaserIO, …); those are inert strings, harmless to leave. |
 | `config/inventoryessentials-common.toml` | `bulkTransferArmorSets` | true | QoL |
+| `config/embeddium++.toml` | whole file | **orphaned** | Embeddium++ was renamed to Chloride at task 13 (`chloride-FORGE-mc1.20.1-v1.8.1.jar`, modid `embeddiumplus` -> `chloride`), so nothing reads this file any more. It holds a real intent worth carrying over — FPS display on, entity/tile-entity distance culling enabled at 4096/32 — plus culling whitelists for mods the pack does not ship (`iceandfire`, `create`, `waterframes`), which are upstream cruft. Task 15 moves the intent to Chloride's own config and deletes this. |
 
 ## Do not ship
 
