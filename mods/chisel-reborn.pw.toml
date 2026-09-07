@@ -1,6 +1,10 @@
+# Pinned: Chisel Reborn 2.0.0 adds a mandatory dependency on cryonicconfig, which the
+# pack does not ship. Nothing in kubejs/ or the quests references a chisel block, so
+# 2.0.0 buys us nothing that justifies a new library mod. Mod audit (design backlog #4).
 name = "Chisel Reborn [Forge/Fabric/NeoForge]"
 filename = "chisel-forge-1.20.1-1.8.0.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

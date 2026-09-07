@@ -9,7 +9,7 @@ $FORGE_VERSION = "1.20.1-47.4.10"
 # hand them to packwiz, so fetch them straight from the CDN. Placing the jar with the
 # pinned filename makes packwiz-installer skip it. Keep in step with mods/*.pw.toml.
 $MANUAL_JARS = @{
-  "findme-3.2.1-forge.jar"      = "https://mediafilez.forgecdn.net/files/5074/609/findme-3.2.1-forge.jar"
+  "findme-3.2.3-forge.jar"      = "https://mediafilez.forgecdn.net/files/7069/249/findme-3.2.3-forge.jar"
   "Structory_1.20.x_v1.3.5.jar" = "https://mediafilez.forgecdn.net/files/5351/581/Structory_1.20.x_v1.3.5.jar"
 }
 

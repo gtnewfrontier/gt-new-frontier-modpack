@@ -1,6 +1,10 @@
+# Pinned: Tectonic 3.x adds a mandatory dependency on lithostitched and rewrites both
+# its config format (config/tectonic.json) and its terrain generation. Taking it is a
+# worldgen change, not a maintenance update — mod audit (design backlog #4) rules on it.
 name = "Tectonic"
 filename = "tectonic-forge-1.20.1-2.4.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"
