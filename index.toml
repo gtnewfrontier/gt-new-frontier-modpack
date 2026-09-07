@@ -1486,7 +1486,7 @@ hash = "7588ffcb734f4ba3caecea9259dff93d4b66b4e7ebc1fe254645a6fb3fa3fa89"
 
 [[files]]
 file = "kubejs/server_scripts/building/building_blocks.js"
-hash = "3e76f5e2c87a2a2eddece553c0d662535fd23a5ddb4eacc7b459ecb9507640c8"
+hash = "cca2eb008c5275aafa9c595098e5a6a88f1519f1e4e77613eaef9cef71ab21df"
 
 [[files]]
 file = "kubejs/server_scripts/building/chisel.js"
@@ -1578,7 +1578,7 @@ hash = "86a7d1aedc582604057fe23eed46a91e65484eb308945fa94d07567e61f5bf67"
 
 [[files]]
 file = "kubejs/server_scripts/vanilla/vanilla.js"
-hash = "bdbe3251b4b39173618be5ff3450ab6abd3dc7a73db591b61d86a010eb8faabb"
+hash = "edd628aae0067065c9de24a32cea2621ca5044d8a8e552bb82a442834e021386"
 
 [[files]]
 file = "kubejs/startup_scripts/components/hsla-steel.js"
@@ -1905,7 +1905,7 @@ metafile = true
 
 [[files]]
 file = "mods/factory-blocks.pw.toml"
-hash = "75aa30ef36dde7927544464166076277e1990d7a5ea15309b6280440e14e5225"
+hash = "9edd51c852b92dd617acdf08134ab7428bbde015b9b30cdab3e9a3987f51c04e"
 metafile = true
 
 [[files]]
