@@ -1,6 +1,6 @@
 # 14 — First boot and error triage
 
-**Status:** not started
+**Status:** done (2026-09-07)
 **Depends on:** 12, 13
 
 ## Goal

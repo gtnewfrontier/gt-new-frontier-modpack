@@ -1,6 +1,6 @@
 # 12 — GT 8 script migration
 
-**Status:** not started
+**Status:** done (2026-09-06)
 **Depends on:** 11
 
 ## Goal
