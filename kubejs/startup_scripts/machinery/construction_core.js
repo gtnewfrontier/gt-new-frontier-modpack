@@ -7,9 +7,9 @@ GTCEuStartupEvents.registry("gtceu:machine", (event) => {
     .recipeModifier(GTRecipeModifiers.OC_NON_PERFECT)
     .pattern((definition) =>
       FactoryBlockPattern.start()
-        .aisle("BBB", "GGG", "BBB")
-        .aisle("BBB", "GCG", "BBB")
-        .aisle("BEB", "GGG", "BBB")
+        .slice("BBB", "GGG", "BBB")
+        .slice("BBB", "GCG", "BBB")
+        .slice("BEB", "GGG", "BBB")
         .where("E", Predicates.controller(Predicates.blocks(definition.get())))
         .where("C", Predicates.blocks("gtceu:steel_gearbox"))
         .where("G", Predicates.blocks("gtceu:tempered_glass"))
@@ -21,9 +21,8 @@ GTCEuStartupEvents.registry("gtceu:machine", (event) => {
         )
         .build()
     )
-    .workableCasingRenderer(
+    .workableCasingModel(
       "gtceu:block/casings/voltage/lv/side",
-      "gtceu:block/multiblock/implosion_compressor",
-      true
+      "gtceu:block/multiblock/implosion_compressor"
     );
 });

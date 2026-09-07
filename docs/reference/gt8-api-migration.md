@@ -5,6 +5,10 @@ diff 519a656..HEAD -- kubejs/startup_scripts`). These are the changes our custom
 content needs; verify each against the GT version we actually pin, since 8.0.0 is a
 snapshot and may move again.
 
+Everything below was checked with `javap` against the jar we actually pin
+(`8.0.0-20260826.220408-269`) during task 12, so "GT 8" here means that build. Where
+upstream's edit was taste rather than a broken API, this file now says so.
+
 ## Multiblock patterns
 
 `FactoryBlockPattern.aisle(...)` is now `.slice(...)`, and patterns that relied on the
@@ -30,6 +34,11 @@ the multiblock unformable, not an error.
 .recipeModifier(GTRecipeModifiers.OC_NON_PERFECT)                                  // GT 7
 .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE]) // GT 8
 ```
+
+**Not actually a break.** `MachineBuilder.recipeModifier(RecipeModifier)` still exists
+in build 269 and just wraps its argument in a `RecipeModifierList` — upstream added
+`BATCH_MODE` because they wanted batch mode, not because the single-arg form died. We
+kept `.recipeModifier(...)`: adding `BATCH_MODE` is a balance change, not a migration.
 
 ## Casing renderer
 
@@ -59,8 +68,11 @@ Also replace `.category("test")` with a real category while you are in the file.
 
 ## Materials
 
-Material property changes moved into a dedicated event, and ignoring a TagPrefix for a
-material now needs an explicit Java signature when passing items:
+`Material.Builder` is unchanged — `.dust()`, `.gem()`, `.components()`, `.flags()` all
+still exist, and `GTMaterials.X.addFlags(...)` inside `GTCEuStartupEvents.registry("gtceu:material")`
+still works (upstream's `components/hsla-steel.js` is untouched on GT 8). What is new is
+a dedicated event for modifying TagPrefix behaviour; ignoring a TagPrefix for a material
+now needs an explicit Java signature when passing items:
 
 ```js
 const $AEItems = Java.loadClass("appeng.core.definitions.AEItems");
@@ -72,6 +84,13 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.block.modifyMaterialAmount(GTMaterials.get("fluix"), 4);
 });
 ```
+
+Upstream pairs that script with `fluix` as `.gem()`. **We do not**: our `fluix` stays
+`.dust()`, so GT never generates a gem/block that would duplicate AE2's, and the whole
+`materialModification` script is unnecessary. Nothing is lost — `GENERATE_GEAR`
+`requireFlags(GENERATE_PLATE, GENERATE_ROD)`, so `gtceu:fluix_rod` and
+`#forge:plates/fluix` (both used by `server_scripts/appliedenergistics2/ae2.js`) exist
+under `.dust()` too. Revisit at task 16 if we ever want gem-prefixed fluix.
 
 Known open GT issue: KubeJS-registered materials can hit `"Some intrusive holders were
 not registered"` at registry freeze on some builds
@@ -95,10 +114,20 @@ Our current `gtceu.yaml` is on the **old** side of every one of these.
 
 ## Files in this pack that need the migration
 
-- `kubejs/startup_scripts/machinery/greenhouse.js`
-- `kubejs/startup_scripts/machinery/construction_core.js`
-- `kubejs/startup_scripts/recipes/greenhouse.js`
-- `kubejs/startup_scripts/recipes/construction_core.js`
-- `kubejs/startup_scripts/material_testing/material.js`
-- `kubejs/startup_scripts/gtceu/World Gen/dimension_markers.js`
-- `config/gtceu.yaml`
+Migrated in task 12:
+
+- `kubejs/startup_scripts/machinery/greenhouse.js` — `.slice`, explicit `RelativeDirection`, `.workableCasingModel`
+- `kubejs/startup_scripts/machinery/construction_core.js` — same, default `start()`
+- `kubejs/startup_scripts/recipes/greenhouse.js` — `GTGuiTextures`, per-IO slot overlays
+- `kubejs/startup_scripts/recipes/construction_core.js` — same
+
+Checked in task 12 and left alone, with the evidence:
+
+- `kubejs/startup_scripts/materials.js` (was `material_testing/material.js`, moved in task 09) — see **Materials** above
+- `kubejs/startup_scripts/components/hsla-steel.js` — identical to upstream's GT 8 copy
+- `kubejs/startup_scripts/gtnf/world_gen_layers.js` — `WorldGenLayerBuilder.targets/.dimensions` unchanged
+- `kubejs/startup_scripts/gtceu/World Gen/dimension_markers.js` — `DimensionMarker.Builder` still has `iconSupplier`/`tier`; `.overrideName(...)` is new but optional, and KubeJS still binds `Item.getItem(ResourceLocation) -> Item`, which is what `iconSupplier` wants
+
+Still outstanding:
+
+- `config/gtceu.yaml` — task 15
