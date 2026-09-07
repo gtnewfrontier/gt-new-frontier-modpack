@@ -66,6 +66,42 @@ KubeJS reports these as errors on every load and the recipes silently never exis
 - ~~`shaderpacks/` ships 8.1 MB of pre-patched Complementary + Euphoria Patches, while both are also listed as CurseForge projects in the manifest and Euphoria Patches regenerates the patched pack at runtime. Probably redundant — verify before deleting.~~ **Deleted in task 13** (807 tracked files, 8 MB). It was redundant: the Euphoria Patches jar patches the pinned base zip at runtime.
 - ~~**The shipped Complementary version is one release behind what Euphoria Patches wants.**~~ **Fixed in task 13.** `packwiz update --all` moved both shader pins r5.3 -> **r5.9** and the Euphoria Patches jar `1.5.2-r5.4` -> **`1.10.0-r5.9`**, so patcher and shaders now name the same release, and the pre-patched folders were deleted rather than regenerated (previous bullet). The `EuphoriaPatcher: You need to have ComplementaryShaders_r5.4 installed!` line should be gone from the task-14 boot log; if it is not, the two pins have drifted apart again.
 
+### 2.5 Found by the task-14 boot
+
+The first launch of the rebaselined pack (Forge 47.4.10 / GTCEu 8.0.0-269, 182 mods)
+turned up two defects that had to be fixed to boot, and a handful of findings recorded
+here because they belong to a later task or to somebody else's code.
+
+- ~~**Factory Blocks 1.4.0 crashes the game on load.**~~ **Fixed in task 14.** Its
+  optional Chisel integration targets Chisel Reborn 2.0.0's renamed package
+  (`com.periut.chisel`), but the pack pins Chisel 1.8.0 (`com.matthewperiut`) because
+  2.0.0 wants a library we do not ship. `NoClassDefFoundError` in `COMMON_SETUP`.
+  Factory Blocks is pinned to 1.3.1; the two pins have to move together.
+- ~~**`gtceu:construction_core/skystone_dust` declared three item inputs on a
+  two-input machine.**~~ **Fixed in task 14.** `.circuit(1)` counts as an item input.
+- **GTCEu's own EMI plugin aborts during EMI reload.**
+  `GTEmiRecipe.getOutputs` does `list.get(0)` on the stacks of an output ingredient
+  without checking for empty, and one GT recipe in the pack has an output that maps to
+  zero stacks, so the whole `gtceu` EMI plugin registration dies with
+  `IndexOutOfBoundsException`. **This is not user-visible in practice**: EMI still
+  bakes 87 349 recipes and GT's recipes reach it through the JEMI (JEI) bridge, so
+  GregTech recipes do render in EMI. The offending recipe was not identified — it is
+  not the multiblock `Predicates.air()` warning that precedes it in the log, and it is
+  not the one tag-valued output (fixed anyway). Whoever picks this up: EMI aborts on
+  the *first* bad recipe, so bisecting `kubejs/server_scripts` converges quickly.
+- **Two shipped configs no longer parse and are silently replaced by defaults.**
+  `config/jei/jei-client.ini` (~50 `is not a valid config key` / `is not a valid
+  category name` errors — JEI changed its config format under task 13's update) and
+  `config/structureessentials.json` (`Could not read config`). Any intent held in
+  those files is already lost. **Task 15 owns this.**
+- **Mod-internal noise that is not ours and needs no fix:** `alexsdelight` ships a
+  recipe using `amfd:singular_cooked_moose_rib` with no mod condition (1 failed recipe);
+  `largemeals` ships three advancements referencing `farmersdelight:chicken_cut`, an
+  item current Farmer's Delight no longer has; GeckoLib `Unable to parse animation`;
+  `born_in_chaos_v1` references models in the `minecraft` namespace; CraftPresence pack
+  detection; the Embeddium mixin-taint warning.
+
+
 ## 3. Quest book
 
 679 quests across 18 chapters, 4 chapter groups (Introduction / Climbing the Ranks /
