@@ -23,6 +23,10 @@ The updated pack launches to a new world with zero KubeJS errors and no crash.
    - quest book opens, all 18 chapters render
    - GT ore veins generate (`/gtceu` prospecting or creative flight in a fresh chunk)
    - Twilight Forest portal works via `gtnf:twilight_portal_generator`
+   - `gtnf:lost_portal_generator` places with its real texture, breaks back with an
+     iron pickaxe, and teleports to The Lost Cities from a bed placed on it
+     (`defaultconfigs/lostcities-server.toml` `specialBedBlock`)
+   - both portal generators show correct names and assembler recipes in EMI
    - Greenhouse and Construction Core form and run a recipe
 
 4. Log every fix as its own commit; if a fix is large, split it into a new task file
