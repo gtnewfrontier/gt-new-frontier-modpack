@@ -2,7 +2,7 @@
 # GregTech: New Frontier — server installer / launcher.
 # Adapted from GregTech-Modern-Community-Pack/serverpack/start.sh.
 
-FORGE_VERSION="1.20.1-47.3.0"
+FORGE_VERSION="1.20.1-47.4.10"
 # Mods whose authors forbid third-party distribution: the CurseForge API refuses to
 # hand them to packwiz, so fetch them straight from the CDN. Placing the jar with the
 # pinned filename makes packwiz-installer skip it. Keep in step with mods/*.pw.toml.
