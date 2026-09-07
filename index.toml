@@ -1337,6 +1337,10 @@ file = "kubejs/assets/gtceu/lang/en_us.json"
 hash = "75a9bdebe500ae378b32a9b341d6d46a73a0d48fcc029e44af2e320b264d3495"
 
 [[files]]
+file = "kubejs/assets/gtnf/textures/block/lost_portal_generator.png"
+hash = "c57975acc7f4d259517a22ce4ea3f92fb2987d35074ef60a102cf0b53d6087b8"
+
+[[files]]
 file = "kubejs/assets/gtnf/textures/item/twilight_portal_generator.png"
 hash = "44d8b1617c4f8cc1bb1c54b46e692d732f51b8de7075b4190a5fee0b7cf15889"
 
@@ -1363,10 +1367,6 @@ hash = "2bc808beef4c48edaf56e7a1c8b51a9a38c3e93a27d4daf9e5258cd9a809e939"
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/dim_marker/twilightforest/twilight_forest/west.png"
 hash = "53346f4f9385066a670017585ffd5ab8a392563f205ba45e23a47847e0dfe8c4"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/block/example_block.png"
-hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/greg_icon.png"
@@ -1594,7 +1594,7 @@ hash = "efefbeeec7ece48a626f4fc995dec4967a65b74d8856fd998f0201b7c365d650"
 
 [[files]]
 file = "kubejs/startup_scripts/gtnf/lost_portal_generator.js"
-hash = "0b70e74809ebc497ff0654347daf22ac9301925875112b5bde8e020bf60c97cc"
+hash = "936540de927363d3afdd79b89a90981476a6eb6058972033739ef58090cc3bd1"
 
 [[files]]
 file = "kubejs/startup_scripts/gtnf/twilight_portal_generator.js"
