@@ -89,6 +89,15 @@ here because they belong to a later task or to somebody else's code.
   not the multiblock `Predicates.air()` warning that precedes it in the log, and it is
   not the one tag-valued output (fixed anyway). Whoever picks this up: EMI aborts on
   the *first* bad recipe, so bisecting `kubejs/server_scripts` converges quickly.
+- ~~**The EV "Better Flight!" quest was uncompletable.**~~ **Fixed in task 14** (human
+  verification pass). It referenced `gtceu:avanced_nanomuscle_chestplate` — "avanced" —
+  as both its icon and its task item. **Task 08's namespace grep is structurally blind to
+  this class of defect**: the namespace is installed, the item name inside it was wrong.
+  The stronger check is to cross-reference every `<mod>:<id>` in the quest book against
+  the ids actually registered at boot (`logs/debug.log` carries them for every Registrate
+  mod). Doing that for `gtceu:` now returns clean — 884 references, 882 registered items
+  and 2 `itemfilters:tag` values. **The same sweep has not been run for the other ~40
+  namespaces in the quest book.**
 - **Two shipped configs no longer parse and are silently replaced by defaults.**
   `config/jei/jei-client.ini` (~50 `is not a valid config key` / `is not a valid
   category name` errors — JEI changed its config format under task 13's update) and
