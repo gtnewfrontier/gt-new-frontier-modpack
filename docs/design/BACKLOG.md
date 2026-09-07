@@ -21,6 +21,7 @@ Nothing here is a task. Nothing here is decided.
 | 9 | **Release and distribution** — versioning, changelog, CurseForge upload, playtest gate. Parked until there's something to release. | — | parked |
 | 10 | **AE2 channels** — the config says channels are ON (`channels: default`), the quest book says they are off. Which one is the pack? | 6 | open |
 | 11 | **Per-dimension gamerules** — a dropped mod used to turn mob loot off in the Nether and freeze the day cycle in Lost Cities. Do we want either back, and with what? | 5, 7 | open |
+| 12 | **Storage tiering** — Sophisticated Backpacks is fully gated behind GT (50 recipe edits in `sophisticated_backpacks/upgrades.js`), and `gtnf.js` re-gates Sophisticated Storage's barrels and chests behind wood + flint. But Storage's own upgrade tree — stack upgrades, controllers, hoppers, pumps, the tier ladder — is untouched and sits at vanilla cost. How deep into GT progression should storage capacity sit? | 4 | open |
 
 ## Context each question starts from
 
@@ -47,5 +48,11 @@ Facts already established, so a cold session doesn't re-derive them:
 - `config/pdgamerules-common.yaml` (deleted in task 15) recorded an intent the pack no
   longer implements: `doMobLoot: false` in the Nether, `doDaylightCycle: false` in
   `lostcities:lostcity`. Per Dimension Gamerules is not installed (backlog #11).
+
+- Storage: the pack ships Sophisticated Storage + Backpacks + Core and **not** Storage
+  Drawers (upstream ships Drawers and no Sophisticated Storage). `gtnf.js` deletes the
+  vanilla barrel and chest recipes and rebuilds both as Sophisticated variants per wood
+  type; it carries a `// todo: add metal chests with sheets`. Backpacks are GT-gated,
+  Storage's upgrades are not (backlog #12).
 
 Sources: `docs/ANALYSIS.md`, `docs/VISION.md`, `docs/reference/config-deltas.md`.

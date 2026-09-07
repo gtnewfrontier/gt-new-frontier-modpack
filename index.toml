@@ -750,7 +750,7 @@ hash = "74fe01700d8c473f02214e4c4c2b5e569fe98704a989e76b092a23673d75297d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_generation.snbt"
-hash = "1eb066c606b3974c6c1d41ca2f8b995fb1d43e736179866fa3f706d8cf5e3081"
+hash = "651f75ad71500665c8f6d795d9203b40e7210457fca8cbc1b9325a795775d93e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_processing.snbt"
@@ -778,11 +778,11 @@ hash = "8f5eec1c3b8902a23c6ab74c338551a0a43e73be9b9caf6a9afc5227e53adeaf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/uv__ultimate_voltage.snbt"
-hash = "d3ad49d2c0c9d9dcf348e6f0bc037de39233af3b4e58b7f232888196a24d54ce"
+hash = "c6a632b6f5bd54f321d6deb234a3b2ead4ad55e2e87de73dbefeb01a2eae8823"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/zpm__zero_point_module.snbt"
-hash = "c4bb8d0062c6f63a357abd33a7b7aec169f9db246f059c56ac88d5153ebc3c39"
+hash = "627de385e6114c9983cc4bc4ef7da0bde83ac331226393acde145fbade2111a4"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -1337,6 +1337,10 @@ file = "kubejs/assets/sophisticatedbackpacks/textures/entity/backpack.png"
 hash = "a3f24536d05bd0dd3e98ecbb9479806e0df26be7ad7595dca92c469a3f4cc035"
 
 [[files]]
+file = "kubejs/client_scripts/jei/hidden_categories.js"
+hash = "84f704a8308688f73b60ed86909f473688210f757a97738a218f612993724763"
+
+[[files]]
 file = "kubejs/config/client.properties"
 hash = "1fece1dc44f38b88afc32d252133257a4c0e55ddf40dc0a268ae109c56d10e48"
 
@@ -1499,6 +1503,10 @@ hash = "5c87d9314fd7b9e4c1b737b8742f01fc88fccebf7e777b3e67bbbd49b7be3d0a"
 [[files]]
 file = "kubejs/server_scripts/tags/gregtech.js"
 hash = "6d1bc28bdaecc1597d7a7590f27ceb1a94cd27643fd8c453bec9605047f264a7"
+
+[[files]]
+file = "kubejs/server_scripts/tags/hidden.js"
+hash = "b58af45e8c6c6d4d8437d7b0604a7b484ae403e2dd561d5a7ddbb816e869288c"
 
 [[files]]
 file = "kubejs/server_scripts/tags/items.js"
