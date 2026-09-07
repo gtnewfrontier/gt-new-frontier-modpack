@@ -31,7 +31,13 @@ Known candidates (see `docs/reference/upstream.md`):
   the pinned `appliedenergistics2-forge-15.4.10.jar`. **Fluix-as-gem plate rework
   declined:** upstream's `compressor` dust→plate and `cutter` block→plate recipes only
   exist because their fluix is `.gem()`; ours stays `.dust()` (tasks 09 and 12), where
-  GT already generates the compressor plate recipe from the `GENERATE_PLATE` flag.
+  GT already generates the compressor plate recipe from the `GENERATE_PLATE` flag —
+  `MaterialRecipeHandler.processDust` emits a `COMPRESSOR_RECIPES` recipe producing
+  `TagPrefix.plate` for any dust material carrying that flag without
+  `EXCLUDE_PLATE_COMPRESSOR_RECIPE`, so upstream's hand-written one is a duplicate for
+  us. AE2 also already tags `ae2:fluix_crystal` as `forge:gems/fluix`
+  (`data/forge/tags/items/gems/fluix.json` in its own jar), so `.gem()` would mint a
+  second fluix gem into a tag AE2 owns.
   Upstream deletes the `fluix_lathing` lathe recipe with that change — we keep it,
   because `gtceu:fluix_rod` is the only rod source feeding `#forge:gears/fluix`
   (`terminals.js:52,61`). The `mae2:` crafting-accelerator hunk is for Modern AE2
@@ -45,23 +51,37 @@ Known candidates (see `docs/reference/upstream.md`):
   (1/2/4/8; HV was 3 and EV was 4). Inscriber presses take `#forge:lenses/{blue,green,
   red,white}` instead of the four specific lens items — checked against the pinned GT
   jar, each tag contains the lens the old recipe named plus its glass equivalent.
-- [x] `kubejs/client_scripts/jei/hidden_items.js` — **declined.** The API is
-  `JEIEvents`, and JEI is our secondary viewer; hiding in JEI while EMI (which has no
-  KubeJS binding — `EmiHidden` is client-runtime only, there is no datapack path)
-  still shows everything is a half-fix that makes the two viewers disagree. Two thirds
-  of upstream's entries name mods we don't ship (Storage Drawers, Extended AE) anyway.
-  Revisit under design backlog #4 (mod audit), which decides whether JEI stays at all.
-  Same reason for upstream's `hidden_categories.js`.
+- [x] `kubejs/client_scripts/jei/hidden_items.js` — **declined, then taken in a better
+  form** (commit `f773cda`). The decline said EMI has no pack-side hiding path. That was
+  wrong; it only looks right because `EmiHidden` — client-runtime ctrl-click state — is
+  the first thing you find. **JEI 15.58 and EMI 1.1.24 both read the item tag
+  `c:hidden_from_recipe_viewers`**: `mezz.jei.api.constants.Tags` and
+  `dev.emi.emi.registry.EmiTags` each hardcode the `c` namespace. So the hiding lives in
+  `kubejs/server_scripts/tags/hidden.js` as one `ServerEvents.tags("item")` block —
+  both viewers, server-side, verifiable headless, no client script. Upstream's Storage
+  Drawers and Extended AE entries are dropped (not shipped), and their sand, red_sand,
+  gravel, tuff and blackstone ore tags with them: GT 8's `StoneTypes` no longer include
+  those five, so they would dangle. `hidden_categories.js` was taken as a client script
+  for `ae2:certus_growth` only — category removal genuinely has no tag form — which
+  means the pack now has a `client_scripts/` directory and a headless boot no longer
+  covers 100% of the KubeJS surface (52 of 53 scripts).
 - [x] cleanroom accepting framed doors — **taken**, appended to
   `kubejs/server_scripts/tags/gregtech.js` as a `ServerEvents.tags("block")` block. We
   ship FramedBlocks 9.4.3 (`framed_door`, `framed_iron_door` both present) and GT 8
   ships `data/gtceu/tags/blocks/cleanroom_doors.json`. Upstream's `tags/blocks.js` also
   wrenches `travelanchors:travel_anchor`, which we don't ship — not copied.
-- [x] quest fixes in chapters we did **not** rewrite — took the two cheap ones:
-  `ore_processing.snbt` "distinguised" → "distinguished", and the GT tool-NBT move
-  below. Everything else upstream did to the quest book is chapter rewriting that
-  design backlog #6 will replace; `optional_task: true` on the ZPM/UV energy output
-  hatches was left alone for the same reason.
+- [x] quest fixes in chapters we did **not** rewrite — took `ore_processing.snbt`
+  "distinguised" → "distinguished" and the GT tool-NBT move below, then came back for
+  `optional_task: true` on the ZPM/UV energy output hatches and `ore_generation.snbt`'s
+  text in `f773cda`. **The rest was declined too broadly.** "Chapter rewriting design
+  backlog #6 will replace anyway" is true of the layout and false of the content: an
+  id-level delta afterwards showed upstream's `+277/-78` on `lv__low_voltage` is **two
+  new quests**, and across the book they added **seven** we don't have, all pure
+  `gtceu:` items. That is now `docs/tasks/17-port-upstream-quest-content.md`, which
+  also records why each of the twelve quests we removed before this repo had git
+  history was removed — every one blocked on a mod we don't ship, or pointing into
+  upstream's `gtceu.snbt` chapter, which we replaced with `introduction` +
+  `stone_age`.
 
 ## Taken beyond the list
 
@@ -101,5 +121,9 @@ config deletions (task 15), and upstream's quest chapter rewrites (design backlo
 
 - [x] Each box ticked or explicitly declined with a one-line reason recorded here.
 - [x] Client boots clean, EMI shows the corrected recipes. — headless dedicated server
-  used instead, per task 14: this pack has no `client_scripts`, so a server exercises
-  100% of the KubeJS surface. See the roadmap status log for the run.
+  used instead: `Done (11.094s)`, 0 ERROR in all three KubeJS logs, item tags
+  4749 → 4750 and added objects 13 → 33 (exactly the 20 hide entries), no
+  `missing following references`. **Caveat:** task 14's "a server exercises 100% of the
+  KubeJS surface" stopped being true when `hidden_categories.js` added a
+  `client_scripts/` directory — it is now 52 of 53 scripts, and that one file plus the
+  EMI/JEI item lists still want a human at the keyboard.
