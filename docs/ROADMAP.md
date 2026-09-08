@@ -49,6 +49,14 @@ Sequential. Do not start until Phase 0 and 1 are done.
 - [x] `16-cherry-pick-upstream-fixes.md` — take upstream's recipe fixes
 - [x] `17-port-upstream-quest-content.md` — 7 quests + text upstream added, 1 stale quest of ours
 
+## Phase 3.5 — Ship it
+
+The rebaseline is a releasable maintenance update over the published v0.4.3. This is not
+design work and does not wait on phase 4.
+
+- [ ] `18-ship-v0.5.0.md` — in-game pass, the CurseForge distribution blocker (backlog
+  #9), merge/tag/changelog, and a deliberate hunt for what the rebaseline silently broke
+
 ## Phase 4 — Design, then build, one mechanic at a time
 
 Everything past the rebaseline is game design, and design comes first. There are no
@@ -65,7 +73,7 @@ decision that justifies them.
 
 ### Tasks spawned so far
 
-_(none yet — 18 onward. Task 17 is phase-3 maintenance, not a design outcome.)_
+_(none yet — 19 onward. Tasks 17 and 18 are maintenance, not design outcomes.)_
 
 ## Status log
 
