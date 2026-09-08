@@ -130,6 +130,21 @@ upstream moved. Two quests, both in `ev__extreme_voltage`, both stale under GT 8
 - A quest can render perfectly and still be uncompletable — a wrong item id, a stale NBT
   shape, or a mechanic that no longer exists. The namespace grep from task 07 cannot see
   any of those; only reading the quest against the current jar can.
+- **GT decorative blocks have no crafting-table recipe, and that is not a bug.** The
+  `Gotta go fast` quest (`41DD503169987D50`) accepts concrete *or* studs, and both come
+  from machines: `gtceu:assembler/studs_black` is 3x `#forge:storage_blocks/concrete` +
+  3x `#forge:plates/rubber` + circuit 8 -> 32 Black Studs, and the other fifteen colours
+  are `gtceu:chemical_bath` dye recipes on top of that. Light Concrete comes from
+  `gtceu:fluid_solidifier/solidify_concrete_block` (144mB `#forge:concrete` + a Block
+  Casting Mold) or the MV Extruder. That is exactly why upstream gated the quest on the
+  **Basic Mixer** and the **Basic Fluid Solidifier** — the Mixer makes the concrete fluid,
+  the Solidifier casts it — so the quest is completable in LV without ever touching studs.
+- **Wood Tar is a fluid; the quest wants the bucket.** `gtceu:pyrolyse_oven/log_to_wood_tar`
+  is 16 logs + circuit 9 -> 20 Charcoal + 1500mB Wood Tar (there is a `_nitrogen` variant,
+  which is what the Pyrolyse Oven quest's Nitrogen line refers to), plus an Extractor route
+  from Charcoal and two distillery routes. `gtceu:wood_tar_bucket` is not in a creative tab,
+  so it is reachable in a recipe viewer by **search** rather than by browsing — that is GT's
+  behaviour for every fluid bucket, and nothing in `hidden.js` touches it.
 - Quest files carry GT tool NBT. GT 8 keeps durability in the vanilla `Damage` tag at
   the item-tag root, **not** inside `GT.Tool` — see task 16. Anything ported from
   upstream's older commits needs checking for the old shape.
