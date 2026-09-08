@@ -746,7 +746,7 @@ hash = "462a645dd07253e7258054b4fb97309890ae56c610bd8a58abe616d603f08cca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mv__medium_voltage.snbt"
-hash = "c0af3b7d61ffce7cba2653c5c12aed5ff1b105e87119e56f2064767084ca6a38"
+hash = "fa8e878cfd5e211b0cf2c398f909a79e29df4e2d224426b44fbc4b87715bc158"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ore_generation.snbt"
