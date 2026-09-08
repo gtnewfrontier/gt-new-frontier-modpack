@@ -50,11 +50,12 @@ _Are you ready to master GregTech and prove yourself an expert?_ Download today 
 | Minecraft | 1.20.1 |
 | Loader | Forge 47.4.10 |
 | GregTech | GTCEu Modern 8.0.0-SNAPSHOT (build `20260826.220408-269`) |
-| Pack | v0.4.3 |
+| Pack | v0.5.0 |
 
-The rebaseline onto Forge 47.4.10 and GTCEu 8.0.0 is in progress — the loader and
-GregTech are pinned, the rest of the mod list is not yet updated. See
-[`docs/ROADMAP.md`](docs/ROADMAP.md).
+v0.5.0 is a maintenance release: the pack is rebaselined from Forge 47.3.0 / GTCEu
+Modern 1.6.3 onto Forge 47.4.10 / GTCEu Modern 8.0.0, every other mod is updated, and
+the defects that survived the move are fixed. No new content. See
+[`docs/ROADMAP.md`](docs/ROADMAP.md) for what changed and what is next.
 
 ### **Installing**
 
