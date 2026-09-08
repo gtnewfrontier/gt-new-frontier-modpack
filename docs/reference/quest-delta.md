@@ -130,6 +130,21 @@ upstream moved. Two quests, both in `ev__extreme_voltage`, both stale under GT 8
 - A quest can render perfectly and still be uncompletable — a wrong item id, a stale NBT
   shape, or a mechanic that no longer exists. The namespace grep from task 07 cannot see
   any of those; only reading the quest against the current jar can.
+- **A chapter renders `quest_links` as well as `quests`, and a link node will hide a
+  quest placed under it.** This cost task 17 a defect: Wood Tar went to mv `(0.0, 0.375)`
+  because a checker that parsed only `quests: [ ]` said the slot was free. It is not —
+  mv has a size-1.2 `quest_links` node there, and because its target `7567E885B7166603`
+  declares no `icon:`, FTB Quests draws that quest's task item, an aluminium ingot, right
+  over the top. The quest stayed findable by search and invisible on the map. Two parsing
+  traps make this easy to miss: `quest_links: [ ]` sits **above** `quests: [ ]` in the file,
+  and a chapter with a single link writes it inline as `quest_links: [{` … `}]` with its
+  fields at **two** tabs rather than the three a quest object uses. Compare **boxes**
+  (`|dx| < (sa+sb)/2 and |dy| < (sa+sb)/2`), not centre distance, and remember a missing
+  `size:` means 1.0. When scanning for a free slot, use the chapter's own lattice: mv's rows
+  are at `0.375 - 1.125k`, not multiples of 1.125.
+- **A headless boot cannot see this class of bug.** It proves the SNBT parses and that FTB
+  Quests round-trips it unchanged, which it did — and the quest was still invisible. Only
+  a human opening the book catches a node drawn underneath another one.
 - **GT decorative blocks have no crafting-table recipe, and that is not a bug.** The
   `Gotta go fast` quest (`41DD503169987D50`) accepts concrete *or* studs, and both come
   from machines: `gtceu:assembler/studs_black` is 3x `#forge:storage_blocks/concrete` +

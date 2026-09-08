@@ -2413,8 +2413,8 @@
 				type: "item"
 			}]
 			title: "Wood Tar"
-			x: 0.0d
-			y: 0.375d
+			x: 2.25d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Venture into petrochemistry and refine electronics"]
