@@ -7,9 +7,9 @@ GTCEuStartupEvents.registry("gtceu:machine", (event) => {
     .recipeModifier(GTRecipeModifiers.OC_NON_PERFECT)
     .pattern((definition) =>
       FactoryBlockPattern.start()
-        .slice("BBB", "GGG", "BBB")
-        .slice("BBB", "GCG", "BBB")
-        .slice("BEB", "GGG", "BBB")
+        .aisle("BBB", "GGG", "BBB")
+        .aisle("BBB", "GCG", "BBB")
+        .aisle("BEB", "GGG", "BBB")
         .where("E", Predicates.controller(Predicates.blocks(definition.get())))
         .where("C", Predicates.blocks("gtceu:steel_gearbox"))
         .where("G", Predicates.blocks("gtceu:tempered_glass"))

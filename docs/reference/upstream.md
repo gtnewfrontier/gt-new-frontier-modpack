@@ -6,7 +6,14 @@ remote we merge.
 - Repo: https://github.com/GregTechCEu/GregTech-Modern-Community-Pack
 - Local clone: `../GregTech-Modern-Community-Pack` (keep it updated with `git pull`)
 - Fork point: **`519a656`** — "Update gtm + other mods (#88)", 2024-12-22, upstream v1.12.1
-- Upstream at time of analysis: `97dda02`, v1.15.0, 2026-09-04
+- Upstream at time of analysis: `97dda02`, 2026-09-04 — their `pack.toml` reads
+  `1.15.0`, but **that is working state, not a release**
+- Upstream's newest *published* release: **`v1.14.5`** — the last tag. It pins GT as
+  `gtceu-1.20.1-7.5.1.jar` in `mode = "metadata:curseforge"`. The GT 8 switch
+  (`c1b4288`) is untagged and unreleased; upstream has not shipped GT 8 to anyone.
+  **Cherry-pick from `v1.14.5`, not `HEAD`**, until upstream actually tags 1.15 —
+  see `docs/design/01-gt-pin-and-distribution.md`. Reading HEAD is still useful; just
+  do not assume anything there has been released or tested by players.
 
 ## Layout mapping
 

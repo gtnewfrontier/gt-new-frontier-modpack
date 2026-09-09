@@ -164,12 +164,12 @@ worldgen:
     # Sets the maximum number of chunks that may be cached for ore vein generation.
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
     # If you substantially increase the ore vein grid size, random vein offset, or have very large (custom) veins, you may need to increase this value as well.
-    # Default: 512
+    # Default: 512 (requires restarting the server / re-opening the world)
     oreGenerationChunkCacheSize: 512
 
     # Sets the maximum number of chunks for which ore indicators may be cached.
     # If you register any custom veins with very large indicator ranges (or modify existing ones that way), you may need to increase this value.
-    # Default: 2048
+    # Default: 2048 (requires restarting the server / re-opening the world)
     oreIndicatorChunkCacheSize: 2048
 
 machines:
@@ -313,6 +313,9 @@ machines:
   # Default: 8
   steamMultiParallelAmount: 8
 
+  # Whether the Drums can input fluids from the output side (bottom).
+  allowDrumsInputFluidsFromOutputSide: false
+
   # Small Steam Boiler Options
   smallBoilers:
     # The amount of steam a Steam Solid Boiler produces per second at max temperature.
@@ -390,8 +393,6 @@ client:
   # Default: true
   machinesHaveBERsByDefault: true
 
-  aprilFoolsMode: false
-
   # Whether or not sounds should be played when using tools outside of crafting.
   # Default: true
   toolUseSounds: true
@@ -405,14 +406,23 @@ client:
   # #D2DCFF is the classic blue from GT5.
   defaultPaintingColor: #FFFFFF
 
+  # The default color to overlay onto Machine (and other) UIs.
+  # #FFFFFF is no coloring (like GTCE) (default).
+  # #D2DCFF is the classic blue from GT5.
+  defaultUIColor: #FFFFFF
+
   # Use VBO cache for multiblock preview.
   # Disable if you have issues with rendering multiblocks.
   # Default: true
   useVBO: true
 
-  # Duration of the multiblock in-world preview (in seconds)
+  # Duration of the multiblock in-world preview (s)
   # Default: 10
   inWorldPreviewDuration: 10
+
+  # Duration of UI animations in ms
+  # Default: 300
+  animationTime: 300
 
   armorHud:
     # Sets HUD location
@@ -452,103 +462,12 @@ client:
     # Default: true
     coloredWireOutline: true
 
-    # The color of the assembly line lasers
-    # Default: #1FA1FC
-    assemblyLineLaser: #1FA1FC
-
-  # Config options for bloom and other post-processing effects
-  bloom:
-    # Bloom Algorithm
-    # Requires reloading all chunks 
-    # UNITY - Unity-like Bloom (rescale)
-    # UNREAL - Unreal-like Bloom (gaussian blur)
-    # DISABLED - No bloom
-    # Default: UNREAL
-    # Allowed values:
-    # - UNITY
-    # - UNREAL
-    # - DISABLED
-    type: UNREAL
-
-    # Whether or not to add bloom to emissive textures
-    # Default: true
-    emissiveTexturesHaveBloom: true
-
-    # The brightness after bloom should not exceed this value. It can be used to limit the brightness of highlights (e.g., daytime)
-    # This value should be greater than minBrightness.
-    # OUTPUT = BACKGROUND + BLOOM * strength * (base + min + (1 - BACKGROUND_BRIGHTNESS) * ({max} - min)))
-    # Default: 0.5
-    maxBrightness: 0.5
-
-    # The brightness after bloom should not smaller than this value. It can be used to limit the brightness of dusky parts (e.g., night/caves)
-    # This value should be lower than maxBrightness.
-    # OUTPUT = BACKGROUND + BLOOM * strength * (base + {min} + (1 - BACKGROUND_BRIGHTNESS) * (max - {min})))
-    # Default: 0.2
-    minBrightness: 0.2
-
-    # The base brightness of the bloom.
-    # It is similar to strength
-    # This value should be lower than maxBrightness.
-    # OUTPUT = BACKGROUND + BLOOM * strength * ({base} + min + (1 - BACKGROUND_BRIGHTNESS) * (max - min)))
-    # Default: 0.1
-    baseBrightness: 0.1
-
-    # Bloom Strength
-    # OUTPUT = BACKGROUND + BLOOM * {strength} * (base + min + (1 - BACKGROUND_BRIGHTNESS) * (max - min)))
-    # Default: 1.5
-    strength: 1.5
-
-    # Blur Step (bloom range)
-    # Default: 1
-    step: 1.0
-
   tankItemFluidPreview:
     # Set true to render the including fluid icons to GT Drums
-    # Default: false
     drum: false
 
-    # Set true to render the including fluid icons to Super and Quantum Tanks
-    # Default: false
+    # Set true to render the including fluid icons to Super (Quantum) Tanks
     quantumTank: false
-
-  ui:
-    # If progress bar should step in texture pixels or screen pixels. (Screen pixels are way smaller and therefore smoother)
-    # Default: true
-    smoothProgressBar: true
-
-    # Duration of UI animations in ms.
-    # Default: 100
-    animationTime: 100
-
-    # Default tooltip position around the widget or its panel.
-    # Default: VERTICAL
-    # Allowed values:
-    # - ABOVE
-    # - BELOW
-    # - LEFT
-    # - RIGHT
-    # - VERTICAL
-    # - HORIZONTAL
-    # - NEXT_TO_MOUSE
-    # - FIXED
-    tooltipPos: NEXT_TO_MOUSE
-
-    # The default color to overlay onto Machine (and other) UIs.
-    # #FFFFFF is no coloring (like GTCE) (default).
-    # #D2DCFF is the classic blue from GT5.
-    defaultUIColor: #FFFFFF
-
-    # If true, pressing the ESC key in a text field will restore the last text instead of confirming current one.
-    # Default: fakse
-    escRestoresLastText: false
-
-    # If true and not specified otherwise, screens will try to use the 'vanilla_dark' theme.
-    # Default: false
-    useDarkThemeByDefault: false
-
-    # If true, vanilla tooltips will be replaced with MUI's RichTooltip
-    # Default: false
-    replaceVanillaTooltips: false
 
 # Config options for Tools and Armor
 tools:
@@ -670,7 +589,7 @@ compat:
 
   # Config options regarding GTCEu compatibility with minimap mods
   minimap:
-    # Toggle specific map mod integration on/off
+    # Toggle specific map mod integration on/off (need to restart for this to take effect)
     toggle:
       # FTB Chunks integration enabled
       ftbChunksIntegration: false
@@ -682,12 +601,12 @@ compat:
       xaerosMapIntegration: true
 
     # The radius, in blocks, that picking up a surface rock will search for veins in.
-    # 0 to disable.
+    # -1 to disable.
     # Default: 24
     surfaceRockProspectRange: 24
 
     # The radius, in blocks, that clicking an ore block will search for veins in.
-    # 0 to disable
+    # -1 to disable
     # Default: 24
     oreBlockProspectRange: 24
 
@@ -705,23 +624,11 @@ compat:
     borderColor: #00000000
 
     # Which part of the screen to anchor buttons to
-    # Default: BOTTOM_LEFT
-    # Allowed values:
-    # - TOP_LEFT
-    # - TOP_CENTER
-    # - TOP_RIGHT
-    # - RIGHT_CENTER
-    # - BOTTOM_RIGHT
-    # - BOTTOM_CENTER
-    # - BOTTOM_LEFT
-    # - LEFT_CENTER
+    # Default: "BOTTOM_LEFT"
     buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
-    # Default: VERTICAL
-    # Allowed values:
-    # - VERTICAL
-    # - HORIZONTAL
+    # Default: "VERTICAL"
     direction: HORIZONTAL
 
     # How horizontally far away from the anchor to place the buttons

@@ -300,8 +300,9 @@
 						Count: 1
 						id: "gtceu:red_steel_pickaxe"
 						tag: {
-							Damage: 0
-							GT.Tool: { }
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -1059,7 +1060,6 @@
 					Count: 1
 					id: "gtceu:invar_mining_hammer"
 					tag: {
-						Damage: 0
 						DisallowContainerItem: 0b
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1074,6 +1074,7 @@
 							MaxAoERow: 1
 						}
 						GT.Tool: {
+							Damage: 0
 							HarvestLevel: 2
 							MaxDamage: 1151
 							ToolSpeed: 5.6f

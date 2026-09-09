@@ -726,11 +726,11 @@ hash = "69ab36769aa2842e619b7360f21b951cf154a20dc205b33f4140f402216dc1b9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/introduction.snbt"
-hash = "8912ea2b9e15d52765850784109fa9d482c809431b7b6be2cae42e3d9508984a"
+hash = "2d60343432350d32e63a03a45d1934395222cf11a1a1841ab144173626e686d8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/iv__insane_voltage.snbt"
-hash = "b5ba241490b30512a81e977f758da3c4ce6bf974e28800d5a4cf125e1af236e2"
+hash = "1e27bdceb28ea4ca91149be40136c1bdc6ba713851be4e48fdab8b27d852339c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/luv__ludicrous_voltage.snbt"
@@ -738,7 +738,7 @@ hash = "d3c007614eed5e446c031a8b4f1ad8ba177fcd1c64797f7582a1ea22580add02"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv__low_voltage.snbt"
-hash = "9969b81b19883b753b720940d6866481d647a15738d4d37a56719682f4e81a5f"
+hash = "1d95df1b8c3b2fc674800e104344417d9d2efbeeb7cc3065bb88fb33fcee1423"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/multiblock_dilemma.snbt"
@@ -766,11 +766,11 @@ hash = "d8b19cc14f333b02b471492fad153fce4fcfe42892fe82e31963649f1e0c4205"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam_age.snbt"
-hash = "fc72f8e75f3a1320f962a89f3b57ff9055ff5f814c0370ebf4d806ccbb21efe8"
+hash = "6cce8fa38bd3a0f53a6f1bc65be12a3369521e00af542c44f91f04353c08f1f8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stone_age.snbt"
-hash = "074f876292f98a5d3cea662619d8c90fa02d3782546885bca377d435d06352a1"
+hash = "3dfbb9196b1b628aa5bebf465e65d7f860f6bf9b324959f5c2741821dc38cd54"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tips_and_tricks_2.snbt"
@@ -778,7 +778,7 @@ hash = "171da1ebd53987df974781fcd70c04b6a4bd3f6d507f6aeb9b914ecef2d3a007"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/uv__ultimate_voltage.snbt"
-hash = "c6a632b6f5bd54f321d6deb234a3b2ead4ad55e2e87de73dbefeb01a2eae8823"
+hash = "154f7c40147239b7de23e98959735cf18b84a85bec395ce22ec961f4464ad635"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/zpm__zero_point_module.snbt"
@@ -787,10 +787,6 @@ hash = "627de385e6114c9983cc4bc4ef7da0bde83ac331226393acde145fbade2111a4"
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "2f4c6e4ddd0f94804788acf851a3d45a43655e80e348f79b53c6c19557616410"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/bronze_age.snbt"
-hash = "a51f509ce2e07a630825ba37103f4bf33360a92343eddb70dc155a6d0379685e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/distillation_tower.snbt"
@@ -822,7 +818,7 @@ hash = "774631c740366a8dfef9c646d5f60a9939299f3627180ab9ac4d540c76af4081"
 
 [[files]]
 file = "config/gtceu.yaml"
-hash = "20e0c7826f9cd578d411199e741f71f1e29beb9c8603d5a44848fdccd97739f7"
+hash = "3411e1e980f5e30b36f7dd2d066a03c77425cc36c516f7428c0f36db6846162b"
 
 [[files]]
 file = "config/hangglider-client.toml"
@@ -1502,11 +1498,11 @@ hash = "5c87d9314fd7b9e4c1b737b8742f01fc88fccebf7e777b3e67bbbd49b7be3d0a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/gregtech.js"
-hash = "6d1bc28bdaecc1597d7a7590f27ceb1a94cd27643fd8c453bec9605047f264a7"
+hash = "39536fa36c826a2da5fab3e94a549147a874781fd74bbfbbc7c4d6496fd73f5f"
 
 [[files]]
 file = "kubejs/server_scripts/tags/hidden.js"
-hash = "b58af45e8c6c6d4d8437d7b0604a7b484ae403e2dd561d5a7ddbb816e869288c"
+hash = "ec0c95e1f399f3ee2e643e6142e942b2474bf24e07d5b9fda935bd145dc51ccd"
 
 [[files]]
 file = "kubejs/server_scripts/tags/items.js"
@@ -1549,12 +1545,16 @@ file = "kubejs/startup_scripts/icons.js"
 hash = "df08c04d15365e5b8126435e7abe7f0b5ff84d7fa908f84990c2ea97e3650e12"
 
 [[files]]
+file = "kubejs/startup_scripts/jeg_supply_drop_stub.js"
+hash = "9646270934fcdb4c8b1dfb5e1fd7047ee6995190d69c60f40f2e2676c6987f00"
+
+[[files]]
 file = "kubejs/startup_scripts/machinery/construction_core.js"
-hash = "02a5150f481cd578c27a526f7e1074bb6871efb1967dddd3729ba2ec3447243f"
+hash = "28506324040277f344de7c454b3b7d6e37eab460cfff875e6378d6231cfad948"
 
 [[files]]
 file = "kubejs/startup_scripts/machinery/greenhouse.js"
-hash = "1e10410942baf4dee94e351fe986d4f12bd0b850281c2845b14868c2f23c9572"
+hash = "865d1b4caf98c99de1ea23a937f9e616435a501f0058ed2a7907ada71cea9d14"
 
 [[files]]
 file = "kubejs/startup_scripts/materials.js"
@@ -1562,11 +1562,11 @@ hash = "f3c91969f460d87d9f4e145f2c73fa58160aedeedb53f58bc1d168dde7716af6"
 
 [[files]]
 file = "kubejs/startup_scripts/recipes/construction_core.js"
-hash = "5f2b7a916f3fdb6bf4f618dead7705fcc52c840fb702668b278aab9933ee705c"
+hash = "03c7e2bfab51ba5a47282ac12d9514a2c317230fdb56ae1c6479ef3cac5c3fa8"
 
 [[files]]
 file = "kubejs/startup_scripts/recipes/greenhouse.js"
-hash = "026f1b1d631ec6e82cfbbb2de25cdb5ffaf7a157f2c980d2b6dd514037999839"
+hash = "03f410a68b9eab63fe3ee151498a8b4be5da7c4688261458b67e4bd3fe9df48b"
 
 [[files]]
 file = "mods/ae2-crafting-tree.pw.toml"
@@ -1965,7 +1965,7 @@ metafile = true
 
 [[files]]
 file = "mods/gregtechceu-modern.pw.toml"
-hash = "3759eaa524e49a0e10927af29feb4aa57d9ce7e96a290a4a03ea323d5d717663"
+hash = "7ce907dafa5ddfd25353cbdd258559f04db20c152f5228f10486d1436c6634d4"
 metafile = true
 
 [[files]]

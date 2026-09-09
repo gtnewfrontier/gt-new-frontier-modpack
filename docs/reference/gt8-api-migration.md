@@ -1,5 +1,26 @@
 # GTCEu 7 to 8 KubeJS API changes
 
+> **The pack is back on GT 7.5.3 as of 2026-09-08.** `docs/design/01-gt-pin-and-distribution.md`
+> repinned GregTech to the newest CurseForge release because GT 8 for 1.20.1 has never
+> had a stable release and cannot be distributed on CurseForge. This file is therefore a
+> record of a path we walked back — and the map for walking it forward again when 8.x
+> reaches CurseForge. The GT 8 tree is preserved on the **`gt8` branch**.
+>
+> Two entries below turned out **not to be 7-to-8 changes at all**, verified with `javap`
+> against `gtceu-1.20.1-7.5.3.jar`:
+>
+> - `workableCasingModel(a, b)` already exists on 7.5.3 — the rename from
+>   `workableCasingRenderer(a, b, true)` happened *before* 8.x, so our files keep it.
+> - `recipeModifier(RecipeModifier)` singular exists on 7.5.3, so declining upstream's
+>   `.recipeModifiers([…, BATCH_MODE])` still holds.
+>
+> What did have to be reversed: `.slice(...)` back to `.aisle(...)` (7.5.3 has `aisle`
+> and no `slice`), `GTGuiTextures` back to `GuiTextures`, and
+> `setItemSlotsOverlay(IO, from, to, …)` / `setProgressBar(ProgressBarTextureSet)` back to
+> `setSlotOverlay(false, false, …)` / `setProgressBar(texture, FillDirection)`.
+> Separately, GT 7.5.x quest tool stacks keep durability at `GT.Tool.Damage`, not the
+> vanilla root `Damage` — 39 stacks were moved back, matching upstream v1.14.5's own book.
+
 Extracted from upstream's own migration (`git -C ../GregTech-Modern-Community-Pack
 diff 519a656..HEAD -- kubejs/startup_scripts`). These are the changes our custom
 content needs; verify each against the GT version we actually pin, since 8.0.0 is a
