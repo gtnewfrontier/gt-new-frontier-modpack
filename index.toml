@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "CHANGELOG.md"
+hash = "e97d6bc4b3fe9349b23b1dcbbb073057082db48a9ca8d0e6a625ef2bb244e380"
+
+[[files]]
 file = "config/CoroUtil/General.toml"
 hash = "da41baa38cd86e7388841af4095cb06b9f6f3a1c883cedfe6f0632ea129f4f06"
 
@@ -1026,7 +1030,7 @@ hash = "f734f35399f949a79b29328d6d0398027a5e5c4f5ffa15f35a44c8054b54da34"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "60ffcafc67a870a9d304d731a36e084074515934387eae4eb3f7ae5d246783f1"
+hash = "205ef1aab3c2d7f20e69be7beb83199cc23ed9a51e1ae161e694ca5560e0b888"
 
 [[files]]
 file = "config/overflowingbars-client.toml"
@@ -1800,7 +1804,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "09455e81afb0af9383c906f8b48854c1a037ccd26cf7edcecc9685ebb8233e39"
+hash = "e6608ff32a9fd87af5fadfb7ad57ac58686f6f76da45c97bd7a33c6df33b56bc"
 metafile = true
 
 [[files]]

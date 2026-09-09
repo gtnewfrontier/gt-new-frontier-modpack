@@ -63,6 +63,7 @@ yields, `oreIndicators`, `batchDuration`, `replaceWithCobbleVersion`,
 | `config/curios-client.toml` | `enableButton` | true | QoL |
 | `config/invtweaks-client.toml` | `sorting.containerOverrides` | kept | This **is** the live config of Inventory Tweaks ReFoxed (`invtweaks-1.20.1-1.2.0.jar`, modid `invtweaks`) — not an Inventory Profiles Next leftover. Task 07 verified and kept it. Its `containerOverrides` name classes from mods we don't ship (Refined Storage, Integrated Dynamics, Thermal, LaserIO, …); those are inert strings, harmless to leave. |
 | `config/inventoryessentials-common.toml` | `bulkTransferArmorSets` | true | QoL |
+| `config/oculus.properties` | `shaderPack` | `ComplementaryReimagined_r5.9 + EuphoriaPatches_1.10.0` | **This name has to move whenever the Complementary pin or the Euphoria Patches version moves.** It names the folder Euphoria Patches generates at launch, not a file we ship. It sat at `r5.3 + EuphoriaPatches_1.4.3` — a folder task 13 deleted — from the initial commit until task 18, so `enableShaders=true` pointed at nothing and Oculus logged `Pack "…" is not valid! Can't load it.` on every client boot. |
 | `config/chloride-client.toml` | `fpsDisplay.mode`, `culling.*` | ADVANCED; entity and tile-entity distance culling on at 4096/32 | Carries the intent that used to live in `config/embeddium++.toml`. Chloride **migrated it itself** on the task-14 boot — the regenerated file already held our values, including the culling whitelists. Task 15 shipped that file and dropped the `iceandfire` / `create` / `waterframes` whitelist entries, which named mods the pack does not ship. |
 
 ## Do not ship
@@ -78,6 +79,22 @@ yields, `oreIndicators`, `batchDuration`, `replaceWithCobbleVersion`,
 | `config/pdgamerules-common.yaml` | Deleted in task 15 — Per Dimension Gamerules is not installed, so the file was inert. **It held real intent that the pack no longer implements**: `doMobLoot: false` in the Nether and `doDaylightCycle: false` in `lostcities:lostcity`. Whether to bring either back — and with which mod — is design backlog #11. |
 | `config/xaerominimap*`, `config/xaeroworldmap*`, `config/xaeropatreon.txt` | Deleted in task 15 — Xaero's minimap and world map are not installed; we ship JourneyMap (see `journeyMapIntegration` above). |
 | `config/xray/`, `config/xray-client.toml` | Deleted in task 15 — the XRay mod is not installed. |
+
+## Held mod pins
+
+Pins deliberately *behind* the newest build. `packwiz update --all` will try to move
+these; `pin = true` in the metafile stops it. Unpin only with a boot to prove it.
+
+| Mod | Held at | Why |
+|---|---|---|
+| `mods/emi.pw.toml` (**pinned**) | `emi-1.1.22+1.20.1+forge.jar` | **EMI 1.1.24 crashes the client on GT 7.5.x.** LDLib — which GT 7.5.3 jarjars and GT 8 did not — has a mixin plugin that touches `dev.emi.emi.api.EmiPlugin` during config prep, and 1.1.24's `emi.mixins.json:GlobalMixin` targets that class, so mixin prep fails with `MixinTargetAlreadyLoadedException` before the game window opens. 1.1.22 is what upstream v1.14.5 ships with GT 7.5.1, hash-for-hash. Found in task 18 by launching the client; a headless server never loads EMI. 1.1.24 is the newest build, so there is nothing to update forward to. |
+| `mods/factory-blocks.pw.toml` | `1.3.1` | 1.4.0 crashes `COMMON_SETUP` against the Chisel version we ship. **Moves together with the Chisel pin.** (task 14) |
+| `mods/journeymap.pw.toml` | `5.10.3` | JourneyMap 6.0.4 declares its version as `1.20.1-6.0.4`, which sorts below `5.8` under Maven ordering, so JourneyMap Integration would refuse to load. (task 13) |
+
+`mods/chisel-reborn.pw.toml`, `mods/rightclickharvest.pw.toml` and `mods/tectonic.pw.toml`
+are pinned for the same reason — task 13's dependency scan found their newest builds
+break against something else in the pack. Six pinned metafiles in total; `grep -l 'pin = true' mods/*.pw.toml`
+is the list.
 
 ## Script-level gameplay deltas
 
