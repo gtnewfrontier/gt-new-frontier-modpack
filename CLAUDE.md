@@ -55,6 +55,12 @@ metadata out of the shipped pack.
 6. **Upstream is a reference, not a remote.** Cherry-pick deliberately —
    `docs/reference/upstream.md`.
 7. Commit style follows existing history: `feat:`, `fix:`, `docs:`, `chore:`.
+8. **Never close a Minecraft instance you didn't launch.** Other clients — another pack,
+   a separate session, a running server — may be up on this machine. Only stop the client
+   this session started, identified by its PID or by the `.minecraft` game directory under
+   this repo; if that wasn't recorded, ask before killing anything. Never blanket-kill by
+   name (`java*`, `javaw`, "Minecraft"). When a test needs a client, say up front which
+   one you're launching and which one you'll close.
 
 ## Verifying a change
 

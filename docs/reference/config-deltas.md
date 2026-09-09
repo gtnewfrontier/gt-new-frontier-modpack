@@ -86,3 +86,14 @@ Not config files, but the same class of intent — recorded so they survive a re
 - `kubejs/server_scripts/gtnf.js`: all vanilla tool/weapon/hoe/sword recipes removed; crafting table needs flint + logs; beds, carpets, rope, knives re-gated behind GT materials and mallets.
 - `kubejs/server_scripts/gtnf/ore_veins.js`: overworld `olivine`, `sapphire`, `galena`, `nickel` veins removed; Twilight Forest gets its own vein set on a custom worldgen layer.
 - `kubejs/server_scripts/gregtech/temporary_fixes.js`: compressed coke clay recipe replaced (upstream's needs a wooden form we gate later).
+- `kubejs/startup_scripts/jeg_supply_drop_stub.js`: registers an empty `jeg:supply_drop`
+  block. **This is a workaround for a bug in Just Enough Guns 0.14.4, not content.** JEG
+  lists `jeg:supply_drop` in `minecraft:needs_iron_tool` but registers the block as
+  `jeg:supply_drop_crate`; one unresolvable required entry makes TagLoader drop the whole
+  tag, so every iron-tier block — diamond, gold, emerald and redstone ore included —
+  becomes mineable with a stone pickaxe. Found in task 18; introduced by task 13's bump
+  from JEG 0.11.1 to 0.14.4. 0.14.4 is the newest build, so there is nothing to update to.
+  A `"remove": ["jeg:supply_drop"]` datapack file was tried first and **does not work** —
+  Forge resolves removals against the registry too, so the tag still fails to load.
+  **Delete both this script and its `hidden.js` entry the moment JEG registers the real
+  block**; two registrations of one id will not coexist.

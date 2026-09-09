@@ -35,6 +35,10 @@ ServerEvents.tags("item", (event) => {
     "#forge:ores_in_ground/granite",
     "#forge:ores_in_ground/marble",
     "#forge:ores_in_ground/red_granite",
+
+    // The stub registered by `startup_scripts/jeg_supply_drop_stub.js` to repair JEG's
+    // broken `minecraft:needs_iron_tool` entry. It is not obtainable and not content.
+    "jeg:supply_drop",
   ];
 
   hidden.forEach((id) => event.add("c:hidden_from_recipe_viewers", id));
