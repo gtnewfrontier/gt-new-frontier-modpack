@@ -1,6 +1,7 @@
 # 18 — Ship v0.5.0
 
-**Status:** not started
+**Status:** done 2026-09-08 — see the roadmap status log. Part 1's visual in-game
+checklist is the one item handed back to a human; the `v0.5.0` tag waits on it.
 **Depends on:** 17
 
 ## Goal
