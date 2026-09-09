@@ -1,0 +1,18 @@
+# Pinned: JourneyMap 6.x declares its version as "1.20.1-6.0.4", which sorts BELOW "5.8"
+# under Maven ordering, so JourneyMap Integration (jmi 0.14-48, mandatory journeymap
+# [5.8,)) refuses to load against it. JMI has no 1.20.1 build newer than 0.14-48 and
+# config-deltas.md records us shipping it deliberately. Unpin when JMI updates.
+name = "JourneyMap"
+filename = "journeymap-1.20.1-5.10.3-forge.jar"
+side = "both"
+pin = true
+
+[download]
+hash-format = "sha1"
+hash = "d0bbe7c23049892b154b6417904dd027fb53a37a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5789363
+project-id = 32274

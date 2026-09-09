@@ -1,0 +1,12 @@
+# LF everywhere, in the index and in the working tree.
+#
+# The pack was once checked out through Git-for-Windows' core.autocrlf=true, so every
+# text file landed as CRLF and diffs against upstream were 100% noise. eol=lf overrides
+# autocrlf on checkout, so the bytes on disk are the same on every platform — which is
+# also what packwiz's index.toml sha256 hashes need.
+* text=auto eol=lf
+
+*.png binary
+*.jar binary
+*.zip binary
+*.ogg binary

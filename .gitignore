@@ -1,1 +1,12 @@
-overrides/config/voicechat/username-cache.json
+# Machine-specific caches a dev run drops into the pack directory.
+**/voicechat/username-cache.json
+
+# packwiz's download cache (phase 1).
+.packwizcache/
+
+# Built pack exports.
+*.zip
+
+# Client/server run output.
+logs/
+crash-reports/
