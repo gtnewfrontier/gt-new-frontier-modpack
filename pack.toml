@@ -1,12 +1,12 @@
 name = "GregTech New Frontier"
 author = "BGxArrow"
-version = "0.5.0"
+version = "0.5.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "e23c22e53f3a435dc6b438ba2ebc38b09c648798f5bf3862629335630c7baa26"
+hash = "942df8d52885e33f53fad6d34cd758c9bffeff731c1f6bce7438e1c4a761ef8a"
 
 [versions]
 forge = "47.4.10"

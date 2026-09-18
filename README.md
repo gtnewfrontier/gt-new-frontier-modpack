@@ -50,7 +50,7 @@ _Are you ready to master GregTech and prove yourself an expert?_ Download today 
 | Minecraft | 1.20.1 |
 | Loader | Forge 47.4.10 |
 | GregTech | GTCEu Modern 7.5.3 |
-| Pack | v0.5.0 |
+| Pack | v0.5.1 |
 
 v0.5.0 is a maintenance release: the pack is rebaselined from Forge 47.3.0 / GTCEu
 Modern 1.6.3 onto Forge 47.4.10 / GTCEu Modern 7.5.3, every other mod is updated, and

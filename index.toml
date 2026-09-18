@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "e97d6bc4b3fe9349b23b1dcbbb073057082db48a9ca8d0e6a625ef2bb244e380"
+hash = "491ef493f0fd8e0c8e07539c5963cd75cd6d449f3037f4ff469efd5c50253085"
 
 [[files]]
 file = "config/CoroUtil/General.toml"
@@ -2029,7 +2029,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "562d4d48069a238a8100b277a5961f241ab04b175b5d7ab0a69da153164f16bc"
+hash = "4867f850e4a97e7a359d25b7dd8997ecfb755b07ec8f548b1f8f3b5c1a91728a"
 metafile = true
 
 [[files]]

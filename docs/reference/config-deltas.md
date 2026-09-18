@@ -88,12 +88,13 @@ these; `pin = true` in the metafile stops it. Unpin only with a boot to prove it
 | Mod | Held at | Why |
 |---|---|---|
 | `mods/emi.pw.toml` (**pinned**) | `emi-1.1.22+1.20.1+forge.jar` | **EMI 1.1.24 crashes the client on GT 7.5.x.** LDLib — which GT 7.5.3 jarjars and GT 8 did not — has a mixin plugin that touches `dev.emi.emi.api.EmiPlugin` during config prep, and 1.1.24's `emi.mixins.json:GlobalMixin` targets that class, so mixin prep fails with `MixinTargetAlreadyLoadedException` before the game window opens. 1.1.22 is what upstream v1.14.5 ships with GT 7.5.1, hash-for-hash. Found in task 18 by launching the client; a headless server never loads EMI. 1.1.24 is the newest build, so there is nothing to update forward to. |
+| `mods/jei.pw.toml` (**pinned**) | `15.20.0.134` | **Moves together with the EMI pin.** EMI 1.1.22's JEI bridge (JEMI) implements JEI's `IRecipeSlotView` and `IRecipeSlotBuilder`/`ITooltipBuilder`; from 15.27 on, JEI keeps adding *abstract* methods to them. From 15.35, `getAllIngredientsList()` is one, and JEI's own crafting-table transfer handler calls it, so every crafting recipe viewed at a crafting table shows EMI "Error Rendering", and shift-hovering or clicking "+" crashes the client with `AbstractMethodError … JemiRecipeSlot`. 0.5.0 shipped 15.58.0.209. 15.20.0.134 is the last build of the 15.20 line that EMI 1.1.22 was built against: zero missing members in either direction across all 182 mods, and above every declared JEI minimum (highest: GTCEu's `15.20.0.115`). Before moving either pin, check that EMI's `dev.emi.emi.jemi.impl.*` classes implement every abstract method of the JEI interfaces they implement (javap both jars). |
 | `mods/factory-blocks.pw.toml` | `1.3.1` | 1.4.0 crashes `COMMON_SETUP` against the Chisel version we ship. **Moves together with the Chisel pin.** (task 14) |
 | `mods/journeymap.pw.toml` | `5.10.3` | JourneyMap 6.0.4 declares its version as `1.20.1-6.0.4`, which sorts below `5.8` under Maven ordering, so JourneyMap Integration would refuse to load. (task 13) |
 
 `mods/chisel-reborn.pw.toml`, `mods/rightclickharvest.pw.toml` and `mods/tectonic.pw.toml`
 are pinned for the same reason — task 13's dependency scan found their newest builds
-break against something else in the pack. Six pinned metafiles in total; `grep -l 'pin = true' mods/*.pw.toml`
+break against something else in the pack. Seven pinned metafiles in total; `grep -l 'pin = true' mods/*.pw.toml`
 is the list.
 
 ## Script-level gameplay deltas

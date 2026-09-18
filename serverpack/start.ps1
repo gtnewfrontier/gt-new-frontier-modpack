@@ -15,7 +15,7 @@ $MANUAL_JARS = @{
 
 # Override PACK_TAG to install a different release, or PACK_URI to point at an
 # arbitrary pack.toml (a commit sha, or `packwiz serve` on localhost).
-if (-not $env:PACK_TAG) { $env:PACK_TAG = "v0.5.0" }
+if (-not $env:PACK_TAG) { $env:PACK_TAG = "v0.5.1" }
 if ($env:PACK_URI) {
   $PACK_URI = $env:PACK_URI
 } else {
