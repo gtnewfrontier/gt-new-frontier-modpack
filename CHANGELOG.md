@@ -3,6 +3,21 @@
 All notable changes to GregTech: New Frontier. Versions follow the pack version in
 `pack.toml`; each release is tagged in git.
 
+## v0.5.1 — 2026-09-18
+
+A hotfix for v0.5.0.
+
+### Fixed
+
+- **Crafting recipes crashed the game at a crafting table.** Viewing any crafting recipe
+  in EMI while a crafting table was open showed "Error Rendering", and shift-hovering an
+  item or clicking the recipe's **+** (fill) button crashed the client. v0.5.0 updated
+  JEI past the version EMI supports; JEI is now held at 15.20.0.134, the newest build
+  that works with the EMI we ship.
+- **The v0.5.0 server pack could not install.** Its scripts fetch the pack from the
+  release's git tag, and that tag was never published. v0.5.1 is tagged, and its server
+  scripts point at it.
+
 ## v0.5.0 — 2026-09-08
 
 A maintenance release. **No new content** — this is the pack rebuilt on a current loader

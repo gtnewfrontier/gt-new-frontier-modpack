@@ -11,7 +11,7 @@ Structory_1.20.x_v1.3.5.jar|https://mediafilez.forgecdn.net/files/5351/581/Struc
 
 # Override PACK_TAG to install a different release, or PACK_URI to point at an
 # arbitrary pack.toml (a commit sha, or `packwiz serve` on localhost).
-PACK_TAG="${PACK_TAG:-v0.5.0}"
+PACK_TAG="${PACK_TAG:-v0.5.1}"
 PACK_URI="${PACK_URI:-https://raw.githubusercontent.com/gtnewfrontier/gt-new-frontier-modpack/refs/tags/$PACK_TAG/pack.toml}"
 
 set -e

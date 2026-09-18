@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "e97d6bc4b3fe9349b23b1dcbbb073057082db48a9ca8d0e6a625ef2bb244e380"
+hash = "491ef493f0fd8e0c8e07539c5963cd75cd6d449f3037f4ff469efd5c50253085"
 
 [[files]]
 file = "config/CoroUtil/General.toml"
